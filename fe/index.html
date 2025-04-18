@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChineseViet - Học tiếng Trung hiệu quả</title>
+    
+    <style>
+      /* Custom styles for Chinese characters */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans:wght@400;500;600;700&display=swap');
+      
+      /* CSS for card flip animations */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      
+      .backface-hidden {
+        backface-visibility: hidden;
+      }
+      
+      .rotate-y-0 {
+        transform: rotateY(0deg);
+      }
+      
+      .rotate-y-180 {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
