@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, BookOpen, User, Bell, Search } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,23 +16,60 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <BookOpen className="w-8 h-8 text-red-600 mr-2" />
             <span className="text-xl font-bold text-gray-800">ChineseViet</span>
-          </div>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Trang chủ</a>
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Học từ mới</a>
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Ôn tập</a>
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Bài kiểm tra</a>
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Tiến trình</a>
+            <Link 
+              to="/" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/') ? 'text-red-600' : ''
+              }`}
+            >
+              Trang chủ
+            </Link>
+            <Link 
+              to="/flashcards" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/flashcards') ? 'text-red-600' : ''
+              }`}
+            >
+              Học từ mới
+            </Link>
+            <Link 
+              to="/review" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/review') ? 'text-red-600' : ''
+              }`}
+            >
+              Ôn tập
+            </Link>
+            <Link 
+              to="/quiz" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/quiz') ? 'text-red-600' : ''
+              }`}
+            >
+              Kiểm tra
+            </Link>
+            <Link 
+              to="/progress" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/progress') ? 'text-red-600' : ''
+              }`}
+            >
+              Tiến trình
+            </Link>
           </nav>
           
           <div className="hidden md:flex items-center space-x-4">
@@ -62,11 +101,51 @@ const Header: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg py-4 px-4 absolute top-full left-0 right-0 border-t border-gray-100">
           <nav className="flex flex-col space-y-4">
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Trang chủ</a>
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Học từ mới</a>
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Ôn tập</a>
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Bài kiểm tra</a>
-            <a href="#" className="text-gray-700 hover:text-red-600 transition-colors">Tiến trình</a>
+            <Link 
+              to="/" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/') ? 'text-red-600' : ''
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Trang chủ
+            </Link>
+            <Link 
+              to="/flashcards" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/flashcards') ? 'text-red-600' : ''
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Học từ mới
+            </Link>
+            <Link 
+              to="/review" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/review') ? 'text-red-600' : ''
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Ôn tập
+            </Link>
+            <Link 
+              to="/quiz" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/quiz') ? 'text-red-600' : ''
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Kiểm tra
+            </Link>
+            <Link 
+              to="/progress" 
+              className={`text-gray-700 hover:text-red-600 transition-colors ${
+                isActive('/progress') ? 'text-red-600' : ''
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Tiến trình
+            </Link>
           </nav>
           <div className="flex items-center space-x-4 mt-4 pt-4 border-t border-gray-100">
             <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BookOpen, Facebook, Twitter, Instagram, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -7,10 +8,10 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
+            <Link to="/" className="flex items-center mb-4">
               <BookOpen className="w-6 h-6 text-red-400 mr-2" />
               <span className="text-xl font-bold">ChineseViet</span>
-            </div>
+            </Link>
             <p className="text-gray-300 mb-4">
               Nền tảng học tiếng Trung hiệu quả nhất dành cho người Việt Nam
             </p>
@@ -33,10 +34,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Tính năng</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Học từ mới</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Ôn tập từ vựng</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Bài kiểm tra</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Theo dõi tiến trình</a></li>
+              <li><Link to="/flashcards" className="text-gray-300 hover:text-white transition-colors">Học từ mới</Link></li>
+              <li><Link to="/review" className="text-gray-300 hover:text-white transition-colors">Ôn tập từ vựng</Link></li>
+              <li><Link to="/review" className="text-gray-300 hover:text-white transition-colors">Bài kiểm tra</Link></li>
+              <li><Link to="/progress" className="text-gray-300 hover:text-white transition-colors">Theo dõi tiến trình</Link></li>
             </ul>
           </div>
           

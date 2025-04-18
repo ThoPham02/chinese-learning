@@ -1,4 +1,4 @@
-import { Topic, Word, UserProgress } from '../types';
+import { Topic, Word, UserProgress, QuizQuestion } from '../types';
 import { CalendarClock, School, Home, Briefcase, Plane, Utensils, ShoppingCart, Users, Music, BookOpen } from 'lucide-react';
 
 export const topics: Topic[] = [
