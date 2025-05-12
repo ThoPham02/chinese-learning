@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, BookOpen, User, Bell, Search } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Menu, X, BookOpen, LogIn, Search, Bell, User } from 'lucide-react';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/redux';
+import { ROUTE_PATHS } from '../../common/path';
+import UserContainer from '../ui/User';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +21,9 @@ const Header: React.FC = () => {
   }, []);
 
   const isActive = (path: string) => location.pathname === path;
+  const navigate = useNavigate();
+
+  const { isLogined } = useSelector((state: RootState) => state.auth);
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -73,15 +80,19 @@ const Header: React.FC = () => {
           </nav>
           
           <div className="hidden md:flex items-center space-x-4">
-            <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
-              <Search className="w-5 h-5 text-gray-600" />
-            </button>
-            <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
-              <Bell className="w-5 h-5 text-gray-600" />
-            </button>
-            <button className="p-2 rounded-full bg-red-100 hover:bg-red-200 transition-colors">
-              <User className="w-5 h-5 text-red-600" />
-            </button>
+            {isLogined ? (
+              <>
+                <UserContainer />
+              </>
+            ) :
+                <button
+                  onClick={() => navigate(`${ROUTE_PATHS.LOGIN}`)}
+                  className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition duration-300 flex items-center"
+                >
+                  <LogIn className="w-4 h-4 mr-2" />
+                  Login
+                </button>
+            }
           </div>
           
           <button 
