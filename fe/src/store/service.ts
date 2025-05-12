@@ -5,7 +5,6 @@ export interface AuthPayload {
   email: string;
   password: string;
   fullname?: string;
-  phone?: string;
   [key: string]: any;
 }
 
@@ -24,7 +23,7 @@ export const apiRegister = (payload: AuthPayload): Promise<ApiResponse> =>
     try {
       const response = await axios({
         method: "post",
-        url: "/register",
+        url: "/auth/register",
         data: payload,
       });
       resolve(response.data);
@@ -39,11 +38,9 @@ export const apiLogin = (payload: AuthPayload): Promise<ApiResponse> =>
     try {
       const response = await axios({
         method: "post",
-        url: "/login",
+        url: "/auth/login",
         data: payload,
       });
-      console.log("apiLogin response:", response);
-
       resolve(response.data);
     } catch (error) {
       reject(error);
@@ -56,7 +53,7 @@ export const apiGetCurrent = (): Promise<ApiResponse> =>
     try {
       const response = await axios({
         method: "get",
-        url: "/info",
+        url: "/auth/info",
       });
       resolve(response.data);
     } catch (error) {
