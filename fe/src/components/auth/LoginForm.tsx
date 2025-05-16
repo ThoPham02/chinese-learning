@@ -1,16 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Input from '../ui/Input';
 import Button from '../ui/Button';
 import Checkbox from '../ui/Checkbox';
 import { validateEmail, validatePassword } from '../../utils/validation';
 import { useNavigate } from 'react-router-dom';
 import { ROUTE_PATHS } from '../../common/path';
+import { useDispatch, useSelector } from 'react-redux';
+import { AppDispatch, RootState } from '../../store/redux';
+import * as actions from "../../store/action";
 
 type LoginFormProps = {
 };
 
 const LoginForm: React.FC<LoginFormProps> = ({}) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch<AppDispatch>();
+
+  const { isLogined } = useSelector((state: RootState) => state.auth);
+
+  useEffect(() => {
+    isLogined && navigate(ROUTE_PATHS.ROOT);
+  }, [isLogined, navigate]);
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -39,13 +49,15 @@ const LoginForm: React.FC<LoginFormProps> = ({}) => {
     if (!validateForm()) return;
     
     setIsSubmitting(true);
-    
-    // Simulate API call
+
+    dispatch(actions.login( {
+      email,
+      password,
+    }));
+
     setTimeout(() => {
-      console.log('Login:', { email, password, rememberMe });
       setIsSubmitting(false);
-      alert('Đăng nhập thành công!');
-    }, 1500);
+    }, 500);
   };
 
   return (

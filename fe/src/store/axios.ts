@@ -11,10 +11,12 @@ import {
 import { ROUTE_PATHS } from "../common/path";
 
 const instance = axios.create({
-  baseURL: "http://localhost:8888",
+  baseURL: "http://localhost:5000",
   headers: {
     Accept: "application/json",
-    "Content-Type": "multipart/form-data",
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
   },
 });
 
@@ -36,15 +38,15 @@ instance.interceptors.request.use(
 );
 
 const NO_TOAST_API_LIST = [
-  "aa/login",
-  "aa/register",
+  "/user/login",
+  "/user/register",
 ];
 
 // Intercept response to show toast or handle error codes
 instance.interceptors.response.use(
   (response: AxiosResponse<any>) => {
     const config = response.config;
-    const errorCode = response.data?.result?.code;
+    const errorCode = response.data?.code;
 
     const isNoToastApi = NO_TOAST_API_LIST.some((api) =>
       config.url?.includes(api)

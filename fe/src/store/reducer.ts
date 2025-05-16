@@ -35,15 +35,15 @@ const appReducer = (state = initState, action: AppAction): AppState => {
     case actionTypes.SET_CURRENTPAGE:
       return {
         ...state,
-        currentPage: action.data,
+        currentPage: action.data.data,
       };
     case actionTypes.LOGIN_SUCCESS:
     case actionTypes.REGISTER_SUCCESS:
       return {
         ...state,
         isLogined: true,
-        token: action.data?.token || null,
-        user: action.data?.user || null,
+        token: action.data.data?.token || null,
+        user: action.data.data?.user || null,
       };
 
     case actionTypes.LOGIN_FAIL:
@@ -60,7 +60,7 @@ const appReducer = (state = initState, action: AppAction): AppState => {
     case actionTypes.UPDATE_CURRENT_USER_SUCCESS:
       return {
         ...state,
-        user: action.data?.user || state.user,
+        user: action.data.data?.user || state.user,
       };
 
     case actionTypes.UPDATE_CURRENT_USER_FAIL:

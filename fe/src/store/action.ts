@@ -22,7 +22,9 @@ export default actionTypes;
 export const register = (payload: AuthPayload) => async (dispatch: Dispatch) => {
   try {
     const data: ApiResponse = await apiRegister(payload);
-    if (data?.result.code === 0) {
+    console.log("data", data);
+
+    if (data?.code === 0) {
       dispatch({
         type: actionTypes.REGISTER_SUCCESS,
         data,
@@ -45,7 +47,7 @@ export const register = (payload: AuthPayload) => async (dispatch: Dispatch) => 
 export const login = (payload: AuthPayload) => async (dispatch: Dispatch) => {
   try {
     const data: ApiResponse = await apiLogin(payload);
-    if (data?.result.code === 0) {
+    if (data?.code === 0) {
       dispatch({
         type: actionTypes.LOGIN_SUCCESS,
         data,

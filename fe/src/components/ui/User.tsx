@@ -9,7 +9,7 @@ import { Mail } from "lucide-react";
 const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 interface UserData {
-  fullName?: string;
+  username?: string;
   email?: string;
   role?: number;
 }
@@ -29,7 +29,7 @@ const User = () => {
   return (
     <>
       <div
-        className="flex items-center"
+        className="flex items-center relative"
         onMouseEnter={() => setIsAvatarHovered(true)}
         onMouseLeave={() => setIsAvatarHovered(false)}
       >
@@ -43,18 +43,18 @@ const User = () => {
 
         {isAvatarHovered && (
           <div
-            className="absolute w-360 bg-white shadow-md rounded-md z-50"
+            className="absolute w-[360px] bg-white shadow-md rounded-md z-50"
             style={{ top: "100%", right: 0 }}
           >
             <div className="flex items-center py-9 mx-7 border-bottom">
               <img
                 src={defaultAvatar}
-                className="rounded-full w-24 h-24"
+                className="rounded-full w-16 h-16"
                 alt="avatar"
               />
               <div className="ms-3">
                 <h5 className="mb-1 font-medium">
-                  {user.fullName || user.email}
+                  {user.username || user.email}
                 </h5>
                 <p className="mb-0 flex items-center gap-2">
                   <Mail />

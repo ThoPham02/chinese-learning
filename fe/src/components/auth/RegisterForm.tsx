@@ -1,15 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Input from '../ui/Input';
 import Button from '../ui/Button';
 import { validateEmail, validatePassword, validateFullName } from '../../utils/validation';
 import { useNavigate } from 'react-router-dom';
 import { ROUTE_PATHS } from '../../common/path';
+import { useDispatch, useSelector } from 'react-redux';
+import { AppDispatch, RootState } from '../../store/redux';
+import * as actions from "../../store/action";
 
 type RegisterFormProps = {
 };
 
 const RegisterForm: React.FC<RegisterFormProps> = ({ }) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch<AppDispatch>();
+
+  const { isLogined } = useSelector((state: RootState) => state.auth);
+
+  useEffect(() => {
+    isLogined && navigate(ROUTE_PATHS.ROOT);
+  }, [isLogined, navigate]);
 
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
@@ -42,12 +52,15 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ }) => {
     
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
-      console.log('Register:', { fullName, email, password });
-      setIsSubmitting(false);
-      alert('Đăng ký thành công!');
-    }, 1500);
+    dispatch(actions.register( {
+          email: email,
+          username: fullName,
+          password: password,
+        }));
+    
+        setTimeout(() => {
+          setIsSubmitting(false);
+        }, 500);
   };
 
   return (
