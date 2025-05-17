@@ -15,7 +15,7 @@ const TopicSelector: React.FC<TopicSelectorProps> = ({
 }) => {
   return (
     <div className="bg-white rounded-xl shadow-md p-5">
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">Chủ đề</h2>
+      <h2 className="text-xl font-semibold text-gray-800 mb-4">Level</h2>
       
       <div className="space-y-2">
         {topics.map((topic) => {

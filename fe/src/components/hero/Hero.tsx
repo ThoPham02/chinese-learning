@@ -1,5 +1,8 @@
 import React from 'react';
-import { BookOpen, Award, Clock, CheckCircle } from 'lucide-react';
+import { Award, Clock, CheckCircle } from 'lucide-react';
+import { Volume2, Bookmark } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { iconMap, topics } from '../../data/mockData';
 
 const Hero: React.FC = () => {
   return (
@@ -36,12 +39,11 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-              <button className="px-6 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors shadow-sm">
-                Bắt đầu học ngay
-              </button>
-              <button className="px-6 py-3 bg-white text-red-600 font-medium rounded-lg border border-red-600 hover:bg-red-50 transition-colors">
-                Xem hướng dẫn
-              </button>
+              <Link to="/flashcards">
+                <button className="px-6 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors shadow-sm">
+                  Bắt đầu học ngay
+                </button>
+              </Link>
             </div>
           </div>
           
@@ -88,43 +90,42 @@ const Hero: React.FC = () => {
         
         <div className="mt-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Chủ đề từ vựng</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Cấp độ từ vựng</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Học từ vựng theo chủ đề giúp bạn tiếp thu kiến thức có hệ thống và ứng dụng thực tế hiệu quả
+              Học từ vựng theo cấp độ giúp bạn tiếp thu kiến thức có hệ thống và ứng dụng thực tế hiệu quả
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { name: 'Gia đình', icon: 'Users', total: 32, color: 'blue' },
-              { name: 'Trường học', icon: 'School', total: 45, color: 'green' },
-              { name: 'Du lịch', icon: 'Plane', total: 38, color: 'purple' },
-              { name: 'Công việc', icon: 'Briefcase', total: 41, color: 'red' },
-            ].map((topic, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {topics.map((topic, index) => {
+              const IconComponent = iconMap[topic.iconName];
+
+              return (
               <div 
                 key={index} 
-                className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow"
+                className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow 
+                          flex flex-col items-center text-center"
               >
-                <div className={`p-3 rounded-full bg-${topic.color}-100 w-fit mb-4`}>
-                  {topic.icon === 'Users' && <Users className={`w-6 h-6 text-${topic.color}-600`} />}
-                  {topic.icon === 'School' && <School className={`w-6 h-6 text-${topic.color}-600`} />}
-                  {topic.icon === 'Plane' && <Plane className={`w-6 h-6 text-${topic.color}-600`} />}
-                  {topic.icon === 'Briefcase' && <Briefcase className={`w-6 h-6 text-${topic.color}-600`} />}
+                <div className="p-3 rounded-full w-fit mb-4 bg-gray-100">
+                  {IconComponent && <IconComponent className="w-6 h-6" />}
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{topic.name}</h3>
-                <p className="text-gray-500 mb-4">{topic.total} từ vựng</p>
-                <button className="text-blue-600 font-medium hover:underline">
-                  Bắt đầu học →
-                </button>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">{topic.name}</h3>
+                  <p className="text-gray-500 mb-4">{topic.totalWords} từ vựng</p>
+                </div>
+                <Link to="/flashcards">
+                  <button className="text-blue-600 font-medium hover:underline">
+                    Bắt đầu học →
+                  </button>
+                </Link>
               </div>
-            ))}
+            )
+            })}
           </div>
         </div>
       </div>
     </div>
   );
 };
-
-import { Volume2, Bookmark, Users, School, Plane, Briefcase } from 'lucide-react';
 
 export default Hero;

@@ -143,7 +143,7 @@ const Flashcard: React.FC<FlashcardProps> = ({
 
   return (
     <div className="mb-8">
-      <div className="flex justify-between items-center mb-4">
+      {/* <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-medium text-gray-700">Chế độ học:</h3>
         <div className="flex space-x-2">
           <button 
@@ -177,7 +177,7 @@ const Flashcard: React.FC<FlashcardProps> = ({
             Bước 3
           </button>
         </div>
-      </div>
+      </div> */}
       
       <div 
         className={`relative w-full bg-white rounded-xl shadow-lg p-6 cursor-pointer select-none

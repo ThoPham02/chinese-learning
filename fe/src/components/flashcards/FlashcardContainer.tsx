@@ -11,7 +11,6 @@ const FlashcardContainer: React.FC = () => {
   const [currentStage, setCurrentStage] = useState(0);
   
   useEffect(() => {
-    // In a real implementation, this would fetch words from an API or database
     if (selectedTopic) {
       const filteredWords = sampleWords.filter(word => word.topicId === selectedTopic.id);
       setCurrentWords(filteredWords.length > 0 ? filteredWords : sampleWords);
@@ -46,7 +45,7 @@ const FlashcardContainer: React.FC = () => {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-2">Học từ mới</h1>
         <p className="text-gray-600">
-          Chọn chủ đề bạn muốn học và luyện tập với thẻ từ vựng
+          Chọn level bạn muốn học và luyện tập với thẻ từ vựng
         </p>
       </div>
       
@@ -64,10 +63,10 @@ const FlashcardContainer: React.FC = () => {
             <>
               <div className="mb-4 flex justify-between items-center">
                 <h2 className="text-xl font-semibold text-gray-800">
-                  {selectedTopic?.name} - {currentIndex + 1}/{currentWords.length}
+                  {selectedTopic?.name} - {currentIndex + 1}/{selectedTopic?.totalWords}
                 </h2>
                 <div className="text-sm text-gray-500">
-                  Đã học {currentIndex + 1} trong tổng số {currentWords.length} từ
+                  Đã học {currentIndex + 1} trong tổng số {selectedTopic?.totalWords} từ
                 </div>
               </div>
               
