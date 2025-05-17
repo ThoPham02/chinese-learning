@@ -7,18 +7,11 @@ exports.pronunciation = async (req, res) => {
     const expectedTextRaw = req.body.expectedText;
     const expectedText = expectedTextRaw ? expectedTextRaw.toLowerCase() : null;
     const audioFile = req.file;
+    const groq = new Groq();
 
     if (!audioFile || !expectedText) {
       return res.status(400).json({ error: "Thiếu file voice hoặc từ gốc." });
     }
-
-    console.log("expectedText", expectedText)
-    console.log("audio", audioFile);
-    
-    const groq = new Groq();
-
-    // Gửi voice lên Groq Speech-to-Text
-
 
     const transcription = await groq.audio.transcriptions.create({
       file: fs.createReadStream(audioFile.path),
@@ -29,27 +22,14 @@ exports.pronunciation = async (req, res) => {
       language: "zh",
       temperature: 0.0,
     });
-    console.log("transcription", transcription);
 
     const recognizedText = transcription.text?.trim().toLowerCase();
-
-    // // Gọi AI phân tích phát âm
-    // const prompt = getPronunciationPrompt(expectedText, recognizedText);
-    // const chatRes = await groq.chat.completions.create({
-    //   model: "deepseek-r1-distill-llama-70b",
-    //   messages: [
-    //     { role: "system", content: "Bạn là một trợ lý luyện phát âm." },
-    //     { role: "user", content: prompt }
-    //   ]
-    // });
-    // const feedback = chatRes.choices[0].message.content;
 
     const isCorrect = recognizedText === expectedText;
     const feedback = isCorrect
       ? "Phát âm chính xác."
       : `Phát âm chưa đúng. Bạn đã nói: "${recognizedText}".`;
 
-    // Trả kết quả
     res.json({
       expectedText,
       recognizedText,
@@ -57,7 +37,6 @@ exports.pronunciation = async (req, res) => {
       isCorrect
     });
 
-    // Xoá file tạm
     fs.unlink(audioFile.path, () => { });
   } catch (err) {
     console.error("Pronunciation error:", err);
