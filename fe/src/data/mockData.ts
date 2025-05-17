@@ -1,64 +1,79 @@
-import { Topic, Word, UserProgress, QuizQuestion } from '../types';
-import { CalendarClock, School, Home, Briefcase, Plane, Utensils, ShoppingCart, Users, Music, BookOpen } from 'lucide-react';
+import { Topic, Word, UserProgress, QuizQuestion, DailyTask } from '../types';
+import { CalendarClock, School, Home, Briefcase, Plane, Utensils, ShoppingCart, Users, Music, BookOpen, Smile, Map, Library, Globe } from 'lucide-react';
 
 export const topics: Topic[] = [
   {
-    id: 'family',
-    name: 'Gia đình',
-    description: 'Từ vựng về gia đình và các mối quan hệ',
-    iconName: 'Users',
-    totalWords: 32,
+    id: 1,
+    name: 'HSK Level 1',
+    description: 'Từ vựng cơ bản dành cho người mới bắt đầu (chào hỏi, gia đình, số đếm)',
+    iconName: 'Smile',
+    totalWords: 150,
   },
   {
-    id: 'school',
-    name: 'Trường học',
-    description: 'Từ vựng liên quan đến trường học và học tập',
-    iconName: 'School',
-    totalWords: 45,
-  },
-  {
-    id: 'travel',
-    name: 'Du lịch',
-    description: 'Từ vựng cần thiết khi đi du lịch',
-    iconName: 'Plane',
-    totalWords: 38,
-  },
-  {
-    id: 'work',
-    name: 'Công việc',
-    description: 'Từ vựng liên quan đến công việc và nơi làm việc',
-    iconName: 'Briefcase',
-    totalWords: 41,
-  },
-  {
-    id: 'food',
-    name: 'Ẩm thực',
-    description: 'Từ vựng về thực phẩm và ăn uống',
-    iconName: 'Utensils',
-    totalWords: 50,
-  },
-  {
-    id: 'shopping',
-    name: 'Mua sắm',
-    description: 'Từ vựng liên quan đến mua sắm',
-    iconName: 'ShoppingCart',
-    totalWords: 28,
-  },
-  {
-    id: 'entertainment',
-    name: 'Giải trí',
-    description: 'Từ vựng về giải trí và thời gian rảnh',
-    iconName: 'Music',
-    totalWords: 35,
-  },
-  {
-    id: 'reading',
-    name: 'Đọc hiểu',
-    description: 'Từ vựng nâng cao cho đọc hiểu',
+    id: 2,
+    name: 'HSK Level 2',
+    description: 'Từ vựng mở rộng về sinh hoạt, trường học và cuộc sống hàng ngày',
     iconName: 'BookOpen',
-    totalWords: 40,
+    totalWords: 150,
   },
+  {
+    id: 3,
+    name: 'HSK Level 3',
+    description: 'Từ vựng dùng trong du lịch, công việc, giao tiếp xã hội cơ bản',
+    iconName: 'Map',
+    totalWords: 300,
+  },
+  {
+    id: 4,
+    name: 'HSK Level 4',
+    description: 'Từ vựng nâng cao về công việc, quan điểm cá nhân, tin tức xã hội',
+    iconName: 'Briefcase',
+    totalWords: 600,
+  },
+  {
+    id: 5,
+    name: 'HSK Level 5',
+    description: 'Từ vựng học thuật và chuyên sâu trong các chủ đề phức tạp',
+    iconName: 'Library',
+    totalWords: 1300,
+  },
+  {
+    id: 6,
+    name: 'HSK Level 6',
+    description: 'Từ vựng cao cấp để đọc báo, hiểu phim ảnh và giao tiếp tự nhiên',
+    iconName: 'Globe',
+    totalWords: 2500,
+  }
 ];
+
+export const todayTasks: DailyTask[] = [
+  {
+    id: 1,
+    title: 'Học từ mới',
+    description: 'Học 10 từ mới theo trình độ hiện tại',
+    status: 'completed', // hoặc 'completed'
+    actionLabel: 'Bắt đầu học',
+    actionLink: '/learn',
+  },
+  {
+    id: 2,
+    title: 'Ôn từ vựng',
+    description: 'Ôn lại các từ đã học theo thuật toán SRS',
+    status: 'incomplete',
+    actionLabel: 'Bắt đầu ôn',
+    actionLink: '/review',
+  },
+  {
+    id: 3,
+    title: 'Làm bài Quiz',
+    description: 'Kiểm tra nhanh 10 từ vựng ngẫu nhiên',
+    status: 'incomplete',
+    actionLabel: 'Làm Quiz',
+    actionLink: '/quiz',
+  }
+];
+
+
 
 export const iconMap: Record<string, React.ElementType> = {
   Users,
@@ -71,11 +86,15 @@ export const iconMap: Record<string, React.ElementType> = {
   BookOpen,
   CalendarClock,
   Home,
+  Smile,
+  Map,
+  Library,
+  Globe,
 };
 
 export const sampleWords: Word[] = [
   {
-    id: '1',
+    id: 1,
     chinese: '你好',
     pinyin: 'nǐ hǎo',
     vietnamese: 'Xin chào',
@@ -85,12 +104,12 @@ export const sampleWords: Word[] = [
       vietnamese: 'Xin chào, rất vui được gặp bạn.',
     },
     imageUrl: 'https://images.pexels.com/photos/7096339/pexels-photo-7096339.jpeg',
-    topicId: 'family',
+    topicId: 1,
     difficulty: 'easy',
     stage: 2,
   },
   {
-    id: '2',
+    id: 2,
     chinese: '谢谢',
     pinyin: 'xiè xiè',
     vietnamese: 'Cảm ơn',
@@ -100,12 +119,12 @@ export const sampleWords: Word[] = [
       vietnamese: 'Cảm ơn bạn đã giúp đỡ.',
     },
     imageUrl: 'https://images.pexels.com/photos/3807742/pexels-photo-3807742.jpeg',
-    topicId: 'family',
+    topicId: 1,
     difficulty: 'easy',
     stage: 1,
   },
   {
-    id: '3',
+    id: 3,
     chinese: '学生',
     pinyin: 'xué shēng',
     vietnamese: 'Học sinh',
@@ -115,12 +134,12 @@ export const sampleWords: Word[] = [
       vietnamese: 'Tôi là một học sinh.',
     },
     imageUrl: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg',
-    topicId: 'school',
+    topicId: 2,
     difficulty: 'easy',
     stage: 3,
   },
   {
-    id: '4',
+    id: 4,
     chinese: '老师',
     pinyin: 'lǎo shī',
     vietnamese: 'Giáo viên',
@@ -130,12 +149,12 @@ export const sampleWords: Word[] = [
       vietnamese: 'Đây là giáo viên của tôi.',
     },
     imageUrl: 'https://images.pexels.com/photos/8617837/pexels-photo-8617837.jpeg',
-    topicId: 'school',
+    topicId: 2,
     difficulty: 'easy',
     stage: 2,
   },
   {
-    id: '5',
+    id: 5,
     chinese: '工作',
     pinyin: 'gōng zuò',
     vietnamese: 'Công việc',
@@ -145,7 +164,7 @@ export const sampleWords: Word[] = [
       vietnamese: 'Công việc của tôi rất thú vị.',
     },
     imageUrl: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
-    topicId: 'work',
+    topicId: 3,
     difficulty: 'medium',
     stage: 1,
   },

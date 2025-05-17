@@ -1,6 +1,6 @@
 import React from 'react';
-import { userProgressMock } from '../../data/mockData';
-import { Trophy, Calendar, BookOpen, Brain, TrendingUp as Trending, Clock } from 'lucide-react';
+import { todayTasks, userProgressMock } from '../../data/mockData';
+import { Trophy, BookOpen, Brain, Clock } from 'lucide-react';
 
 const ProgressDashboard: React.FC = () => {
   // For a real implementation, this would come from a server or state management
@@ -129,7 +129,7 @@ const ProgressDashboard: React.FC = () => {
           
           <div className="h-64 flex items-end space-x-2">
             {/* This would be a chart in a real implementation */}
-            {['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'].map((day, i) => {
+            {['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'].map((day, _) => {
               const height = Math.floor(Math.random() * 60) + 20;
               return (
                 <div key={day} className="flex-1 flex flex-col items-center">
@@ -145,37 +145,36 @@ const ProgressDashboard: React.FC = () => {
         </div>
         
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-xl font-semibold text-gray-800 mb-6">Từ vựng cần ôn hôm nay</h2>
+          <h2 className="text-xl font-semibold text-gray-800 mb-6">Nhiệm vụ hôm nay</h2>
           
           <div className="space-y-4">
-            {[
-              { word: '你好', meaning: 'Xin chào', dueTime: '2 giờ trước' },
-              { word: '谢谢', meaning: 'Cảm ơn', dueTime: 'Hôm nay' },
-              { word: '学生', meaning: 'Học sinh', dueTime: 'Hôm nay' },
-              { word: '工作', meaning: 'Công việc', dueTime: 'Ngày mai' },
-              { word: '家人', meaning: 'Gia đình', dueTime: 'Ngày mai' },
-            ].map((item, index) => (
-              <div key={index} className="flex items-center p-3 border rounded-lg border-gray-200 hover:bg-gray-50 transition-colors">
-                <div className="flex-1">
-                  <p className="font-medium">{item.word}</p>
-                  <p className="text-sm text-gray-500">{item.meaning}</p>
-                </div>
-                <div className={`text-xs px-2 py-1 rounded-full ${
-                  item.dueTime.includes('trước') 
-                    ? 'bg-red-100 text-red-700' 
-                    : item.dueTime === 'Hôm nay' 
-                    ? 'bg-yellow-100 text-yellow-700' 
-                    : 'bg-green-100 text-green-700'
-                }`}>
-                  {item.dueTime}
-                </div>
+            {todayTasks.map(task => (
+              <div
+                key={task.id}
+                className={`p-4 mb-4 rounded-xl shadow-md ${
+                  task.status === 'completed' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                }`}
+              >
+                <h3 className="text-xl font-semibold">{task.title}</h3>
+                <p className="text-sm">{task.description}</p>
+
+                {task.status === 'incomplete' && (
+                  <a
+                    href={task.actionLink}
+                    className="inline-block mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                  >
+                    {task.actionLabel}
+                  </a>
+                )}
+
+                {task.status === 'completed' && (
+                  <span className="inline-block mt-2 px-3 py-1 text-sm font-medium bg-green-200 rounded">
+                    ✅ Đã hoàn thành
+                  </span>
+                )}
               </div>
             ))}
           </div>
-          
-          <button className="w-full mt-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-            Ôn tập ngay
-          </button>
         </div>
       </div>
     </div>

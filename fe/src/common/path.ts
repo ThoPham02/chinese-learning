@@ -10,7 +10,7 @@ export const API_URL = {
     LOGIN: "/login",
     REGISTER: "/register",
     HOME: "/home",
-    FLASHCARD: "/flashcard",
+    FLASHCARD: "/flashcards",
     REVIEW : "/review",
     QUIZ: "/quiz",
     PROGRESS: "/progress",

@@ -1,5 +1,5 @@
 export interface Word {
-  id: string;
+  id: number;
   chinese: string;
   pinyin: string;
   vietnamese: string;
@@ -9,7 +9,7 @@ export interface Word {
     vietnamese: string;
   };
   imageUrl?: string;
-  topicId: string;
+  topicId: number;
   difficulty: 'easy' | 'medium' | 'hard';
   lastReviewed?: Date;
   nextReview?: Date;
@@ -17,7 +17,7 @@ export interface Word {
 }
 
 export interface Topic {
-  id: string;
+  id: number;
   name: string;
   description: string;
   iconName: string;
@@ -37,4 +37,15 @@ export interface QuizQuestion {
   word: Word;
   options?: string[];
   correctAnswer: string;
+}
+
+export type TaskStatus = 'completed' | 'incomplete';
+
+export interface DailyTask {
+  id: number;
+  title: string;
+  description: string;
+  status: TaskStatus;
+  actionLabel: string;
+  actionLink: string;
 }
