@@ -1,4 +1,5 @@
 const User = require("../models/user.model");
+const LearningProgress = require("../models/learnProgress.model");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const apiResponse = require("../utils/apiResponse");
@@ -7,15 +8,25 @@ exports.register = async (req, res) => {
   const { username, email, password } = req.body;
   try {
     const hashed = await bcrypt.hash(password, 10);
-    const user = await User.create({ username, email, passwordHash: hashed });
+    const currentTime = new Date();
+
+    const user = await User.create({ username, email, passwordHash: hashed, createdAt: currentTime });
+    const learnProgress = await LearningProgress.create({
+      userId: user.id,
+      totalVocab: 0,
+      learnedVocab: 0,
+      reviewCount: 0,
+      currentStreak: 0,
+      lastReviewDate: currentTime,
+    });
 
     const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: "7d" });
     
     return apiResponse(res, {
-      data: { 
+      data: {
         user: { id: user.id, username: user.username, email: user.email },
         token,
-       },
+      },
     });
 
   } catch (err) {

@@ -1,38 +1,28 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
 
-const User = require("./user.model");
-const Vocab = require("./vocab.model");
-
-const UserVocab = sequelize.define("UserVocab", {
-  status: {
-    type: DataTypes.ENUM("new", "learning", "review"),
-    defaultValue: "new"
+const UserVocabulary = sequelize.define(
+  "UserVocabulary",
+  {
+    status: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
+    },
+    correct_count: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
+    },
+    last_review: DataTypes.BIGINT,
+    next_review: DataTypes.BIGINT,
+    created_at: {
+      type: DataTypes.BIGINT,
+      defaultValue: () => Date.now(),
+    },
   },
-  lastReviewDate: {
-    type: DataTypes.DATE,
-    allowNull: true
-  },
-  reviewCount: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0
+  {
+    tableName: "user_vocabulary",
+    timestamps: false,
   }
-}, {
-  tableName: "USER_VOCAB",
-  timestamps: false
-});
+);
 
-// Thiết lập quan hệ nhiều-nhiều
-User.belongsToMany(Vocab, {
-  through: UserVocab,
-  foreignKey: "UserId",
-  otherKey: "VocabId"
-});
-
-Vocab.belongsToMany(User, {
-  through: UserVocab,
-  foreignKey: "VocabId",
-  otherKey: "UserId"
-});
-
-module.exports = UserVocab;
+module.exports = UserVocabulary;

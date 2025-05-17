@@ -1,30 +1,26 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
 
-const Vocab = sequelize.define("Vocab", {
-  word: {
-    type: DataTypes.STRING,
-    allowNull: false,
+const Vocabulary = sequelize.define(
+  "Vocabulary",
+  {
+    level: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    hanzi: {
+      type: DataTypes.STRING(20),
+      allowNull: false,
+    },
+    pinyin: DataTypes.STRING(100),
+    meaning_vi: DataTypes.TEXT,
+    example_vi: DataTypes.TEXT,
+    audio_url: DataTypes.STRING(255),
   },
-  pinyin: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },
-  meaning: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },
-  example: {
-    type: DataTypes.TEXT,
-    allowNull: true,
-  },
-  topic: {
-    type: DataTypes.STRING,
-    allowNull: true,
+  {
+    tableName: "vocabulary",
+    timestamps: false,
   }
-}, {
-  tableName: "VOCABULARY",
-  timestamps: false,
-});
+);
 
-module.exports = Vocab;
+module.exports = Vocabulary;
