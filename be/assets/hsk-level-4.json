@@ -1,1202 +1,162 @@
 [
   {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 1
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 2
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 3
-  },
-  {
     "word": "安排",
     "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 4
+    "meaning": "sắp xếp, bố trí",
+    "example_cn": "明天的会议已经安排好了。",
+    "example_pinyin": "Míngtiān de huìyì yǐjīng ānpái hǎo le.",
+    "example_vn": "Cuộc họp ngày mai đã được sắp xếp xong."
   },
   {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 5
+    "word": "抱歉",
+    "pinyin": "bàoqiàn",
+    "meaning": "xin lỗi",
+    "example_cn": "我来晚了，真抱歉。",
+    "example_pinyin": "Wǒ lái wǎn le, zhēn bàoqiàn.",
+    "example_vn": "Tôi đến muộn rồi, thật xin lỗi."
   },
   {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 6
+    "word": "表示",
+    "pinyin": "biǎoshì",
+    "meaning": "biểu thị, thể hiện",
+    "example_cn": "他点头表示同意。",
+    "example_pinyin": "Tā diǎntóu biǎoshì tóngyì.",
+    "example_vn": "Anh ấy gật đầu để biểu thị đồng ý."
   },
   {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 7
+    "word": "表扬",
+    "pinyin": "biǎoyáng",
+    "meaning": "khen ngợi",
+    "example_cn": "老师表扬了他的进步。",
+    "example_pinyin": "Lǎoshī biǎoyáng le tā de jìnbù.",
+    "example_vn": "Giáo viên đã khen ngợi sự tiến bộ của cậu ấy."
   },
   {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 8
+    "word": "成就",
+    "pinyin": "chéngjiù",
+    "meaning": "thành tựu",
+    "example_cn": "他在工作中取得了很大的成就。",
+    "example_pinyin": "Tā zài gōngzuò zhōng qǔdé le hěn dà de chéngjiù.",
+    "example_vn": "Anh ấy đã đạt được thành tựu lớn trong công việc."
   },
   {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 9
+    "word": "吃惊",
+    "pinyin": "chījīng",
+    "meaning": "ngạc nhiên",
+    "example_cn": "听到这个消息我很吃惊。",
+    "example_pinyin": "Tīngdào zhège xiāoxi wǒ hěn chījīng.",
+    "example_vn": "Tôi rất ngạc nhiên khi nghe tin này."
   },
   {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 10
+    "word": "大约",
+    "pinyin": "dàyuē",
+    "meaning": "khoảng, xấp xỉ",
+    "example_cn": "我们大约七点到。",
+    "example_pinyin": "Wǒmen dàyuē qī diǎn dào.",
+    "example_vn": "Chúng tôi đến khoảng 7 giờ."
   },
   {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 11
+    "word": "放弃",
+    "pinyin": "fàngqì",
+    "meaning": "từ bỏ",
+    "example_cn": "无论如何都不要放弃。",
+    "example_pinyin": "Wúlùn rúhé dōu bú yào fàngqì.",
+    "example_vn": "Dù thế nào cũng đừng từ bỏ."
   },
   {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 12
+    "word": "负责",
+    "pinyin": "fùzé",
+    "meaning": "phụ trách",
+    "example_cn": "她负责这个项目的管理。",
+    "example_pinyin": "Tā fùzé zhège xiàngmù de guǎnlǐ.",
+    "example_vn": "Cô ấy phụ trách quản lý dự án này."
   },
   {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 13
+    "word": "估计",
+    "pinyin": "gūjì",
+    "meaning": "dự đoán",
+    "example_cn": "我估计他已经到了。",
+    "example_pinyin": "Wǒ gūjì tā yǐjīng dào le.",
+    "example_vn": "Tôi đoán là anh ấy đã đến rồi."
   },
   {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 14
+    "word": "鼓励",
+    "pinyin": "gǔlì",
+    "meaning": "khích lệ, động viên",
+    "example_cn": "老师鼓励我们多说汉语。",
+    "example_pinyin": "Lǎoshī gǔlì wǒmen duō shuō Hànyǔ.",
+    "example_vn": "Giáo viên khuyến khích chúng tôi nói nhiều tiếng Trung."
   },
   {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 15
+    "word": "合适",
+    "pinyin": "héshì",
+    "meaning": "phù hợp",
+    "example_cn": "这件衣服很合适你。",
+    "example_pinyin": "Zhè jiàn yīfu hěn héshì nǐ.",
+    "example_vn": "Bộ quần áo này rất hợp với bạn."
   },
   {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 16
+    "word": "坚持",
+    "pinyin": "jiānchí",
+    "meaning": "kiên trì",
+    "example_cn": "他每天坚持跑步。",
+    "example_pinyin": "Tā měitiān jiānchí pǎobù.",
+    "example_vn": "Anh ấy kiên trì chạy bộ mỗi ngày."
   },
   {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 17
+    "word": "节约",
+    "pinyin": "jiéyuē",
+    "meaning": "tiết kiệm",
+    "example_cn": "我们要节约用水。",
+    "example_pinyin": "Wǒmen yào jiéyuē yòng shuǐ.",
+    "example_vn": "Chúng ta cần tiết kiệm nước."
   },
   {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 18
+    "word": "经济",
+    "pinyin": "jīngjì",
+    "meaning": "kinh tế",
+    "example_cn": "这个城市的经济发展很快。",
+    "example_pinyin": "Zhè gè chéngshì de jīngjì fāzhǎn hěn kuài.",
+    "example_vn": "Nền kinh tế của thành phố này phát triển rất nhanh."
   },
   {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 19
+    "word": "交流",
+    "pinyin": "jiāoliú",
+    "meaning": "giao lưu, trao đổi",
+    "example_cn": "我们经常和外国朋友交流文化。",
+    "example_pinyin": "Wǒmen jīngcháng hé wàiguó péngyǒu jiāoliú wénhuà.",
+    "example_vn": "Chúng tôi thường xuyên giao lưu văn hóa với bạn bè nước ngoài."
   },
   {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 20
+    "word": "精彩",
+    "pinyin": "jīngcǎi",
+    "meaning": "xuất sắc, tuyệt vời",
+    "example_cn": "这是一场精彩的表演。",
+    "example_pinyin": "Zhè shì yī chǎng jīngcǎi de biǎoyǎn.",
+    "example_vn": "Đây là một buổi biểu diễn tuyệt vời."
   },
   {
     "word": "能力",
     "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 21
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 22
+    "meaning": "năng lực, khả năng",
+    "example_cn": "她的工作能力很强。",
+    "example_pinyin": "Tā de gōngzuò nénglì hěn qiáng.",
+    "example_vn": "Cô ấy có năng lực làm việc rất tốt."
   },
   {
     "word": "态度",
     "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 23
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 24
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 25
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 26
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 27
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 28
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 29
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 30
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 31
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 32
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 33
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 34
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 35
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 36
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 37
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 38
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 39
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 40
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 41
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 42
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 43
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 44
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 45
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 46
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 47
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 48
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 49
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 50
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 51
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 52
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 53
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 54
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 55
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 56
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 57
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 58
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 59
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 60
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 61
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 62
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 63
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 64
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 65
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 66
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 67
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 68
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 69
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 70
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 71
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 72
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 73
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 74
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 75
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 76
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 77
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 78
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 79
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 80
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 81
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 82
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 83
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 84
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 85
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 86
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 87
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 88
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 89
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 90
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 91
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 92
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 93
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 94
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 95
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 96
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 97
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 98
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 99
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 100
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 101
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 102
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 103
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 104
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 105
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 106
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 107
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 108
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 109
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 110
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 111
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 112
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 113
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 114
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 115
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 116
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 117
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 118
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 119
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 120
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 121
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 122
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 123
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 124
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 125
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 126
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 127
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 128
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 129
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 130
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 131
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 132
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 133
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 134
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 135
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 136
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 137
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 138
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 139
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 140
-  },
-  {
-    "word": "能力",
-    "pinyin": "nénglì",
-    "meaning": "Năng lực",
-    "example_cn": "他有很强的工作能力。",
-    "example_vi": "Anh ấy có năng lực làm việc rất tốt.",
-    "id": 141
-  },
-  {
-    "word": "优点",
-    "pinyin": "yōudiǎn",
-    "meaning": "Ưu điểm",
-    "example_cn": "每个人都有自己的优点。",
-    "example_vi": "Mỗi người đều có ưu điểm riêng.",
-    "id": 142
-  },
-  {
-    "word": "态度",
-    "pinyin": "tàidu",
-    "meaning": "Thái độ",
-    "example_cn": "她对工作的态度非常认真。",
-    "example_vi": "Cô ấy có thái độ làm việc rất nghiêm túc.",
-    "id": 143
-  },
-  {
-    "word": "安排",
-    "pinyin": "ānpái",
-    "meaning": "Sắp xếp",
-    "example_cn": "我已经安排好今天的任务。",
-    "example_vi": "Tôi đã sắp xếp xong công việc hôm nay.",
-    "id": 144
-  },
-  {
-    "word": "报名",
-    "pinyin": "bàomíng",
-    "meaning": "Đăng ký",
-    "example_cn": "你报名参加比赛了吗？",
-    "example_vi": "Bạn đã đăng ký tham gia cuộc thi chưa?",
-    "id": 145
-  },
-  {
-    "word": "材料",
-    "pinyin": "cáiliào",
-    "meaning": "Tài liệu",
-    "example_cn": "这些是我们需要准备的材料。",
-    "example_vi": "Đây là những tài liệu chúng ta cần chuẩn bị.",
-    "id": 146
-  },
-  {
-    "word": "差不多",
-    "pinyin": "chàbuduō",
-    "meaning": "Gần như",
-    "example_cn": "我和他差不多高。",
-    "example_vi": "Tôi và anh ấy cao gần bằng nhau.",
-    "id": 147
-  },
-  {
-    "word": "出差",
-    "pinyin": "chūchāi",
-    "meaning": "Đi công tác",
-    "example_cn": "我下周要去北京出差。",
-    "example_vi": "Tuần sau tôi phải đi công tác Bắc Kinh.",
-    "id": 148
-  },
-  {
-    "word": "方面",
-    "pinyin": "fāngmiàn",
-    "meaning": "Phương diện",
-    "example_cn": "他在很多方面都很优秀。",
-    "example_vi": "Anh ấy rất xuất sắc ở nhiều phương diện.",
-    "id": 149
-  },
-  {
-    "word": "符合",
-    "pinyin": "fúhé",
-    "meaning": "Phù hợp",
-    "example_cn": "这份工作很符合你的要求。",
-    "example_vi": "Công việc này rất phù hợp với yêu cầu của bạn.",
-    "id": 150
+    "meaning": "thái độ",
+    "example_cn": "他的学习态度很好。",
+    "example_pinyin": "Tā de xuéxí tàidu hěn hǎo.",
+    "example_vn": "Thái độ học tập của anh ấy rất tốt."
+  },
+  {
+    "word": "压力",
+    "pinyin": "yālì",
+    "meaning": "áp lực",
+    "example_cn": "工作压力很大。",
+    "example_pinyin": "Gōngzuò yālì hěn dà.",
+    "example_vn": "Áp lực công việc rất lớn."
   }
 ]

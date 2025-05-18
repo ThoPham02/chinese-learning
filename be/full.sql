@@ -15,6 +15,7 @@ CREATE TABLE vocabulary (
     meaning TEXT,
     example_vi TEXT,
     example_cn TEXT,
+    example_pinyin TEXT,
     audio_url VARCHAR(255)
 );
 

@@ -2,1201 +2,161 @@
   {
     "word": "你好",
     "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 1
+    "meaning": "xin chào",
+    "example_cn": "你好，我是老师。",
+    "example_pinyin": "Nǐ hǎo, wǒ shì lǎoshī.",
+    "example_vn": "Xin chào, tôi là giáo viên."
   },
   {
     "word": "谢谢",
     "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 2
+    "meaning": "cảm ơn",
+    "example_cn": "谢谢你的帮助。",
+    "example_pinyin": "Xièxie nǐ de bāngzhù.",
+    "example_vn": "Cảm ơn sự giúp đỡ của bạn."
   },
   {
     "word": "再见",
     "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 3
+    "meaning": "tạm biệt",
+    "example_cn": "我走了，再见！",
+    "example_pinyin": "Wǒ zǒu le, zàijiàn!",
+    "example_vn": "Tôi đi đây, tạm biệt!"
   },
   {
     "word": "是",
     "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 4
+    "meaning": "là",
+    "example_cn": "他是学生。",
+    "example_pinyin": "Tā shì xuéshēng.",
+    "example_vn": "Cậu ấy là học sinh."
   },
   {
     "word": "不",
     "pinyin": "bù",
-    "meaning": "Không",
+    "meaning": "không",
     "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 5
+    "example_pinyin": "Wǒ bú shì Zhōngguó rén.",
+    "example_vn": "Tôi không phải là người Trung Quốc."
   },
   {
     "word": "我",
     "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 6
+    "meaning": "tôi",
+    "example_cn": "我喜欢汉语。",
+    "example_pinyin": "Wǒ xǐhuān Hànyǔ.",
+    "example_vn": "Tôi thích tiếng Trung."
   },
   {
     "word": "你",
     "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 7
+    "meaning": "bạn",
+    "example_cn": "你好吗？",
+    "example_pinyin": "Nǐ hǎo ma?",
+    "example_vn": "Bạn khỏe không?"
   },
   {
     "word": "他",
     "pinyin": "tā",
-    "meaning": "Anh ấy",
+    "meaning": "anh ấy",
     "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 8
+    "example_pinyin": "Tā shì yīshēng.",
+    "example_vn": "Anh ấy là bác sĩ."
   },
   {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 9
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 10
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 11
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 12
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 13
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
+    "word": "她",
+    "pinyin": "tā",
+    "meaning": "cô ấy",
     "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 14
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 15
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 16
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 17
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 18
+    "example_pinyin": "Tā shì lǎoshī.",
+    "example_vn": "Cô ấy là giáo viên."
   },
   {
     "word": "我们",
     "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 19
+    "meaning": "chúng tôi",
+    "example_cn": "我们去学校。",
+    "example_pinyin": "Wǒmen qù xuéxiào.",
+    "example_vn": "Chúng tôi đi đến trường."
   },
   {
     "word": "什么",
     "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 20
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 21
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 22
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 23
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 24
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 25
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 26
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 27
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 28
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 29
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 30
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 31
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 32
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 33
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 34
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 35
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 36
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 37
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 38
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 39
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 40
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 41
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 42
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 43
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 44
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 45
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 46
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 47
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 48
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 49
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 50
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 51
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 52
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 53
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 54
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 55
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 56
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 57
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 58
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 59
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 60
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 61
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 62
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 63
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 64
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 65
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 66
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 67
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 68
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 69
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 70
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 71
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 72
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 73
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 74
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 75
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 76
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 77
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 78
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 79
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 80
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 81
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 82
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 83
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 84
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 85
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 86
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 87
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 88
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 89
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 90
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 91
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 92
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 93
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 94
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 95
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 96
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 97
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 98
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 99
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 100
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 101
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 102
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 103
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 104
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 105
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 106
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 107
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 108
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 109
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 110
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 111
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 112
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 113
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 114
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 115
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 116
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 117
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 118
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 119
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 120
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 121
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 122
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 123
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 124
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 125
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 126
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 127
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 128
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 129
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 130
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 131
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 132
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 133
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 134
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 135
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 136
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 137
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 138
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 139
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 140
-  },
-  {
-    "word": "你好",
-    "pinyin": "nǐ hǎo",
-    "meaning": "Xin chào",
-    "example_cn": "你好，我是学生。",
-    "example_vi": "Xin chào, tôi là học sinh.",
-    "id": 141
-  },
-  {
-    "word": "谢谢",
-    "pinyin": "xièxie",
-    "meaning": "Cảm ơn",
-    "example_cn": "谢谢你帮我。",
-    "example_vi": "Cảm ơn bạn đã giúp tôi.",
-    "id": 142
-  },
-  {
-    "word": "再见",
-    "pinyin": "zàijiàn",
-    "meaning": "Tạm biệt",
-    "example_cn": "我们明天再见。",
-    "example_vi": "Mai chúng ta gặp lại nhé.",
-    "id": 143
-  },
-  {
-    "word": "是",
-    "pinyin": "shì",
-    "meaning": "Là",
-    "example_cn": "她是老师。",
-    "example_vi": "Cô ấy là giáo viên.",
-    "id": 144
-  },
-  {
-    "word": "不",
-    "pinyin": "bù",
-    "meaning": "Không",
-    "example_cn": "我不是中国人。",
-    "example_vi": "Tôi không phải người Trung Quốc.",
-    "id": 145
-  },
-  {
-    "word": "我",
-    "pinyin": "wǒ",
-    "meaning": "Tôi",
-    "example_cn": "我叫明。",
-    "example_vi": "Tôi tên là Minh.",
-    "id": 146
-  },
-  {
-    "word": "你",
-    "pinyin": "nǐ",
-    "meaning": "Bạn",
-    "example_cn": "你去哪儿？",
-    "example_vi": "Bạn đi đâu vậy?",
-    "id": 147
-  },
-  {
-    "word": "他",
-    "pinyin": "tā",
-    "meaning": "Anh ấy",
-    "example_cn": "他是医生。",
-    "example_vi": "Anh ấy là bác sĩ.",
-    "id": 148
-  },
-  {
-    "word": "我们",
-    "pinyin": "wǒmen",
-    "meaning": "Chúng tôi",
-    "example_cn": "我们在学校学习。",
-    "example_vi": "Chúng tôi học ở trường.",
-    "id": 149
-  },
-  {
-    "word": "什么",
-    "pinyin": "shénme",
-    "meaning": "Gì",
-    "example_cn": "你在说什么？",
-    "example_vi": "Bạn đang nói gì vậy?",
-    "id": 150
+    "meaning": "gì",
+    "example_cn": "你叫什么名字？",
+    "example_pinyin": "Nǐ jiào shénme míngzi?",
+    "example_vn": "Bạn tên là gì?"
+  },
+  {
+    "word": "名字",
+    "pinyin": "míngzi",
+    "meaning": "tên",
+    "example_cn": "我的名字是小明。",
+    "example_pinyin": "Wǒ de míngzi shì Xiǎomíng.",
+    "example_vn": "Tên của tôi là Tiểu Minh."
+  },
+  {
+    "word": "老师",
+    "pinyin": "lǎoshī",
+    "meaning": "giáo viên",
+    "example_cn": "她是我们的老师。",
+    "example_pinyin": "Tā shì wǒmen de lǎoshī.",
+    "example_vn": "Cô ấy là giáo viên của chúng tôi."
+  },
+  {
+    "word": "学生",
+    "pinyin": "xuéshēng",
+    "meaning": "học sinh",
+    "example_cn": "我是学生。",
+    "example_pinyin": "Wǒ shì xuéshēng.",
+    "example_vn": "Tôi là học sinh."
+  },
+  {
+    "word": "中国",
+    "pinyin": "Zhōngguó",
+    "meaning": "Trung Quốc",
+    "example_cn": "我来自中国。",
+    "example_pinyin": "Wǒ láizì Zhōngguó.",
+    "example_vn": "Tôi đến từ Trung Quốc."
+  },
+  {
+    "word": "美国",
+    "pinyin": "Měiguó",
+    "meaning": "Mỹ",
+    "example_cn": "他是美国人。",
+    "example_pinyin": "Tā shì Měiguó rén.",
+    "example_vn": "Anh ấy là người Mỹ."
+  },
+  {
+    "word": "人",
+    "pinyin": "rén",
+    "meaning": "người",
+    "example_cn": "我是越南人。",
+    "example_pinyin": "Wǒ shì Yuènán rén.",
+    "example_vn": "Tôi là người Việt Nam."
+  },
+  {
+    "word": "汉语",
+    "pinyin": "Hànyǔ",
+    "meaning": "tiếng Trung",
+    "example_cn": "你会说汉语吗？",
+    "example_pinyin": "Nǐ huì shuō Hànyǔ ma?",
+    "example_vn": "Bạn biết nói tiếng Trung không?"
+  },
+  {
+    "word": "会",
+    "pinyin": "huì",
+    "meaning": "biết (làm gì đó)",
+    "example_cn": "我会说英语。",
+    "example_pinyin": "Wǒ huì shuō Yīngyǔ.",
+    "example_vn": "Tôi biết nói tiếng Anh."
+  },
+  {
+    "word": "喜欢",
+    "pinyin": "xǐhuān",
+    "meaning": "thích",
+    "example_cn": "我喜欢吃苹果。",
+    "example_pinyin": "Wǒ xǐhuān chī píngguǒ.",
+    "example_vn": "Tôi thích ăn táo."
   }
 ]

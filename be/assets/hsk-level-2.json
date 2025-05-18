@@ -1,1202 +1,162 @@
 [
   {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 1
+    "word": "因为",
+    "pinyin": "yīnwèi",
+    "meaning": "bởi vì",
+    "example_cn": "我今天不去学校，因为我生病了。",
+    "example_pinyin": "Wǒ jīntiān bú qù xuéxiào, yīnwèi wǒ shēngbìng le.",
+    "example_vn": "Hôm nay tôi không đi học, bởi vì tôi bị ốm."
   },
   {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 2
+    "word": "所以",
+    "pinyin": "suǒyǐ",
+    "meaning": "cho nên",
+    "example_cn": "天气太冷了，所以我们不出去。",
+    "example_pinyin": "Tiānqì tài lěng le, suǒyǐ wǒmen bù chūqù.",
+    "example_vn": "Trời quá lạnh nên chúng tôi không ra ngoài."
   },
   {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 3
+    "word": "觉得",
+    "pinyin": "juéde",
+    "meaning": "cảm thấy",
+    "example_cn": "我觉得这个电影很好看。",
+    "example_pinyin": "Wǒ juéde zhè gè diànyǐng hěn hǎokàn.",
+    "example_vn": "Tôi cảm thấy bộ phim này rất hay."
   },
   {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 4
+    "word": "走",
+    "pinyin": "zǒu",
+    "meaning": "đi, rời khỏi",
+    "example_cn": "我现在要走了。",
+    "example_pinyin": "Wǒ xiànzài yào zǒu le.",
+    "example_vn": "Bây giờ tôi phải đi rồi."
   },
   {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 5
+    "word": "介绍",
+    "pinyin": "jièshào",
+    "meaning": "giới thiệu",
+    "example_cn": "请你介绍一下你的朋友。",
+    "example_pinyin": "Qǐng nǐ jièshào yíxià nǐ de péngyǒu.",
+    "example_vn": "Làm ơn giới thiệu bạn của bạn một chút."
   },
   {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 6
+    "word": "帮助",
+    "pinyin": "bāngzhù",
+    "meaning": "giúp đỡ",
+    "example_cn": "谢谢你的帮助。",
+    "example_pinyin": "Xièxie nǐ de bāngzhù.",
+    "example_vn": "Cảm ơn sự giúp đỡ của bạn."
   },
   {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 7
+    "word": "快乐",
+    "pinyin": "kuàilè",
+    "meaning": "vui vẻ",
+    "example_cn": "祝你生日快乐！",
+    "example_pinyin": "Zhù nǐ shēngrì kuàilè!",
+    "example_vn": "Chúc bạn sinh nhật vui vẻ!"
   },
   {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 8
+    "word": "正在",
+    "pinyin": "zhèngzài",
+    "meaning": "đang (hành động đang diễn ra)",
+    "example_cn": "他正在看书。",
+    "example_pinyin": "Tā zhèngzài kàn shū.",
+    "example_vn": "Anh ấy đang đọc sách."
   },
   {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 9
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 10
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 11
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 12
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 13
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 14
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 15
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 16
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 17
+    "word": "手机",
+    "pinyin": "shǒujī",
+    "meaning": "điện thoại di động",
+    "example_cn": "我的手机在桌子上。",
+    "example_pinyin": "Wǒ de shǒujī zài zhuōzi shàng.",
+    "example_vn": "Điện thoại của tôi ở trên bàn."
   },
   {
     "word": "生病",
     "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 18
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 19
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 20
+    "meaning": "bị ốm",
+    "example_cn": "我昨天生病了。",
+    "example_pinyin": "Wǒ zuótiān shēngbìng le.",
+    "example_vn": "Hôm qua tôi bị ốm."
   },
   {
     "word": "旅游",
     "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 21
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 22
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 23
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 24
+    "meaning": "du lịch",
+    "example_cn": "我想去中国旅游。",
+    "example_pinyin": "Wǒ xiǎng qù Zhōngguó lǚyóu.",
+    "example_vn": "Tôi muốn đi du lịch Trung Quốc."
   },
   {
     "word": "踢足球",
     "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 25
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 26
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 27
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 28
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 29
+    "meaning": "đá bóng",
+    "example_cn": "我周末喜欢踢足球。",
+    "example_pinyin": "Wǒ zhōumò xǐhuān tī zúqiú.",
+    "example_vn": "Tôi thích đá bóng vào cuối tuần."
   },
   {
     "word": "穿",
     "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 30
+    "meaning": "mặc (quần áo)",
+    "example_cn": "今天我穿了一件新衣服。",
+    "example_pinyin": "Jīntiān wǒ chuān le yí jiàn xīn yīfú.",
+    "example_vn": "Hôm nay tôi mặc một bộ quần áo mới."
   },
   {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 31
+    "word": "卖",
+    "pinyin": "mài",
+    "meaning": "bán",
+    "example_cn": "这个商店卖很多水果。",
+    "example_pinyin": "Zhè gè shāngdiàn mài hěn duō shuǐguǒ.",
+    "example_vn": "Cửa hàng này bán rất nhiều trái cây."
+  },
+  {
+    "word": "贵",
+    "pinyin": "guì",
+    "meaning": "đắt",
+    "example_cn": "这件衣服太贵了。",
+    "example_pinyin": "Zhè jiàn yīfú tài guì le.",
+    "example_vn": "Bộ quần áo này quá đắt."
+  },
+  {
+    "word": "便宜",
+    "pinyin": "piányi",
+    "meaning": "rẻ",
+    "example_cn": "这本书很便宜。",
+    "example_pinyin": "Zhè běn shū hěn piányi.",
+    "example_vn": "Cuốn sách này rất rẻ."
   },
   {
     "word": "牛奶",
     "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 32
+    "meaning": "sữa",
+    "example_cn": "我每天早上喝牛奶。",
+    "example_pinyin": "Wǒ měitiān zǎoshang hē niúnǎi.",
+    "example_vn": "Tôi uống sữa mỗi sáng."
   },
   {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 33
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 34
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 35
+    "word": "药",
+    "pinyin": "yào",
+    "meaning": "thuốc",
+    "example_cn": "他生病了，要吃药。",
+    "example_pinyin": "Tā shēngbìng le, yào chī yào.",
+    "example_vn": "Anh ấy bị ốm, phải uống thuốc."
   },
   {
     "word": "教室",
     "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 36
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 37
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 38
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 39
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 40
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 41
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 42
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 43
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 44
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 45
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 46
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 47
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 48
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 49
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 50
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 51
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 52
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 53
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 54
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 55
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 56
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 57
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 58
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 59
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 60
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 61
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 62
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 63
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 64
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 65
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 66
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 67
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 68
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 69
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 70
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 71
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 72
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 73
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 74
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 75
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 76
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 77
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 78
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 79
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 80
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 81
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 82
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 83
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 84
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 85
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 86
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 87
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 88
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 89
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 90
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 91
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 92
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 93
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 94
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 95
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 96
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 97
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 98
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 99
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 100
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 101
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 102
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 103
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 104
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 105
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 106
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 107
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 108
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 109
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 110
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 111
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 112
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 113
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 114
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 115
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 116
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 117
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 118
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 119
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 120
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 121
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 122
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 123
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 124
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 125
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 126
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 127
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 128
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 129
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 130
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 131
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 132
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 133
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 134
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 135
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 136
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 137
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 138
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 139
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 140
-  },
-  {
-    "word": "旅游",
-    "pinyin": "lǚyóu",
-    "meaning": "Du lịch",
-    "example_cn": "我下个月去中国旅游。",
-    "example_vi": "Tháng sau tôi sẽ đi du lịch Trung Quốc.",
-    "id": 141
-  },
-  {
-    "word": "牛奶",
-    "pinyin": "niúnǎi",
-    "meaning": "Sữa bò",
-    "example_cn": "每天早上我都喝牛奶。",
-    "example_vi": "Mỗi sáng tôi đều uống sữa bò.",
-    "id": 142
-  },
-  {
-    "word": "房间",
-    "pinyin": "fángjiān",
-    "meaning": "Phòng",
-    "example_cn": "这个房间很大也很干净。",
-    "example_vi": "Căn phòng này rất rộng và sạch sẽ.",
-    "id": 143
-  },
-  {
-    "word": "考试",
-    "pinyin": "kǎoshì",
-    "meaning": "Thi",
-    "example_cn": "我明天有一个汉语考试。",
-    "example_vi": "Ngày mai tôi có một bài kiểm tra tiếng Trung.",
-    "id": 144
-  },
-  {
-    "word": "踢足球",
-    "pinyin": "tī zúqiú",
-    "meaning": "Đá bóng",
-    "example_cn": "我喜欢和朋友一起踢足球。",
-    "example_vi": "Tôi thích đá bóng với bạn bè.",
-    "id": 145
-  },
-  {
-    "word": "教室",
-    "pinyin": "jiàoshì",
-    "meaning": "Lớp học",
-    "example_cn": "学生们都在教室里上课。",
-    "example_vi": "Học sinh đang học trong lớp học.",
-    "id": 146
-  },
-  {
-    "word": "晴天",
-    "pinyin": "qíngtiān",
-    "meaning": "Trời nắng",
-    "example_cn": "今天是晴天，太阳很大。",
-    "example_vi": "Hôm nay trời nắng, mặt trời rất to.",
-    "id": 147
-  },
-  {
-    "word": "生病",
-    "pinyin": "shēngbìng",
-    "meaning": "Bị bệnh",
-    "example_cn": "他因为生病没去上班。",
-    "example_vi": "Anh ấy không đi làm vì bị bệnh.",
-    "id": 148
-  },
-  {
-    "word": "慢",
-    "pinyin": "màn",
-    "meaning": "Chậm",
-    "example_cn": "他说话很慢，我能听懂。",
-    "example_vi": "Anh ấy nói rất chậm, tôi có thể hiểu.",
-    "id": 149
-  },
-  {
-    "word": "穿",
-    "pinyin": "chuān",
-    "meaning": "Mặc",
-    "example_cn": "她穿了一件红色的裙子。",
-    "example_vi": "Cô ấy mặc một chiếc váy màu đỏ.",
-    "id": 150
+    "meaning": "phòng học",
+    "example_cn": "我们的教室在三楼。",
+    "example_pinyin": "Wǒmen de jiàoshì zài sān lóu.",
+    "example_vn": "Phòng học của chúng tôi ở tầng ba."
+  },
+  {
+    "word": "颜色",
+    "pinyin": "yánsè",
+    "meaning": "màu sắc",
+    "example_cn": "你喜欢什么颜色？",
+    "example_pinyin": "Nǐ xǐhuān shénme yánsè?",
+    "example_vn": "Bạn thích màu gì?"
   }
 ]

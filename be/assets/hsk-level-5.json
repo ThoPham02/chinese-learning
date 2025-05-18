@@ -1,1202 +1,162 @@
 [
   {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 1
+    "word": "傍晚",
+    "pinyin": "bàngwǎn",
+    "meaning": "hoàng hôn, chập tối",
+    "example_cn": "我们傍晚去散步。",
+    "example_pinyin": "Wǒmen bàngwǎn qù sànbù.",
+    "example_vn": "Chúng tôi đi dạo vào lúc hoàng hôn."
   },
   {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 2
+    "word": "编辑",
+    "pinyin": "biānjí",
+    "meaning": "biên tập",
+    "example_cn": "他在一家出版社当编辑。",
+    "example_pinyin": "Tā zài yì jiā chūbǎnshè dāng biānjí.",
+    "example_vn": "Anh ấy làm biên tập tại một nhà xuất bản."
   },
   {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 3
+    "word": "参与",
+    "pinyin": "cānyù",
+    "meaning": "tham dự, tham gia",
+    "example_cn": "她积极参与各种活动。",
+    "example_pinyin": "Tā jījí cānyù gè zhǒng huódòng.",
+    "example_vn": "Cô ấy tích cực tham gia các hoạt động khác nhau."
   },
   {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 4
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 5
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 6
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 7
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 8
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 9
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 10
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 11
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 12
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 13
+    "word": "撤销",
+    "pinyin": "chèxiāo",
+    "meaning": "hủy bỏ, thu hồi",
+    "example_cn": "决定已经撤销了。",
+    "example_pinyin": "Juédìng yǐjīng chèxiāo le.",
+    "example_vn": "Quyết định đã bị hủy bỏ rồi."
   },
   {
     "word": "承担",
     "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 14
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 15
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 16
+    "meaning": "gánh vác, đảm nhận",
+    "example_cn": "他承担了全部责任。",
+    "example_pinyin": "Tā chéngdān le quánbù zérèn.",
+    "example_vn": "Anh ấy gánh vác toàn bộ trách nhiệm."
   },
   {
     "word": "待遇",
     "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 17
+    "meaning": "chế độ đãi ngộ",
+    "example_cn": "他对工作待遇很满意。",
+    "example_pinyin": "Tā duì gōngzuò dàiyù hěn mǎnyì.",
+    "example_vn": "Anh ấy rất hài lòng với chế độ đãi ngộ công việc."
   },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 18
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 19
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 20
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 21
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 22
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 23
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 24
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 25
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 26
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 27
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 28
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 29
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 30
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 31
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 32
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 33
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 34
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 35
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 36
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 37
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 38
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 39
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 40
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 41
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 42
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 43
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 44
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 45
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 46
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 47
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 48
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 49
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 50
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 51
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 52
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 53
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 54
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 55
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 56
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 57
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 58
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 59
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 60
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 61
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 62
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 63
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 64
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 65
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 66
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 67
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 68
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 69
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 70
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 71
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 72
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 73
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 74
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 75
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 76
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 77
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 78
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 79
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 80
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 81
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 82
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 83
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 84
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 85
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 86
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 87
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 88
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 89
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 90
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 91
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 92
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 93
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 94
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 95
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 96
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 97
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 98
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 99
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 100
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 101
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 102
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 103
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 104
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 105
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 106
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 107
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 108
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 109
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 110
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 111
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 112
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 113
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 114
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 115
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 116
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 117
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 118
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 119
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 120
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 121
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 122
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 123
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 124
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 125
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 126
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 127
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 128
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 129
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 130
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 131
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 132
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 133
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 134
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 135
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 136
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 137
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 138
-  },
-  {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 139
-  },
-  {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 140
-  },
-  {
-    "word": "背景",
-    "pinyin": "bèijǐng",
-    "meaning": "Bối cảnh",
-    "example_cn": "这部电影的故事背景在法国。",
-    "example_vi": "Bối cảnh câu chuyện của bộ phim này là ở Pháp.",
-    "id": 141
-  },
-  {
-    "word": "彼此",
-    "pinyin": "bǐcǐ",
-    "meaning": "Lẫn nhau",
-    "example_cn": "我们彼此了解，很容易合作。",
-    "example_vi": "Chúng tôi hiểu nhau nên hợp tác rất dễ dàng.",
-    "id": 142
-  },
-  {
-    "word": "不断",
-    "pinyin": "bùduàn",
-    "meaning": "Không ngừng",
-    "example_cn": "他在不断地努力工作。",
-    "example_vi": "Anh ấy đang không ngừng nỗ lực làm việc.",
-    "id": 143
-  },
-  {
-    "word": "承担",
-    "pinyin": "chéngdān",
-    "meaning": "Gánh vác",
-    "example_cn": "他愿意承担所有责任。",
-    "example_vi": "Anh ấy sẵn sàng gánh vác mọi trách nhiệm.",
-    "id": 144
-  },
-  {
-    "word": "从而",
-    "pinyin": "cóng'ér",
-    "meaning": "Do đó",
-    "example_cn": "我们提高了产品质量，从而增加了销售。",
-    "example_vi": "Chúng tôi nâng cao chất lượng sản phẩm, do đó tăng được doanh số.",
-    "id": 145
-  },
-  {
-    "word": "打交道",
-    "pinyin": "dǎ jiāodào",
-    "meaning": "Giao tiếp",
-    "example_cn": "我不太喜欢和陌生人打交道。",
-    "example_vi": "Tôi không thích giao tiếp với người lạ lắm.",
-    "id": 146
-  },
-  {
-    "word": "待遇",
-    "pinyin": "dàiyù",
-    "meaning": "Đãi ngộ",
-    "example_cn": "这份工作的待遇很不错。",
-    "example_vi": "Công việc này có đãi ngộ rất tốt.",
-    "id": 147
-  },
-  {
-    "word": "登记",
-    "pinyin": "dēngjì",
-    "meaning": "Đăng ký",
-    "example_cn": "请到前台登记入住。",
-    "example_vi": "Vui lòng đăng ký nhận phòng tại quầy lễ tân.",
-    "id": 148
+  {
+    "word": "对比",
+    "pinyin": "duìbǐ",
+    "meaning": "so sánh",
+    "example_cn": "通过对比，我们发现了差距。",
+    "example_pinyin": "Tōngguò duìbǐ, wǒmen fāxiàn le chājù.",
+    "example_vn": "Thông qua so sánh, chúng tôi phát hiện ra sự khác biệt."
   },
+  {
+    "word": "反而",
+    "pinyin": "fǎn'ér",
+    "meaning": "ngược lại",
+    "example_cn": "他没有生气，反而笑了。",
+    "example_pinyin": "Tā méiyǒu shēngqì, fǎn'ér xiào le.",
+    "example_vn": "Anh ấy không tức giận, ngược lại còn cười."
+  },
+  {
+    "word": "否定",
+    "pinyin": "fǒudìng",
+    "meaning": "phủ định",
+    "example_cn": "他否定了这个说法。",
+    "example_pinyin": "Tā fǒudìng le zhège shuōfǎ.",
+    "example_vn": "Anh ấy phủ định cách nói đó."
+  },
+  {
+    "word": "辩论",
+    "pinyin": "biànlùn",
+    "meaning": "tranh luận",
+    "example_cn": "他们正在激烈地辩论。",
+    "example_pinyin": "Tāmen zhèngzài jīliè de biànlùn.",
+    "example_vn": "Họ đang tranh luận sôi nổi."
+  },
+  {
+    "word": "改革",
+    "pinyin": "gǎigé",
+    "meaning": "cải cách",
+    "example_cn": "政府正在进行经济改革。",
+    "example_pinyin": "Zhèngfǔ zhèngzài jìnxíng jīngjì gǎigé.",
+    "example_vn": "Chính phủ đang tiến hành cải cách kinh tế."
+  },
+  {
+    "word": "贡献",
+    "pinyin": "gòngxiàn",
+    "meaning": "đóng góp",
+    "example_cn": "他为公司做出了巨大贡献。",
+    "example_pinyin": "Tā wèi gōngsī zuòchū le jùdà gòngxiàn.",
+    "example_vn": "Anh ấy đã có đóng góp to lớn cho công ty."
+  },
+  {
+    "word": "合理",
+    "pinyin": "hélǐ",
+    "meaning": "hợp lý",
+    "example_cn": "这个安排非常合理。",
+    "example_pinyin": "Zhège ānpái fēicháng hélǐ.",
+    "example_vn": "Sự sắp xếp này rất hợp lý."
+  },
+  {
+    "word": "激烈",
+    "pinyin": "jīliè",
+    "meaning": "kịch liệt",
+    "example_cn": "比赛进行得非常激烈。",
+    "example_pinyin": "Bǐsài jìnxíng de fēicháng jīliè.",
+    "example_vn": "Trận đấu diễn ra rất kịch liệt."
+  },
+  {
+    "word": "讲究",
+    "pinyin": "jiǎngjiu",
+    "meaning": "chú trọng, coi trọng",
+    "example_cn": "他很讲究穿着。",
+    "example_pinyin": "Tā hěn jiǎngjiu chuānzhuó.",
+    "example_vn": "Anh ấy rất chú trọng cách ăn mặc."
+  },
+  {
+    "word": "角色",
+    "pinyin": "juésè",
+    "meaning": "vai diễn, vai trò",
+    "example_cn": "她在电影中扮演主角的角色。",
+    "example_pinyin": "Tā zài diànyǐng zhōng bànyǎn zhǔjué de juésè.",
+    "example_vn": "Cô ấy đóng vai chính trong bộ phim."
+  },
+  {
+    "word": "克服",
+    "pinyin": "kèfú",
+    "meaning": "vượt qua, khắc phục",
+    "example_cn": "我们必须克服困难。",
+    "example_pinyin": "Wǒmen bìxū kèfú kùnnán.",
+    "example_vn": "Chúng ta phải vượt qua khó khăn."
+  },
+  {
+    "word": "理念",
+    "pinyin": "lǐniàn",
+    "meaning": "quan niệm, tư tưởng",
+    "example_cn": "公司的经营理念很先进。",
+    "example_pinyin": "Gōngsī de jīngyíng lǐniàn hěn xiānjìn.",
+    "example_vn": "Quan niệm kinh doanh của công ty rất tiên tiến."
+  },
   {
-    "word": "发票",
-    "pinyin": "fāpiào",
-    "meaning": "Hóa đơn",
-    "example_cn": "买东西后请记得索取发票。",
-    "example_vi": "Sau khi mua hàng, hãy nhớ lấy hóa đơn.",
-    "id": 149
+    "word": "明确",
+    "pinyin": "míngquè",
+    "meaning": "rõ ràng, minh bạch",
+    "example_cn": "请把任务说得更明确一些。",
+    "example_pinyin": "Qǐng bǎ rènwu shuō de gèng míngquè yìxiē.",
+    "example_vn": "Hãy nói nhiệm vụ một cách rõ ràng hơn."
   },
   {
-    "word": "分布",
-    "pinyin": "fēnbù",
-    "meaning": "Phân bố",
-    "example_cn": "这种植物主要分布在南方。",
-    "example_vi": "Loài cây này chủ yếu phân bố ở miền Nam.",
-    "id": 150
+    "word": "实施",
+    "pinyin": "shíshī",
+    "meaning": "thực hiện, thi hành",
+    "example_cn": "这个计划已经开始实施。",
+    "example_pinyin": "Zhège jìhuà yǐjīng kāishǐ shíshī.",
+    "example_vn": "Kế hoạch này đã bắt đầu được thực hiện."
   }
 ]

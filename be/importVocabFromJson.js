@@ -24,8 +24,9 @@ async function importVocabFromFile(fileName, level) {
     });
 
     if (!created) {
-      vocab.example_vi = item.example_vi || "";
+      vocab.example_vi = item.example_vn || "";
       vocab.example_cn = item.example_cn || "";
+      vocab.example_pinyin = item.example_pinyin || "";
       vocab.pinyin = item.pinyin;
       vocab.meaning = meaning;
       vocab.level = level;

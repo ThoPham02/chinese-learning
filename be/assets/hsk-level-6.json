@@ -1,1202 +1,162 @@
 [
   {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 1
+    "word": "爱不释手",
+    "pinyin": "ài bù shì shǒu",
+    "meaning": "yêu thích không rời tay",
+    "example_cn": "他对这本小说爱不释手。",
+    "example_pinyin": "Tā duì zhè běn xiǎoshuō ài bù shì shǒu.",
+    "example_vn": "Anh ấy yêu thích cuốn tiểu thuyết này đến mức không rời tay."
   },
   {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 2
+    "word": "安居乐业",
+    "pinyin": "ān jū lè yè",
+    "meaning": "an cư lạc nghiệp",
+    "example_cn": "改革后，百姓能够安居乐业。",
+    "example_pinyin": "Gǎigé hòu, bǎixìng nénggòu ānjū lè yè.",
+    "example_vn": "Sau cải cách, người dân có thể an cư lạc nghiệp."
   },
   {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 3
+    "word": "巴不得",
+    "pinyin": "bā bu dé",
+    "meaning": "mong muốn tha thiết",
+    "example_cn": "我巴不得马上放假。",
+    "example_pinyin": "Wǒ bābude mǎshàng fàngjià.",
+    "example_vn": "Tôi mong muốn được nghỉ ngay lập tức."
   },
   {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 4
+    "word": "摆脱",
+    "pinyin": "bǎituō",
+    "meaning": "thoát khỏi",
+    "example_cn": "他终于摆脱了困境。",
+    "example_pinyin": "Tā zhōngyú bǎituō le kùnjìng.",
+    "example_vn": "Anh ấy cuối cùng đã thoát khỏi hoàn cảnh khó khăn."
   },
   {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 5
+    "word": "弊端",
+    "pinyin": "bìduān",
+    "meaning": "tệ nạn, thói xấu",
+    "example_cn": "这个制度存在一些弊端。",
+    "example_pinyin": "Zhège zhìdù cúnzài yìxiē bìduān.",
+    "example_vn": "Chế độ này tồn tại một số tệ nạn."
   },
   {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 6
+    "word": "变故",
+    "pinyin": "biàngù",
+    "meaning": "biến cố",
+    "example_cn": "家里突然发生了变故。",
+    "example_pinyin": "Jiālǐ tūrán fāshēng le biàngù.",
+    "example_vn": "Trong nhà đột nhiên xảy ra biến cố."
   },
   {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 7
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 8
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 9
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 10
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 11
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 12
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 13
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 14
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 15
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 16
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 17
+    "word": "表彰",
+    "pinyin": "biǎozhāng",
+    "meaning": "biểu dương",
+    "example_cn": "公司决定表彰优秀员工。",
+    "example_pinyin": "Gōngsī juédìng biǎozhāng yōuxiù yuángōng.",
+    "example_vn": "Công ty quyết định biểu dương những nhân viên xuất sắc."
   },
   {
     "word": "并存",
     "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 18
+    "meaning": "cùng tồn tại",
+    "example_cn": "传统和现代文化可以并存。",
+    "example_pinyin": "Chuántǒng hé xiàndài wénhuà kěyǐ bìngcún.",
+    "example_vn": "Văn hóa truyền thống và hiện đại có thể cùng tồn tại."
   },
   {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 19
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 20
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 21
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 22
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 23
+    "word": "波动",
+    "pinyin": "bōdòng",
+    "meaning": "dao động",
+    "example_cn": "市场价格经常波动。",
+    "example_pinyin": "Shìchǎng jiàgé jīngcháng bōdòng.",
+    "example_vn": "Giá cả thị trường thường xuyên dao động."
   },
   {
     "word": "裁员",
     "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 24
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 25
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 26
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 27
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 28
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 29
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 30
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 31
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 32
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 33
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 34
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 35
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 36
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 37
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 38
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 39
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 40
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 41
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 42
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 43
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 44
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 45
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 46
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 47
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 48
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 49
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 50
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 51
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 52
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 53
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 54
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 55
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 56
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 57
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 58
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 59
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 60
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 61
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 62
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 63
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 64
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 65
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 66
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 67
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 68
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 69
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 70
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 71
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 72
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 73
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 74
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 75
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 76
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 77
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 78
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 79
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 80
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 81
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 82
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 83
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 84
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 85
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 86
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 87
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 88
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 89
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 90
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 91
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 92
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 93
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 94
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 95
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 96
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 97
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 98
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 99
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 100
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 101
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 102
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 103
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 104
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 105
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 106
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 107
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 108
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 109
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 110
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 111
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 112
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 113
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 114
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 115
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 116
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 117
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 118
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 119
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 120
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 121
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 122
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 123
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 124
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 125
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 126
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 127
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 128
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 129
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 130
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 131
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 132
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 133
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 134
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 135
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 136
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 137
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 138
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 139
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 140
-  },
-  {
-    "word": "辩论",
-    "pinyin": "biànlùn",
-    "meaning": "Tranh luận",
-    "example_cn": "他们在课堂上就这个问题进行了激烈的辩论。",
-    "example_vi": "Họ đã tranh luận sôi nổi về vấn đề này trong lớp học.",
-    "id": 141
-  },
-  {
-    "word": "本能",
-    "pinyin": "běnnéng",
-    "meaning": "Bản năng",
-    "example_cn": "遇到危险时人的本能是逃跑。",
-    "example_vi": "Khi gặp nguy hiểm, bản năng của con người là bỏ chạy.",
-    "id": 142
-  },
-  {
-    "word": "闭塞",
-    "pinyin": "bìsè",
-    "meaning": "Hẻo lánh, tách biệt",
-    "example_cn": "这个村庄地处偏远，交通十分闭塞。",
-    "example_vi": "Ngôi làng này ở vùng hẻo lánh, giao thông rất khó khăn.",
-    "id": 143
-  },
-  {
-    "word": "裁员",
-    "pinyin": "cáiyuán",
-    "meaning": "Cắt giảm nhân sự",
-    "example_cn": "公司因为经济压力而不得不裁员。",
-    "example_vi": "Do áp lực tài chính, công ty buộc phải cắt giảm nhân sự.",
-    "id": 144
-  },
-  {
-    "word": "颁布",
-    "pinyin": "bānbù",
-    "meaning": "Ban hành",
-    "example_cn": "政府刚刚颁布了一项新政策。",
-    "example_vi": "Chính phủ vừa ban hành một chính sách mới.",
-    "id": 145
-  },
-  {
-    "word": "表态",
-    "pinyin": "biǎotài",
-    "meaning": "Tỏ thái độ",
-    "example_cn": "他在会议上没有明确表态。",
-    "example_vi": "Anh ấy không tỏ rõ thái độ trong cuộc họp.",
-    "id": 146
-  },
-  {
-    "word": "变迁",
-    "pinyin": "biànqiān",
-    "meaning": "Biến đổi",
-    "example_cn": "城市的发展带来了巨大的社会变迁。",
-    "example_vi": "Sự phát triển của thành phố đã mang lại biến đổi lớn cho xã hội.",
-    "id": 147
-  },
-  {
-    "word": "并存",
-    "pinyin": "bìngcún",
-    "meaning": "Cùng tồn tại",
-    "example_cn": "传统文化与现代文化应该并存。",
-    "example_vi": "Văn hóa truyền thống và hiện đại nên cùng tồn tại.",
-    "id": 148
-  },
-  {
-    "word": "剥削",
-    "pinyin": "bōxuē",
-    "meaning": "Bóc lột",
-    "example_cn": "旧社会存在严重的剥削现象。",
-    "example_vi": "Xã hội cũ tồn tại hiện tượng bóc lột nghiêm trọng.",
-    "id": 149
-  },
-  {
-    "word": "博览会",
-    "pinyin": "bólǎnhuì",
-    "meaning": "Hội chợ triển lãm",
-    "example_cn": "他参加了在广州举办的国际博览会。",
-    "example_vi": "Anh ấy đã tham dự hội chợ triển lãm quốc tế tổ chức tại Quảng Châu.",
-    "id": 150
+    "meaning": "cắt giảm nhân sự",
+    "example_cn": "公司因为亏损而裁员。",
+    "example_pinyin": "Gōngsī yīnwèi kuīsǔn ér cáiyuán.",
+    "example_vn": "Công ty sa thải nhân sự vì thua lỗ."
+  },
+  {
+    "word": "岔",
+    "pinyin": "chà",
+    "meaning": "rẽ, ngã (đường)",
+    "example_cn": "我们在前面那个岔路口见。",
+    "example_pinyin": "Wǒmen zài qiánmiàn nàgè chà lùkǒu jiàn.",
+    "example_vn": "Chúng ta gặp nhau ở ngã rẽ phía trước."
+  },
+  {
+    "word": "沉重",
+    "pinyin": "chénzhòng",
+    "meaning": "nặng nề (cảm xúc, tinh thần)",
+    "example_cn": "他听到这个消息后感到心情沉重。",
+    "example_pinyin": "Tā tīngdào zhège xiāoxi hòu gǎndào xīnqíng chénzhòng.",
+    "example_vn": "Anh ấy cảm thấy nặng nề sau khi nghe tin đó."
+  },
+  {
+    "word": "陈述",
+    "pinyin": "chénshù",
+    "meaning": "trình bày, tường thuật",
+    "example_cn": "请你把事情的经过陈述一下。",
+    "example_pinyin": "Qǐng nǐ bǎ shìqíng de jīngguò chénshù yíxià.",
+    "example_vn": "Xin hãy trình bày lại quá trình sự việc."
+  },
+  {
+    "word": "澄清",
+    "pinyin": "chéngqīng",
+    "meaning": "làm rõ, làm sáng tỏ",
+    "example_cn": "他在会上澄清了误会。",
+    "example_pinyin": "Tā zài huìshàng chéngqīng le wùhuì.",
+    "example_vn": "Anh ấy đã làm rõ hiểu lầm trong cuộc họp."
+  },
+  {
+    "word": "充实",
+    "pinyin": "chōngshí",
+    "meaning": "phong phú, đầy đủ",
+    "example_cn": "这个假期过得非常充实。",
+    "example_pinyin": "Zhège jiàqī guò de fēicháng chōngshí.",
+    "example_vn": "Kỳ nghỉ này trôi qua rất ý nghĩa và phong phú."
+  },
+  {
+    "word": "筹备",
+    "pinyin": "chóubèi",
+    "meaning": "chuẩn bị, sắp xếp",
+    "example_cn": "我们正在筹备明年的年会。",
+    "example_pinyin": "Wǒmen zhèngzài chóubèi míngnián de niánhuì.",
+    "example_vn": "Chúng tôi đang chuẩn bị cho tiệc cuối năm vào năm tới."
+  },
+  {
+    "word": "出路",
+    "pinyin": "chūlù",
+    "meaning": "lối thoát, hướng đi",
+    "example_cn": "他终于找到了人生的出路。",
+    "example_pinyin": "Tā zhōngyú zhǎodào le rénshēng de chūlù.",
+    "example_vn": "Anh ấy cuối cùng đã tìm được lối đi cho cuộc đời mình."
+  },
+  {
+    "word": "触犯",
+    "pinyin": "chùfàn",
+    "meaning": "vi phạm, đụng chạm đến",
+    "example_cn": "他的行为触犯了法律。",
+    "example_pinyin": "Tā de xíngwéi chùfàn le fǎlǜ.",
+    "example_vn": "Hành vi của anh ấy đã vi phạm pháp luật."
+  },
+  {
+    "word": "穿越",
+    "pinyin": "chuānyuè",
+    "meaning": "xuyên qua, vượt qua",
+    "example_cn": "我们穿越森林到了山顶。",
+    "example_pinyin": "Wǒmen chuānyuè sēnlín dàole shāndǐng.",
+    "example_vn": "Chúng tôi đã xuyên qua khu rừng để lên đến đỉnh núi."
+  },
+  {
+    "word": "伺候",
+    "pinyin": "cìhou",
+    "meaning": "hầu hạ, chăm sóc",
+    "example_cn": "她每天伺候生病的母亲。",
+    "example_pinyin": "Tā měitiān cìhou shēngbìng de mǔqīn.",
+    "example_vn": "Cô ấy chăm sóc người mẹ bị bệnh mỗi ngày."
   }
 ]
