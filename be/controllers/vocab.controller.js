@@ -23,10 +23,25 @@ exports.getAllVocab = async (req, res) => {
 
     const words = await getVocabularyByLevels(levels);
 
+    const dataRes = words.map((word) => {
+      return {
+        id: word.id,
+        level: word.level,
+        hanzi: word.hanzi,
+        pinyin: word.pinyin,
+        meaning: word.meaning,
+        exampleVn: word.example_vi,
+        exampleCn: word.example_cn,
+        examplePinyin: word.example_pinyin,
+        meaningOption: word.meaning_option,
+        hanziOption: word.hanzi_option,
+      };
+    });
+
     return apiResponse(res, {
       code: responseCode.SUCCESS.code,
       mess: responseCode.SUCCESS.mess,
-      data: words,
+      data: dataRes,
     });
   } catch (error) {
     console.log("Error fetching vocabulary:", error);

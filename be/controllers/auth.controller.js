@@ -7,12 +7,14 @@ const apiResponse = require("../utils/apiResponse");
 exports.register = async (req, res) => {
   const { username, email, password } = req.body;
   try {
+    console.log("Registering user:", { username, email, password });
+
     const hashed = await bcrypt.hash(password, 10);
     const currentTime = new Date();
 
-    const user = await User.create({ username, email, passwordHash: hashed, createdAt: currentTime });
+    const user = await User.create({ username, email, password_hash: hashed, createdAt: currentTime });
     const learnProgress = await LearningProgress.create({
-      userId: user.id,
+      user_id: user.id,
       totalVocab: 0,
       learnedVocab: 0,
       reviewCount: 0,

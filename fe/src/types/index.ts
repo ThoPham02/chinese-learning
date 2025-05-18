@@ -1,19 +1,14 @@
 export interface Word {
   id: number;
-  chinese: string;
+  level: number;
+  hanzi: string;
   pinyin: string;
-  vietnamese: string;
-  example: {
-    chinese: string;
-    pinyin: string;
-    vietnamese: string;
-  };
-  imageUrl?: string;
-  topicId: number;
-  difficulty: 'easy' | 'medium' | 'hard';
-  lastReviewed?: Date;
-  nextReview?: Date;
-  stage: number; // 0-3 indicating mastery level
+  meaning: string;
+  exampleVn: string;
+  exampleCn: string;
+  examplePinyin: string;
+  meaningOption: string[];
+  hanziOption: string[];
 }
 
 export interface Topic {

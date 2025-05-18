@@ -2,24 +2,30 @@ import React, { useState, useEffect } from 'react';
 import Flashcard from './Flashcard';
 import TopicSelector from './TopicSelector';
 import { Word, Topic } from '../../types';
-import { sampleWords, topics } from '../../data/mockData';
+import { filterWords } from '../../store/service';
+import { topics } from '../../data/mockData';
 
 const FlashcardContainer: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(topics[0]);
-  const [currentWords, setCurrentWords] = useState<Word[]>([]);
+  const [filteredWords, setFilteredWords] = useState<Word[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentStage, setCurrentStage] = useState(0);
+  const [learnStage, setLearnStage] = useState(true);
   
   useEffect(() => {
-    if (selectedTopic) {
-      const filteredWords = sampleWords.filter(word => word.topicId === selectedTopic.id);
-      setCurrentWords(filteredWords.length > 0 ? filteredWords : sampleWords);
-      setCurrentIndex(0);
-    }
+    const fetchWords = async () => {
+      if (selectedTopic) {
+        const words = await filterWords(selectedTopic.id);
+        setFilteredWords(words.data);
+        setCurrentIndex(0);
+      }
+    };
+
+    fetchWords();
   }, [selectedTopic]);
 
   const handleNextCard = () => {
-    if (currentIndex < currentWords.length - 1) {
+    setLearnStage(true);
+    if (currentIndex < filteredWords.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
       // Loop back to the beginning
@@ -28,15 +34,17 @@ const FlashcardContainer: React.FC = () => {
   };
 
   const handlePreviousCard = () => {
+    setLearnStage(true);
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
     } else {
       // Loop to the end
-      setCurrentIndex(currentWords.length - 1);
+      setCurrentIndex(filteredWords.length - 1);
     }
   };
 
   const handleTopicChange = (topic: Topic) => {
+    setLearnStage(true);
     setSelectedTopic(topic);
   };
 
@@ -59,23 +67,27 @@ const FlashcardContainer: React.FC = () => {
         </div>
         
         <div className="lg:col-span-3">
-          {currentWords.length > 0 ? (
+          {filteredWords.length > 0 ? (
             <>
               <div className="mb-4 flex justify-between items-center">
                 <h2 className="text-xl font-semibold text-gray-800">
                   {selectedTopic?.name} - {currentIndex + 1}/{selectedTopic?.totalWords}
                 </h2>
-                <div className="text-sm text-gray-500">
-                  Đã học {currentIndex + 1} trong tổng số {selectedTopic?.totalWords} từ
-                </div>
+
+                {learnStage && 
+                <button
+                  onClick={() => setLearnStage(!learnStage)}
+                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+                >
+                  Luyện tập
+                </button>}
               </div>
               
               <Flashcard 
-                word={currentWords[currentIndex]}
+                word={filteredWords[currentIndex]}
                 onNext={handleNextCard}
                 onPrevious={handlePreviousCard}
-                currentStage={currentStage}
-                onChangeStage={setCurrentStage}
+                learnStage={learnStage}
               />
             </>
           ) : (

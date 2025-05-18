@@ -17,6 +17,10 @@ async function importVocabFromFile(fileName, level) {
     const [vocab, created] = await Vocab.findOrCreate({
       where: { hanzi: item.word },
       defaults: {
+        hanzi: item.word,
+        example_vi: item.example_vn || "",
+        example_cn: item.example_cn || "",
+        example_pinyin: item.example_pinyin || "",
         pinyin: item.pinyin,
         meaning,
         level,

@@ -41,3 +41,13 @@ export const HANDLE_ERROR_CODE = {
     [HANDLE_ERROR_CODE.SAI_MAT_KHAU]:
       "Thông tin tài khoản hoặc mật khẩu không chính xác!",
   };
+
+export const QUIZ_TYPE = {
+    FillBlank_Word: 1,
+    FillBlank_Listen: 2,
+    ListenRepeat: 3,
+    MultiChoice_Mean : 4,
+    MultiChoice_Listen: 5,
+    MultiChoice_Hanzi: 6,
+    MultiChoice_FillBlank: 7,
+}

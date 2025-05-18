@@ -48,7 +48,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ question, onAnswer, onNext }) => {
   const handleSpeakWord = () => {
     // In a real implementation, this would use the Web Speech API
     if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(question.word.chinese);
+      const utterance = new SpeechSynthesisUtterance(question.word.hanzi);
       utterance.lang = 'zh-CN';
       window.speechSynthesis.speak(utterance);
     }
@@ -64,7 +64,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ question, onAnswer, onNext }) => {
             </h3>
             <div className="flex justify-center mb-6">
               <div className="text-center">
-                <p className="text-3xl font-bold mb-2">{question.word.chinese}</p>
+                <p className="text-3xl font-bold mb-2">{question.word.hanzi}</p>
                 <p className="text-blue-600">{question.word.pinyin}</p>
                 <button onClick={handleSpeakWord} className="mt-2 flex items-center justify-center mx-auto text-blue-600 hover:text-blue-800">
                   <Volume2 className="w-5 h-5 mr-1" />
@@ -109,8 +109,8 @@ const QuizCard: React.FC<QuizCardProps> = ({ question, onAnswer, onNext }) => {
               Viết từ tiếng Trung cho từ:
             </h3>
             <div className="text-center mb-6">
-              <p className="text-xl font-medium">{question.word.vietnamese}</p>
-              {question.word.imageUrl && (
+              <p className="text-xl font-medium">{question.word.meaning}</p>
+              {/* {question.word.imageUrl && (
                 <div className="mt-4 max-w-xs mx-auto h-40 rounded-lg overflow-hidden">
                   <img 
                     src={question.word.imageUrl} 
@@ -118,7 +118,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ question, onAnswer, onNext }) => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-              )}
+              )} */}
             </div>
             <div className="mb-4">
               <input
@@ -226,7 +226,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ question, onAnswer, onNext }) => {
             </h3>
             <div className="flex justify-center mb-6">
               <div className="text-center">
-                <p className="text-3xl font-bold mb-2">{question.word.chinese}</p>
+                <p className="text-3xl font-bold mb-2">{question.word.hanzi}</p>
                 <p className="text-blue-600">{question.word.pinyin}</p>
               </div>
             </div>
