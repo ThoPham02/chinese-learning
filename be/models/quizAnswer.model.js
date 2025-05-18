@@ -2,10 +2,12 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
 
 const QuizAnswer = sequelize.define(
-  "QuizAnswer",
+  "quiz_answer",
   {
-    content: DataTypes.TEXT,
-    is_correct: DataTypes.BOOLEAN,
+    id: { type: DataTypes.BIGINT, autoIncrement: true, primaryKey: true },
+    question_id: { type: DataTypes.BIGINT, allowNull: false },
+    content: { type: DataTypes.TEXT, allowNull: false },
+    is_correct: { type: DataTypes.BOOLEAN },
   },
   {
     tableName: "quiz_answer",

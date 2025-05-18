@@ -1,5 +1,7 @@
-const UserVocab = require("../models/userVocab.model");
 const LearningProgress = require("../models/learnProgress.model");
+const DailyTaskLog = require("../models/dailyTaskLog.model");
+
+const apiResponse = require("../utils/apiResponse");
 
 exports.getProgress = async (req, res) => {
   try {
@@ -26,9 +28,45 @@ exports.getProgress = async (req, res) => {
         currentStreak: 0,
         lastReviewDate: currentTime,
       });
+
+      return apiResponse(res, {
+        data: {
+          totalVocab: 0,
+          learnedVocab: 0,
+          reviewCount: 0,
+          currentStreak: 0,
+          lastReviewDate: currentTime,
+          dailyTask: {
+            learn: 0,
+            review: 0,
+            quiz: 0,
+          },
+        },
+      });
     }
 
-    // Fetch the user's vocabularies
+    // const logs = await DailyTaskLog.findAll({
+    //   where: {
+    //     user_id: userId,
+    //     task_date: ,
+
+    //   },
+    // });
+
+
+
+    
+
+    return apiResponse(res, {
+      data: {
+        totalVocab: progress.totalVocab,
+        learnedVocab: progress.learnedVocab,
+        reviewCount: progress.reviewCount,
+        currentStreak: progress.currentStreak,
+        lastReviewDate: progress.lastReviewDate,
+        dailyTask: dailyTask,
+      },
+    });
   } catch (err) {
     console.error(err);
 

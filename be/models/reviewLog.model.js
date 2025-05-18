@@ -2,14 +2,14 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
 
 const ReviewLog = sequelize.define(
-  "ReviewLog",
+  "review_log",
   {
-    review_time: {
-      type: DataTypes.BIGINT,
-      defaultValue: 0,
-    },
-    is_correct: DataTypes.BOOLEAN,
-    attempt: DataTypes.INTEGER,
+    id: { type: DataTypes.BIGINT, autoIncrement: true, primaryKey: true },
+    user_id: { type: DataTypes.BIGINT, allowNull: false },
+    vocabulary_id: { type: DataTypes.BIGINT, allowNull: false },
+    review_time: { type: DataTypes.BIGINT },
+    is_correct: { type: DataTypes.BOOLEAN },
+    attempt: { type: DataTypes.INTEGER },
   },
   {
     tableName: "review_log",

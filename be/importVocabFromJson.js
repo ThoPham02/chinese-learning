@@ -11,21 +11,23 @@ async function importVocabFromFile(fileName, level) {
   let inserted = 0;
 
   for (const item of vocabList) {
-    const meaning_vi = item.translations.join("; ");
+    const meaning = item.meaning || "";
 
     // Check tồn tại theo hanzi để tránh trùng
     const [vocab, created] = await Vocab.findOrCreate({
-      where: { hanzi: item.hanzi },
+      where: { hanzi: item.word },
       defaults: {
         pinyin: item.pinyin,
-        meaning_vi,
+        meaning,
         level,
       },
     });
 
     if (!created) {
+      vocab.example_vi = item.example_vi || "";
+      vocab.example_cn = item.example_cn || "";
       vocab.pinyin = item.pinyin;
-      vocab.meaning_vi = meaning_vi;
+      vocab.meaning = meaning;
       vocab.level = level;
       await vocab.save();
     }

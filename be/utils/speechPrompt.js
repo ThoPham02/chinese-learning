@@ -12,8 +12,8 @@ module.exports = function getPronunciationPrompt(expectedText, recognizedText) {
 
     LƯU Ý:
     - Bỏ nhưng ký tự "\n" đi
-    - Không cần giải thích
     - Dùng các thẻ HTML chuẩn như <div>, <p>, <ul>, <li>, <strong>, <em> để chia đoạn và làm rõ nội dung.
     - Trả về kết quả đúng định dạng HTML, dễ đọc, không thêm thẻ <think> hay thẻ code.
-  `;
-}
+    `;
+  }
+  // - Không cần giải thích

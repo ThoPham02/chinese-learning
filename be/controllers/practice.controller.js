@@ -47,12 +47,14 @@ exports.pronunciation = async (req, res) => {
 exports.feedback = async (req, res) => {
   try {
     const expectedText = req.body.expectedText;
-    const recognizedText = req.body.recognizedText;
+    // const recognizedText = req.body.recognizedText;
+    const recognizedText = req.file;
 
     const groq = new Groq();
     const prompt = getPronunciationPrompt(expectedText, recognizedText);
     const chatRes = await groq.chat.completions.create({
-      model: "meta-llama/llama-4-maverick-17b-128e-instruct",
+      // model: "meta-llama/llama-4-maverick-17b-128e-instruct",
+      model: "deepseek-r1-distill-llama-70b",
       messages: [
         { role: "system", content: "Bạn là một trợ lý luyện phát âm." },
         { role: "user", content: prompt }

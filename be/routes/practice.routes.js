@@ -31,5 +31,5 @@ const fileFilter = (req, file, cb) => {
 const upload = multer({ storage, fileFilter });
 
 router.post("/pronunciation", upload.single("file"), pronunciation);
-router.get("/pronunciation/feedback", upload.array(), feedback);
+router.post("/pronunciation/feedback", upload.single("file"), feedback);
 module.exports = router;
