@@ -5,6 +5,8 @@ const jwt = require("jsonwebtoken");
 const apiResponse = require("../utils/apiResponse");
 
 exports.register = async (req, res) => {
+  console.log("Register request body:", req.body);
+
   const { username, email, password } = req.body;
   try {
     console.log("Registering user:", { username, email, password });
