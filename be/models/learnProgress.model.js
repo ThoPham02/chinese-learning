@@ -6,6 +6,7 @@ const LearnProgress = sequelize.define(
   {
     id: { type: DataTypes.BIGINT, autoIncrement: true, primaryKey: true },
     user_id: { type: DataTypes.BIGINT, allowNull: false },
+    level: { type: DataTypes.INTEGER, defaultValue: 1 },
     learned_words: { type: DataTypes.INTEGER, defaultValue: 0 },
     reviewed_words: { type: DataTypes.INTEGER, defaultValue: 0 },
     mastered_words: { type: DataTypes.INTEGER, defaultValue: 0 },

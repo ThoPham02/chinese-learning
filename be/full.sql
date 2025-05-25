@@ -65,6 +65,7 @@ CREATE TABLE quiz_answer (
 CREATE TABLE learning_progress (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     user_id BIGINT NOT NULL,
+    level INT DEFAULT 1 CHECK (level BETWEEN 1 AND 6),
     learned_words INT DEFAULT 0,
     reviewed_words INT DEFAULT 0,
     mastered_words INT DEFAULT 0,

@@ -1,6 +1,7 @@
 const { Op } = require("sequelize");
 const { UserVocab, Vocab } = require("../models");
 const dayjs = require("dayjs");
+const { getCurrentTime } = require("../utils/helper");
 
 /**
  * Lấy danh sách từ mới user chưa học, theo level kèm theo meaning_option và hanzi_option
@@ -124,7 +125,7 @@ exports.getWordsToReview = async (userId, now = dayjs().unix()) => {
  * Cập nhật kết quả học 1 từ (đúng hoặc sai)
  */
 exports.updateReviewResult = async (user_vocab_id, is_correct, current_correct_count) => {
-  const now = dayjs().unix();
+  const now = getCurrentTime();
   const newCorrectCount = is_correct ? current_correct_count + 1 : 0;
 
   console.log("updateReviewResult", user_vocab_id, is_correct, current_correct_count, newCorrectCount);
@@ -134,7 +135,7 @@ exports.updateReviewResult = async (user_vocab_id, is_correct, current_correct_c
   const delay = delays[Math.min(newCorrectCount, delays.length - 1)];
   const next_review = dayjs().add(delay, 'day').unix();
 
-  await UserVocab.update(
+  return await UserVocab.update(
     {
       correct_count: newCorrectCount,
       last_review: now,
@@ -145,6 +146,4 @@ exports.updateReviewResult = async (user_vocab_id, is_correct, current_correct_c
       where: { id: user_vocab_id },
     }
   );
-
-  return next_review;
 };

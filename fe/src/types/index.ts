@@ -20,15 +20,16 @@ export interface Topic {
 }
 
 export interface UserProgress {
-  wordsLearned: number;
-  wordsMastered: number;
-  wordsToReview: number;
-  streakDays: number;
-  lastStudyDate?: Date;
+  level: number;
+  learnedWords: number;
+  reviewedWords: number;
+  masteredWords: number;
+  currentStreak: number;
+  lastActiveDate: number;
 }
 
 export interface QuizQuestion {
-  type: 'multiple-choice' | 'matching' | 'listening' | 'fill-blank';
+  type: number;
   word: Word;
   options?: string[];
   correctAnswer: string;

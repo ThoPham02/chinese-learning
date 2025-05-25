@@ -8,6 +8,7 @@ import FlashcardContainer from "../components/flashcards/FlashcardContainer";
 import ReviewContainer from "../components/review/ReviewContainer";
 import QuizContainer from "../components/quiz/QuizContainer";
 import ProgressDashboard from "../components/progress/ProgressDashboard";
+import LearnWord from "../components/progress/LearnWord";
 
 export const AppRoute: RouteObject[] = [
   {
@@ -40,6 +41,17 @@ export const AppRoute: RouteObject[] = [
     path: ROUTE_PATHS.PROGRESS,
     element: <ProgressDashboard />,
   },
+  {
+    id: "learnWord",
+    path: ROUTE_PATHS.LEARN_WORD,
+    element: <LearnWord />,
+  },
+  {
+    id: "error",
+    path: ROUTE_PATHS.ERROR,
+    element: <div>Error Page</div>,
+  }
+
 ];
 
 

@@ -1,24 +1,31 @@
-import React from 'react';
-import { todayTasks, userProgressMock } from '../../data/mockData';
-import { Trophy, BookOpen, Brain, Clock } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { todayTasks } from '../../data/mockData';
+import { Trophy, BookOpen, Brain, Clock, StretchHorizontal } from 'lucide-react';
+import { apiGetUserProgress } from '../../store/service';
+import { UserProgress } from '../../types';
+import { convertTimestampToDate } from '../../utils/utils';
+import { Link } from 'react-router-dom';
 
 const ProgressDashboard: React.FC = () => {
-  // For a real implementation, this would come from a server or state management
-  const progress = userProgressMock;
-  
-  const formatDate = (date: Date | undefined) => {
-    if (!date) return 'Chưa có dữ liệu';
-    return new Intl.DateTimeFormat('vi-VN', {
-      day: '2-digit',
-      month: '2-digit',
-      year: 'numeric',
-    }).format(date);
-  };
+  const [progress, setProgress] = useState<UserProgress>({} as UserProgress);
+
+  useEffect(() => {
+    const fetchProcess = async () => {
+      const resp = await apiGetUserProgress();
+
+      console.log('User progress data:', resp.data);
+
+      setProgress(resp.data);
+    }
+    
+    fetchProcess();
+  }
+  , []);
   
   // Calculate completion percentage
-  const totalWords = progress.wordsLearned;
+  const totalWords = progress.learnedWords;
   const completionPercentage = totalWords > 0 
-    ? Math.round((progress.wordsMastered / totalWords) * 100) 
+    ? Math.round((progress.masteredWords / totalWords) * 100) 
     : 0;
 
   return (
@@ -30,12 +37,32 @@ const ProgressDashboard: React.FC = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
+        <div className="bg-white rounded-xl shadow-md p-6">
+          <div className="flex items-start justify-between">
+            <div>
+              <p className="text-gray-500 text-sm">Level hiện tại</p>
+              <p className="text-3xl font-bold mt-1">{progress.level} / 6</p>
+            </div>
+            <div className="p-3 rounded-full bg-red-100">
+              <StretchHorizontal className="w-6 h-6 text-red-600" />
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="w-full bg-gray-100 rounded-full h-2">
+              <div 
+                className="h-2 rounded-full bg-red-600"
+                style={{ width: `${(progress.level / 6) * 100}%` }}
+              ></div>
+            </div>
+          </div>
+        </div>
+
         <div className="bg-white rounded-xl shadow-md p-6">
           <div className="flex items-start justify-between">
             <div>
               <p className="text-gray-500 text-sm">Tổng số từ đã học</p>
-              <p className="text-3xl font-bold mt-1">{progress.wordsLearned}</p>
+              <p className="text-3xl font-bold mt-1">{progress.learnedWords}</p>
             </div>
             <div className="p-3 rounded-full bg-purple-100">
               <BookOpen className="w-6 h-6 text-purple-600" />
@@ -55,7 +82,7 @@ const ProgressDashboard: React.FC = () => {
           <div className="flex items-start justify-between">
             <div>
               <p className="text-gray-500 text-sm">Từ đã thành thạo</p>
-              <p className="text-3xl font-bold mt-1">{progress.wordsMastered}</p>
+              <p className="text-3xl font-bold mt-1">{progress.masteredWords}</p>
             </div>
             <div className="p-3 rounded-full bg-green-100">
               <Brain className="w-6 h-6 text-green-600" />
@@ -76,7 +103,7 @@ const ProgressDashboard: React.FC = () => {
           <div className="flex items-start justify-between">
             <div>
               <p className="text-gray-500 text-sm">Từ cần ôn tập</p>
-              <p className="text-3xl font-bold mt-1">{progress.wordsToReview}</p>
+              <p className="text-3xl font-bold mt-1">{progress.reviewedWords}</p>
             </div>
             <div className="p-3 rounded-full bg-yellow-100">
               <Clock className="w-6 h-6 text-yellow-600" />
@@ -86,11 +113,11 @@ const ProgressDashboard: React.FC = () => {
             <div className="w-full bg-gray-100 rounded-full h-2">
               <div 
                 className="h-2 rounded-full bg-yellow-600"
-                style={{ width: `${(progress.wordsToReview / progress.wordsLearned) * 100}%` }}
+                style={{ width: `${(progress.reviewedWords / progress.learnedWords) * 100}%` }}
               ></div>
             </div>
             <p className="text-xs text-gray-500 mt-1">
-              {Math.round((progress.wordsToReview / progress.wordsLearned) * 100)}% cần ôn tập
+              {100 - completionPercentage}% cần ôn tập
             </p>
           </div>
         </div>
@@ -99,7 +126,7 @@ const ProgressDashboard: React.FC = () => {
           <div className="flex items-start justify-between">
             <div>
               <p className="text-gray-500 text-sm">Chuỗi ngày học</p>
-              <p className="text-3xl font-bold mt-1">{progress.streakDays}</p>
+              <p className="text-3xl font-bold mt-1">{progress.currentStreak}</p>
             </div>
             <div className="p-3 rounded-full bg-red-100">
               <Trophy className="w-6 h-6 text-red-600" />
@@ -107,10 +134,10 @@ const ProgressDashboard: React.FC = () => {
           </div>
           <div className="mt-4">
             <p className="text-xs text-gray-500">
-              Lần học gần nhất: {formatDate(progress.lastStudyDate)}
+              Lần học gần nhất: {progress.lastActiveDate != 0 || convertTimestampToDate(progress.lastActiveDate)}
             </p>
             <p className="text-sm text-red-600 font-medium mt-1">
-              🔥 Hãy giữ chuỗi ngày học của bạn!
+              {progress.currentStreak == 0 ? "Bắt đầu chuỗi ngày học của bạn nào!" :"🔥 Hãy giữ chuỗi ngày học của bạn!"}
             </p>
           </div>
         </div>
@@ -159,12 +186,11 @@ const ProgressDashboard: React.FC = () => {
                 <p className="text-sm">{task.description}</p>
 
                 {task.status === 'incomplete' && (
-                  <a
-                    href={task.actionLink}
-                    className="inline-block mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                  >
+                  <Link 
+                    to={task.actionLink}
+                    className="inline-block mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
                     {task.actionLabel}
-                  </a>
+                  </Link>
                 )}
 
                 {task.status === 'completed' && (

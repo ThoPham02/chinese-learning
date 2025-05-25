@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, BookOpen, LogIn, Search, Bell, User } from 'lucide-react';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../store/redux';
-import { ROUTE_PATHS } from '../../common/path';
-import UserContainer from '../ui/User';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Menu, X, BookOpen, LogIn, Search, Bell, User } from "lucide-react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/redux";
+import { ROUTE_PATHS } from "../../common/path";
+import UserContainer from "../ui/User";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,9 +15,9 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const isActive = (path: string) => location.pathname === path;
@@ -26,76 +26,83 @@ const Header: React.FC = () => {
   const { isLogined } = useSelector((state: RootState) => state.auth);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+      }`}
+    >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
             <BookOpen className="w-8 h-8 text-red-600 mr-2" />
             <span className="text-xl font-bold text-gray-800">ChineseViet</span>
           </Link>
-          
+
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/') ? 'text-red-600' : ''
+                isActive("/") ? "text-red-600" : ""
               }`}
             >
               Trang chủ
             </Link>
-            <Link 
-              to="/flashcards" 
+            <Link
+              to="/flashcards"
               className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/flashcards') ? 'text-red-600' : ''
+                isActive("/flashcards") ? "text-red-600" : ""
               }`}
             >
               Học từ mới
             </Link>
-            <Link 
-              to="/review" 
-              className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/review') ? 'text-red-600' : ''
-              }`}
-            >
-              Ôn tập
-            </Link>
-            <Link 
-              to="/quiz" 
-              className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/quiz') ? 'text-red-600' : ''
-              }`}
-            >
-              Kiểm tra
-            </Link>
-            <Link 
-              to="/progress" 
-              className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/progress') ? 'text-red-600' : ''
-              }`}
-            >
-              Tiến trình
-            </Link>
+
+            {isLogined && (
+              <>
+                <Link
+                  to="/review"
+                  className={`text-gray-700 hover:text-red-600 transition-colors ${
+                    isActive("/review") ? "text-red-600" : ""
+                  }`}
+                >
+                  Ôn tập
+                </Link>
+                <Link
+                  to="/quiz"
+                  className={`text-gray-700 hover:text-red-600 transition-colors ${
+                    isActive("/quiz") ? "text-red-600" : ""
+                  }`}
+                >
+                  Kiểm tra
+                </Link>
+                <Link
+                  to="/progress"
+                  className={`text-gray-700 hover:text-red-600 transition-colors ${
+                    isActive("/progress") ? "text-red-600" : ""
+                  }`}
+                >
+                  Tiến trình
+                </Link>
+              </>
+            )}
           </nav>
-          
+
           <div className="hidden md:flex items-center space-x-4">
             {isLogined ? (
               <>
                 <UserContainer />
               </>
-            ) :
-                <button
-                  onClick={() => navigate(`${ROUTE_PATHS.LOGIN}`)}
-                  className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition duration-300 flex items-center"
-                >
-                  <LogIn className="w-4 h-4 mr-2" />
-                  Login
-                </button>
-            }
+            ) : (
+              <button
+                onClick={() => navigate(`${ROUTE_PATHS.LOGIN}`)}
+                className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full text-sm font-semibold transition duration-300 flex items-center"
+              >
+                <LogIn className="w-4 h-4 mr-2" />
+                Login
+              </button>
+            )}
           </div>
-          
-          <button 
+
+          <button
             className="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -107,51 +114,51 @@ const Header: React.FC = () => {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg py-4 px-4 absolute top-full left-0 right-0 border-t border-gray-100">
           <nav className="flex flex-col space-y-4">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/') ? 'text-red-600' : ''
+                isActive("/") ? "text-red-600" : ""
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Trang chủ
             </Link>
-            <Link 
-              to="/flashcards" 
+            <Link
+              to="/flashcards"
               className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/flashcards') ? 'text-red-600' : ''
+                isActive("/flashcards") ? "text-red-600" : ""
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Học từ mới
             </Link>
-            <Link 
-              to="/review" 
+            <Link
+              to="/review"
               className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/review') ? 'text-red-600' : ''
+                isActive("/review") ? "text-red-600" : ""
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Ôn tập
             </Link>
-            <Link 
-              to="/quiz" 
+            <Link
+              to="/quiz"
               className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/quiz') ? 'text-red-600' : ''
+                isActive("/quiz") ? "text-red-600" : ""
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Kiểm tra
             </Link>
-            <Link 
-              to="/progress" 
+            <Link
+              to="/progress"
               className={`text-gray-700 hover:text-red-600 transition-colors ${
-                isActive('/progress') ? 'text-red-600' : ''
+                isActive("/progress") ? "text-red-600" : ""
               }`}
               onClick={() => setIsMenuOpen(false)}
             >

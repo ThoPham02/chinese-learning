@@ -62,23 +62,6 @@ const ListenRepeat: React.FC<ListenRepeatProps> = ({ type, word, onAnswer, onNex
         mediaRecorderRef.current?.stop();
     };
 
-    // const renderOption = () => {
-    //     switch (type) {
-    //         case 0:
-    //             return <>
-    //                 <div className="text-2xl mb-4">Nghe và lặp lại:</div>
-    //                 <div className="text-3xl font-bold mb-4 w-full text-center">{word.exampleCn}</div>
-    //             </>;
-    //         case 1:
-    //             return <>
-    //                 <div className="text-2xl mb-4">Nghe và lặp lại:</div>
-    //                 <div className="text-3xl text-blue-600 font-bold mb-4 w-full text-center">{word.pinyin}</div>
-    //             </>;
-    //         default:
-    //             return <div>Lỗi câu hỏi</div>;
-    //     }
-    // }
-
     console.log(type);
 
     return (

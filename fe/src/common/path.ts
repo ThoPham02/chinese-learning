@@ -11,6 +11,8 @@ export const API_URL = {
     REGISTER: "/register",
     HOME: "/home",
     FLASHCARD: "/flashcards",
+    // private routes
+    LEARN_WORD: "/learn",
     REVIEW : "/review",
     QUIZ: "/quiz",
     PROGRESS: "/progress",

@@ -99,3 +99,54 @@ export const checkSpeaking = async (data: FormData): Promise<ApiResponse> => {
     throw error;
   }
 };
+
+// Get user progress
+export const apiGetUserProgress = (): Promise<ApiResponse> =>
+  new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "get",
+        url: "/user/progress",
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+
+// get daily words to learn
+export const apiGetLearnWords = (): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "get",
+        url: "/word/learn",
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+// update word status
+export const apiUpdateWord = (wordId: number, isCorrect: boolean): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "post",
+        url: `/word/update`,
+        data: { 
+          wordId,
+          isCorrect,
+        },
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}

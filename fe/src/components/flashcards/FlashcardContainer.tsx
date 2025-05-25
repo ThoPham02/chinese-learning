@@ -74,13 +74,12 @@ const FlashcardContainer: React.FC = () => {
                   {selectedTopic?.name} - {currentIndex + 1}/{selectedTopic?.totalWords}
                 </h2>
 
-                {learnStage && 
                 <button
-                  onClick={() => setLearnStage(!learnStage)}
-                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+                    onClick={() => setLearnStage(!learnStage)}
+                    className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors"
                 >
-                  Luyện tập
-                </button>}
+                    {learnStage ? "Học từ" : "Xem nghĩa"}
+                </button>
               </div>
               
               <Flashcard 

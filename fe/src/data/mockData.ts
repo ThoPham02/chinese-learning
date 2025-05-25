@@ -51,7 +51,7 @@ export const todayTasks: DailyTask[] = [
     id: 1,
     title: 'Học từ mới',
     description: 'Học 10 từ mới theo trình độ hiện tại',
-    status: 'completed', // hoặc 'completed'
+    status: 'incomplete', // hoặc 'completed'
     actionLabel: 'Bắt đầu học',
     actionLink: '/learn',
   },
@@ -92,89 +92,90 @@ export const iconMap: Record<string, React.ElementType> = {
   Globe,
 };
 
-export const sampleWords: Word[] = [
-  {
-    id: 1,
-    hanzi: '你好',
-    pinyin: 'nǐ hǎo',
-    meaning: 'Xin chào',
-    exampleVn: 'Xin chào, bạn khỏe không?',
-    exampleCn: '你好，你好吗？',
-    level: 1,
-  },
-  {
-    id: 2,
-    hanzi: '谢谢',
-    pinyin: 'xiè xiè',
-    meaning: 'Cảm ơn',
-    exampleVn: 'Cảm ơn bạn đã giúp tôi.',
-    exampleCn: '谢谢你帮我。',
-    level: 1,
-  },
-  {
-    id: 3,
-    hanzi: '学生',
-    pinyin: 'xué shēng',
-    meaning: 'Học sinh',
-    exampleVn: 'Tôi là một học sinh.',
-    exampleCn: '我是一名学生。',
-    level: 2,
-  },
-  {
-    id: 4,
-    hanzi: '老师',
-    pinyin: 'lǎo shī',
-    meaning: 'Giáo viên',
-    exampleVn: 'Cô ấy là giáo viên dạy tiếng Trung.',
-    exampleCn: '她是中文老师。',
-    level: 2,
-  },
-  {
-    id: 5,
-    hanzi: '工作',
-    pinyin: 'gōng zuò',
-    meaning: 'Công việc',
-    exampleVn: 'Công việc của tôi rất thú vị.',
-    exampleCn: '我的工作很有趣。',
-    level: 3,
-  },
-];
+// export const sampleWords: Word[] = [
+//   {
+//     id: 1,
+//     hanzi: '你好',
+//     pinyin: 'nǐ hǎo',
+//     meaning: 'Xin chào',
+//     exampleVn: 'Xin chào, bạn khỏe không?',
+//     exampleCn: '你好，你好吗？',
+//     level: 1,
+//   },
+//   {
+//     id: 2,
+//     hanzi: '谢谢',
+//     pinyin: 'xiè xiè',
+//     meaning: 'Cảm ơn',
+//     exampleVn: 'Cảm ơn bạn đã giúp tôi.',
+//     exampleCn: '谢谢你帮我。',
+//     level: 1,
+//   },
+//   {
+//     id: 3,
+//     hanzi: '学生',
+//     pinyin: 'xué shēng',
+//     meaning: 'Học sinh',
+//     exampleVn: 'Tôi là một học sinh.',
+//     exampleCn: '我是一名学生。',
+//     level: 2,
+//   },
+//   {
+//     id: 4,
+//     hanzi: '老师',
+//     pinyin: 'lǎo shī',
+//     meaning: 'Giáo viên',
+//     exampleVn: 'Cô ấy là giáo viên dạy tiếng Trung.',
+//     exampleCn: '她是中文老师。',
+//     level: 2,
+//   },
+//   {
+//     id: 5,
+//     hanzi: '工作',
+//     pinyin: 'gōng zuò',
+//     meaning: 'Công việc',
+//     exampleVn: 'Công việc của tôi rất thú vị.',
+//     exampleCn: '我的工作很有趣。',
+//     level: 3,
+//   },
+// ];
 
-export const userProgressMock: UserProgress = {
-  wordsLearned: 145,
-  wordsMastered: 78,
-  wordsToReview: 24,
-  streakDays: 12,
-  lastStudyDate: new Date(),
-};
+// export const userProgressMock: UserProgress = {
+//   level: 3,
+//   wordsLearned: 145,
+//   wordsMastered: 78,
+//   wordsToReview: 24,
+//   streakDays: 12,
+//   lastStudyDate: new Date(),
+// };
 
 export const sampleQuestions: QuizQuestion[] = [
-  {
-    type: 'multiple-choice',
-    word: sampleWords[0],
-    options: ['Xin chào', 'Cảm ơn', 'Tạm biệt', 'Xin lỗi'],
-    correctAnswer: 'Xin chào',
-  },
-  {
-    type: 'multiple-choice',
-    word: sampleWords[1],
-    options: ['Xin chào', 'Cảm ơn', 'Tạm biệt', 'Xin lỗi'],
-    correctAnswer: 'Cảm ơn',
-  },
-  {
-    type: 'fill-blank',
-    word: sampleWords[2],
-    correctAnswer: '学生',
-  },
-  {
-    type: 'listening',
-    word: sampleWords[3],
-    options: ['学生', '老师', '朋友', '家人'],
-    correctAnswer: '老师',
-  },
-  {
-    type: 'matching',
-    word: sampleWords[4],
-    correctAnswer: 'Công việc',
-  },
+  // {
+  //   type: 'multiple-choice',
+  //   word: sampleWords[0],
+  //   options: ['Xin chào', 'Cảm ơn', 'Tạm biệt', 'Xin lỗi'],
+  //   correctAnswer: 'Xin chào',
+  // },
+  // {
+  //   type: 'multiple-choice',
+  //   word: sampleWords[1],
+  //   options: ['Xin chào', 'Cảm ơn', 'Tạm biệt', 'Xin lỗi'],
+  //   correctAnswer: 'Cảm ơn',
+  // },
+  // {
+  //   type: 'fill-blank',
+  //   word: sampleWords[2],
+  //   correctAnswer: '学生',
+  // },
+  // {
+  //   type: 'listening',
+  //   word: sampleWords[3],
+  //   options: ['学生', '老师', '朋友', '家人'],
+  //   correctAnswer: '老师',
+  // },
+  // {
+  //   type: 'matching',
+  //   word: sampleWords[4],
+  //   correctAnswer: 'Công việc',
+  // },
 ];
