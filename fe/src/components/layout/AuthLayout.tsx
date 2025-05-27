@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import { ROUTE_PATHS } from '../../common/path';
 
 const AuthLayout: React.FC = () => {
