@@ -79,5 +79,6 @@ CREATE TABLE daily_task_log (
     task_type INT NOT NULL,
     status INT DEFAULT 0,
     task_date DATE NOT NULL,
+    number_words INT DEFAULT 0,
     updated_at BIGINT
 );

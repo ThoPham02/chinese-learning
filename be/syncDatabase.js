@@ -4,7 +4,7 @@ const models = require("./models"); // Import tất cả model
 async function syncDatabase() {
   try {
     console.log("🔄 Syncing database...");
-    await sequelize.sync({ force: true }); // hoặc { force: true } để xóa tạo lại
+    await sequelize.sync({ alter: true }); // hoặc { force: true } để xóa tạo lại
 
 
     console.log("✅ Database synced successfully!");

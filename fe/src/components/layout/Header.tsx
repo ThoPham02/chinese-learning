@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   const isActive = (path: string) => location.pathname === path;
   const navigate = useNavigate();
 
-  const { isLogined } = useSelector((state: RootState) => state.auth);
+  const { isLogined, user } = useSelector((state: RootState) => state.auth);
 
   return (
     <header
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
               Học từ mới
             </Link>
 
-            {isLogined && (
+            {isLogined && user.username !== "Admin" &&(
               <>
                 <Link
                   to="/review"
@@ -81,6 +81,27 @@ const Header: React.FC = () => {
                   }`}
                 >
                   Tiến trình
+                </Link>
+              </>
+            )}
+
+            {isLogined && user.username === "Admin" &&(
+              <>
+                <Link
+                  to="/admin-words"
+                  className={`text-gray-700 hover:text-red-600 transition-colors ${
+                    isActive("/admin-words") ? "text-red-600" : ""
+                  }`}
+                >
+                  Từ vựng
+                </Link>
+                <Link
+                  to="/admin-quiz"
+                  className={`text-gray-700 hover:text-red-600 transition-colors ${
+                    isActive("/admin-quiz") ? "text-red-600" : ""
+                  }`}
+                >
+                  Bài kiểm tra
                 </Link>
               </>
             )}

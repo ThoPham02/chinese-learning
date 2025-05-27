@@ -10,12 +10,9 @@ exports.getProgress = async (req, res) => {
     const currentTime = getCurrentTime();
 
     // Fetch the user's learning progress
-    const progress = await LearningProgress.findOne({
+    let progress = await LearningProgress.findOne({
       where: { user_id: userId },
     });
-
-    console.log("User progress:", progress);
-
 
     if (!progress) {
       progress = {

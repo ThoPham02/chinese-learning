@@ -16,6 +16,10 @@ export const API_URL = {
     REVIEW : "/review",
     QUIZ: "/quiz",
     PROGRESS: "/progress",
+    // admin routes
+    ADMIN_DASHBOARD: "/admin",
+    ADMIN_WORDS: "/admin-words",
+    ADMIN_QUIZ: "/admin-quiz",
 
     ERROR: "/error",
   } as const;

@@ -9,6 +9,9 @@ import ReviewContainer from "../components/review/ReviewContainer";
 import QuizContainer from "../components/quiz/QuizContainer";
 import ProgressDashboard from "../components/progress/ProgressDashboard";
 import LearnWord from "../components/progress/LearnWord";
+import AdminQuiz from "../components/admin/AdminQuiz";
+import AdminWord from "../components/admin/AdminWord";
+import AdminDashBoard from "../components/admin/AdminDashBoard";
 
 export const AppRoute: RouteObject[] = [
   {
@@ -47,11 +50,25 @@ export const AppRoute: RouteObject[] = [
     element: <LearnWord />,
   },
   {
+    id: "admin-words",
+    path: ROUTE_PATHS.ADMIN_WORDS,
+    element: < AdminWord/>,
+  },
+  {
+    id: "admin-quiz",
+    path: ROUTE_PATHS.ADMIN_QUIZ,
+    element: <AdminQuiz />,
+  },
+  {
+    id: "admin",
+    path: ROUTE_PATHS.ADMIN_DASHBOARD,
+    element: <AdminDashBoard />,
+  },
+  {
     id: "error",
     path: ROUTE_PATHS.ERROR,
     element: <div>Error Page</div>,
-  }
-
+  },
 ];
 
 

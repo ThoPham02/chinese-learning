@@ -9,6 +9,7 @@ const DailyTaskLog = sequelize.define(
     task_type: { type: DataTypes.INTEGER, allowNull: false },
     status: { type: DataTypes.INTEGER, defaultValue: 0 },
     task_date: { type: DataTypes.DATEONLY, allowNull: false },
+    number_words: { type: DataTypes.INTEGER, defaultValue: 0 },
     updated_at: { type: DataTypes.BIGINT },
   },
   {
