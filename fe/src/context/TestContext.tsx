@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { Test, Question } from '../types';
+import { Test } from '../types';
 
 interface TestContextType {
   tests: Test[];
