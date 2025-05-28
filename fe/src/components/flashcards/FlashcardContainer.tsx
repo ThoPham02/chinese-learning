@@ -14,7 +14,7 @@ const FlashcardContainer: React.FC = () => {
   useEffect(() => {
     const fetchWords = async () => {
       if (selectedTopic) {
-        const words = await filterWords(selectedTopic.id, "");
+        const words = await filterWords(selectedTopic.id, "", "id", "ASC");
         setFilteredWords(words.data);
         setCurrentIndex(0);
       }

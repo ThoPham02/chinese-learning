@@ -8,7 +8,6 @@ import { Plus } from "lucide-react";
 import { apiAdminCreateWord, apiAdminDeleteWord, apiAdminUpdateWord, filterWords } from "../../../store/service";
 
 const AdminWord = () => {
-  const [vocabularyList, setVocabularyList] = useState<Vocabulary[]>([]);
   const [filteredList, setFilteredList] = useState<Vocabulary[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [selectedLevel, setSelectedLevel] = useState<HSKLevel>(1);
@@ -22,7 +21,7 @@ const AdminWord = () => {
 
   // Filter vocabulary when search term or level changes
   const fetchVocabulary = async () => {
-    const result = await filterWords(selectedLevel, searchTerm);
+    const result = await filterWords(selectedLevel, searchTerm, "id", "DESC");
     console.log(result);
 
     setFilteredList(result.data);

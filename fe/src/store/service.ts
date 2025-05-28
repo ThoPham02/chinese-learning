@@ -63,7 +63,7 @@ export const apiGetCurrent = (): Promise<ApiResponse> =>
   });
 
 // filter words
-export const filterWords = (levels: number, search: string): Promise<ApiResponse> =>
+export const filterWords = (levels: number, search: string, orderBy: string, orderDes: string): Promise<ApiResponse> =>
   new Promise(async (resolve, reject) => {
     try {
       const response = await axios({
@@ -71,7 +71,9 @@ export const filterWords = (levels: number, search: string): Promise<ApiResponse
         url: "/word/filter",
         params: {
           levels,
-          search
+          search,
+          orderBy,
+          orderDes,
         },
       });
 

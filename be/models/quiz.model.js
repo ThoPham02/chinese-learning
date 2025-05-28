@@ -5,10 +5,10 @@ const Quiz = sequelize.define(
   "quiz",
   {
     id: { type: DataTypes.BIGINT, autoIncrement: true, primaryKey: true },
-    user_id: { type: DataTypes.BIGINT, allowNull: false },
     title: { type: DataTypes.STRING(255) },
-    score: { type: DataTypes.FLOAT },
-    created_at: { type: DataTypes.BIGINT },
+    time: { type: DataTypes.BIGINT },
+    level: { type: DataTypes.BIGINT },
+    num: { type: DataTypes.BIGINT },
   },
   {
     tableName: "quiz",

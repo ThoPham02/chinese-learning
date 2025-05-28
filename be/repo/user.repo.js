@@ -1,7 +1,7 @@
 const { Op } = require("sequelize"); // đảm bảo bạn đã import Op
 const Vocab = require("../models/vocab.model"); // import model Vocab
 
-exports.getVocabularyByLevels = async (levels, search) => {
+exports.getVocabularyByLevels = async (levels, search, orderBy = "id", orderDes = "ASC") => {
   try {
     // 1. Xây dựng điều kiện where cho levels và search
     const whereConditions = {};
@@ -20,7 +20,7 @@ exports.getVocabularyByLevels = async (levels, search) => {
     // 2. Lấy toàn bộ từ vựng theo điều kiện where
     const words = await Vocab.findAll({
       where: Object.keys(whereConditions).length === 0 ? undefined : whereConditions,
-      order: [["id", "ASC"]],
+      order: [[orderBy, orderDes]],
       raw: true,
     });
 

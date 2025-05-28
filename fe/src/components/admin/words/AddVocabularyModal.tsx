@@ -175,12 +175,12 @@ const AddVocabularyModal: React.FC<AddVocabularyModalProps> = ({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="chineseExample" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="exampleCn" className="block text-sm font-medium text-gray-700 mb-1">
                     Ví dụ tiếng Trung
                   </label>
                   <textarea
-                    name="chineseExample"
-                    id="chineseExample"
+                    name="exampleCn"
+                    id="exampleCn"
                     rows={2}
                     value={formData.exampleCn}
                     onChange={handleChange}
@@ -189,12 +189,12 @@ const AddVocabularyModal: React.FC<AddVocabularyModalProps> = ({
                 </div>
 
                 <div>
-                  <label htmlFor="chineseExamplePinyin" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="examplePinyin" className="block text-sm font-medium text-gray-700 mb-1">
                     Pinyin của ví dụ
                   </label>
                   <textarea
-                    name="chineseExamplePinyin"
-                    id="chineseExamplePinyin"
+                    name="examplePinyin"
+                    id="examplePinyin"
                     rows={2}
                     value={formData.examplePinyin}
                     onChange={handleChange}
@@ -204,12 +204,12 @@ const AddVocabularyModal: React.FC<AddVocabularyModalProps> = ({
               </div>
 
               <div>
-                <label htmlFor="explanation" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="explain" className="block text-sm font-medium text-gray-700 mb-1">
                   Giải thích
                 </label>
                 <textarea
-                  name="explanation"
-                  id="explanation"
+                  name="explain"
+                  id="explain"
                   rows={3}
                   value={formData.explain}
                   onChange={handleChange}

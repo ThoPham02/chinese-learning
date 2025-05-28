@@ -195,8 +195,10 @@ exports.getAllVocab = async (req, res) => {
       ? req.query.levels.split(",").map(Number)
       : [];
     const search = req.query.search || "";
+    const orderBy = req.query.orderBy || "id";
+    const orderDes = req.query.orderDes || "ASC";
 
-    const words = await getVocabularyByLevels(levels, search);
+    const words = await getVocabularyByLevels(levels, search, orderBy, orderDes);
 
     const dataRes = words.map((word) => {
       return {
@@ -210,7 +212,7 @@ exports.getAllVocab = async (req, res) => {
         examplePinyin: word.example_pinyin,
         meaningOption: word.meaning_option,
         hanziOption: word.hanzi_option,
-        explanation: word.explain,
+        explain: word.explain,
       };
     });
 
