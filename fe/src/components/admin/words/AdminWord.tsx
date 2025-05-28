@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
-import { Vocabulary, HSKLevel, sampleVocabulary } from "../../types";
+import { Vocabulary, HSKLevel } from "../../../types";
 import AddVocabularyModal from "./AddVocabularyModal";
-import Pagination from "./Pagination";
+import Pagination from "../../ui/Pagination";
 import VocabularyTable from "./VocabularyTable";
 import VocabularyFilter from "./VocabularyFilter";
 import { Plus } from "lucide-react";
+import { apiAdminCreateWord, apiAdminDeleteWord, apiAdminUpdateWord, filterWords } from "../../../store/service";
 
 const AdminWord = () => {
-  const [vocabularyList, setVocabularyList] =
-    useState<Vocabulary[]>(sampleVocabulary);
-  const [filteredList, setFilteredList] =
-    useState<Vocabulary[]>(sampleVocabulary);
+  const [vocabularyList, setVocabularyList] = useState<Vocabulary[]>([]);
+  const [filteredList, setFilteredList] = useState<Vocabulary[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [selectedLevel, setSelectedLevel] = useState<HSKLevel>(1);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -19,29 +18,20 @@ const AdminWord = () => {
   );
   const [currentPage, setCurrentPage] = useState<number>(1);
 
-  const itemsPerPage = 20;
+  const itemsPerPage = 10;
 
   // Filter vocabulary when search term or level changes
+  const fetchVocabulary = async () => {
+    const result = await filterWords(selectedLevel, searchTerm);
+    console.log(result);
+
+    setFilteredList(result.data);
+    setCurrentPage(1);
+  };
   useEffect(() => {
-    let result = [...vocabularyList];
 
-    if (searchTerm) {
-      const lowerCaseSearchTerm = searchTerm.toLowerCase();
-      result = result.filter(
-        (vocab) =>
-          vocab.hanzi.toLowerCase().includes(lowerCaseSearchTerm) ||
-          vocab.pinyin.toLowerCase().includes(lowerCaseSearchTerm) ||
-          vocab.meaning.toLowerCase().includes(lowerCaseSearchTerm)
-      );
-    }
-
-    if (selectedLevel) {
-      result = result.filter((vocab) => vocab.level === selectedLevel);
-    }
-
-    setFilteredList(result);
-    setCurrentPage(1); // Reset to first page when filters change
-  }, [searchTerm, selectedLevel, vocabularyList]);
+    fetchVocabulary();
+  }, [searchTerm, selectedLevel]);
 
   // Calculate pagination
   const totalPages = Math.ceil(filteredList.length / itemsPerPage);
@@ -61,21 +51,24 @@ const AdminWord = () => {
     setIsModalOpen(true);
   };
 
-  const handleDeleteVocabulary = (id: number) => {
-    const newList = vocabularyList.filter((vocab) => vocab.id !== id);
-    setVocabularyList(newList);
+  const handleDeleteVocabulary = async (id: number) => {
+    const resp = await apiAdminDeleteWord(id);
+    console.log(resp);
+
+    fetchVocabulary();
   };
 
-  const handleSaveVocabulary = (vocabulary: Vocabulary) => {
+  const handleSaveVocabulary = async (vocabulary: Vocabulary) => {
     if (editingVocabulary) {
       // Update existing vocabulary
-      const newList = vocabularyList.map((vocab) =>
-        vocab.id === vocabulary.id ? vocabulary : vocab
-      );
-      setVocabularyList(newList);
+      const resp = await apiAdminUpdateWord(vocabulary);
+
+      console.log(resp);
+      fetchVocabulary();
     } else {
-      // Add new vocabulary
-      setVocabularyList([...vocabularyList, vocabulary]);
+      const resp = await apiAdminCreateWord(vocabulary);
+      console.log(resp);
+      fetchVocabulary();
     }
 
     setIsModalOpen(false);

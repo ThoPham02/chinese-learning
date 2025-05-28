@@ -1,36 +1,35 @@
 import React, { useState } from 'react';
-import { X, Save, AlertCircle, Plus } from 'lucide-react';
-import { useTests } from '../../context/TestContext';
-import { Test, Question, vocabularyOptions, questionTypes, hskLevels } from '../../types';
+import { X, PlusCircle, AlertCircle } from 'lucide-react';
+import { useTests } from '../../../context/TestContext';
+import { Test, Question, vocabularyOptions, questionTypes, hskLevels } from '../../../types';
 import { QuestionForm } from './QuestionForm';
 
-interface TestDetailsModalProps {
-  testId: string;
+interface CreateTestModalProps {
+  isOpen: boolean;
   onClose: () => void;
 }
 
-export const TestDetailsModal: React.FC<TestDetailsModalProps> = ({ testId, onClose }) => {
-  const { tests, updateTest } = useTests();
-  const test = tests.find(t => t.id === testId);
-
-  if (!test) return null;
-
-  const [title, setTitle] = useState(test.title);
-  const [questionCount, setQuestionCount] = useState(test.questionCount);
-  const [timeLimit, setTimeLimit] = useState(test.timeLimit);
-  const [hskLevel, setHskLevel] = useState(test.hskLevel);
-  const [questions, setQuestions] = useState<Question[]>(test.questions);
+export const CreateTestModal: React.FC<CreateTestModalProps> = ({ isOpen, onClose }) => {
+  const { addTest } = useTests();
+  
+  const [title, setTitle] = useState('');
+  const [questionCount, setQuestionCount] = useState(10);
+  const [timeLimit, setTimeLimit] = useState(15);
+  const [hskLevel, setHskLevel] = useState(1);
+  const [questions, setQuestions] = useState<Question[]>([
+    { id: '1', order: 1, vocabulary: vocabularyOptions[0], questionType: questionTypes[0] }
+  ]);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const addQuestion = () => {
     const newOrder = questions.length + 1;
     setQuestions([
-      ...questions,
-      {
-        id: Date.now().toString(),
-        order: newOrder,
-        vocabulary: vocabularyOptions[0],
-        questionType: questionTypes[0]
+      ...questions, 
+      { 
+        id: Date.now().toString(), 
+        order: newOrder, 
+        vocabulary: vocabularyOptions[0], 
+        questionType: questionTypes[0] 
       }
     ]);
   };
@@ -69,28 +68,45 @@ export const TestDetailsModal: React.FC<TestDetailsModalProps> = ({ testId, onCl
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+    
     if (!validateForm()) return;
-
-    const updatedTest: Test = {
-      ...test,
+    
+    const newTest: Test = {
+      id: Date.now().toString(),
       title,
       questionCount,
       timeLimit,
       hskLevel,
       questions
     };
-
-    updateTest(updatedTest);
+    
+    addTest(newTest);
+    resetForm();
     onClose();
   };
 
+  const resetForm = () => {
+    setTitle('');
+    setQuestionCount(10);
+    setTimeLimit(15);
+    setHskLevel(1);
+    setQuestions([
+      { id: '1', order: 1, vocabulary: vocabularyOptions[0], questionType: questionTypes[0] }
+    ]);
+    setErrors({});
+  };
+
+  if (!isOpen) return null;
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col animate-fadeIn">
+      <div 
+        className="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col animate-fadeIn"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="p-6 border-b border-gray-200 flex justify-between items-center">
-          <h2 className="text-xl font-bold text-gray-800">Chi tiết bài kiểm tra</h2>
-          <button
+          <h2 className="text-xl font-bold text-gray-800">Tạo bài kiểm tra mới</h2>
+          <button 
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700 transition-colors duration-200"
           >
@@ -188,7 +204,7 @@ export const TestDetailsModal: React.FC<TestDetailsModalProps> = ({ testId, onCl
                   onClick={addQuestion}
                   className="flex items-center gap-1 text-red-600 hover:text-red-800 font-medium"
                 >
-                  <Plus size={18} />
+                  <PlusCircle size={18} />
                   <span>Thêm câu hỏi</span>
                 </button>
               </div>
@@ -219,10 +235,9 @@ export const TestDetailsModal: React.FC<TestDetailsModalProps> = ({ testId, onCl
           <button
             type="button"
             onClick={handleSubmit}
-            className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors duration-200"
+            className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors duration-200"
           >
-            <Save size={18} />
-            <span>Lưu thay đổi</span>
+            Lưu bài kiểm tra
           </button>
         </div>
       </div>

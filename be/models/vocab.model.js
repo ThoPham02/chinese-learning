@@ -16,7 +16,7 @@ const Vocab = sequelize.define(
     example_vi: { type: DataTypes.TEXT },
     example_cn: { type: DataTypes.TEXT },
     example_pinyin: { type: DataTypes.TEXT },
-    audio_url: { type: DataTypes.STRING(255) },
+    explain: { type: DataTypes.STRING(255) },
   },
   {
     tableName: "vocabulary",

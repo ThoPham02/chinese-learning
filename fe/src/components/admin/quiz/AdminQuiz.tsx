@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TestList } from "./TestList";
 import { CreateTestModal } from "./CreateTestModal";
-import { TestProvider } from "../../context/TestContext";
+import { TestProvider } from "../../../context/TestContext";
 
 const AdminQuiz = () => {
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);

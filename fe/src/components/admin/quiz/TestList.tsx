@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useTests } from '../../context/TestContext';
+import { useTests } from '../../../context/TestContext';
 import { Clock, BookOpen, GraduationCap, Filter, Plus, Trash2, Eye } from 'lucide-react';
-import { hskLevels } from '../../types';
+import { hskLevels } from '../../../types';
 import { TestDetailsModal } from './TestDetailsModal';
 
 interface TestListProps {

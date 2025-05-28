@@ -1,4 +1,4 @@
-import { Word } from "../types";
+import { Vocabulary, Word } from "../types";
 import axios from "./axios";
 
 // Kiểu dữ liệu chung
@@ -63,7 +63,7 @@ export const apiGetCurrent = (): Promise<ApiResponse> =>
   });
 
 // filter words
-export const filterWords = (levels: number): Promise<ApiResponse> =>
+export const filterWords = (levels: number, search: string): Promise<ApiResponse> =>
   new Promise(async (resolve, reject) => {
     try {
       const response = await axios({
@@ -71,6 +71,7 @@ export const filterWords = (levels: number): Promise<ApiResponse> =>
         url: "/word/filter",
         params: {
           levels,
+          search
         },
       });
 
@@ -138,10 +139,60 @@ export const apiUpdateWord = (wordId: number, isCorrect: boolean): Promise<ApiRe
       const response = await axios({
         method: "post",
         url: `/word/update`,
-        data: { 
+        data: {
           wordId,
           isCorrect,
         },
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+
+// ADMIN API
+// create new word
+export const apiAdminCreateWord = (word: Vocabulary): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "post",
+        url: "/word",
+        data: word,
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+// update existing word
+export const apiAdminUpdateWord = (word: Vocabulary): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "put",
+        url: `/word/${word.id}`,
+        data: word,
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+// delete word
+export const apiAdminDeleteWord = (wordId: number): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "delete",
+        url: `/word/${wordId}`,
       });
 
       resolve(response.data);

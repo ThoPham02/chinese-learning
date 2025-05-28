@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trash2 } from 'lucide-react';
-import { Question, vocabularyOptions, questionTypes } from '../../types';
+import { Question, vocabularyOptions, questionTypes } from '../../../types';
 
 interface QuestionFormProps {
   question: Question;

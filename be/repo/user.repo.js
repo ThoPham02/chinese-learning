@@ -1,38 +1,44 @@
-const { Op } = require("sequelize");
-const { Vocab } = require("../models");
+const { Op } = require("sequelize"); // đảm bảo bạn đã import Op
+const Vocab = require("../models/vocab.model"); // import model Vocab
 
-/**
- * Lấy danh sách từ vựng theo level, kèm meaning_option và hanzi_option
- * @param {number[]} levels - Mảng level muốn lọc (vd: [1, 2])
- */
-exports.getVocabularyByLevels = async (levels) => {
+exports.getVocabularyByLevels = async (levels, search) => {
   try {
-    // 1. Lấy toàn bộ từ vựng theo level
+    // 1. Xây dựng điều kiện where cho levels và search
+    const whereConditions = {};
+
+    if (levels && levels.length > 0) {
+      whereConditions.level = { [Op.in]: levels };
+    }
+
+    if (search && search.trim() !== "") {
+      whereConditions[Op.or] = [
+        { meaning: { [Op.like]: `%${search}%` } },
+        { hanzi: { [Op.like]: `%${search}%` } },
+      ];
+    }
+
+    // 2. Lấy toàn bộ từ vựng theo điều kiện where
     const words = await Vocab.findAll({
-      where: !levels || levels.length === 0
-        ? undefined
-        : {
-            level: levels.length === 1 ? levels[0] : { [Op.in]: levels },
-          },
+      where: Object.keys(whereConditions).length === 0 ? undefined : whereConditions,
       order: [["id", "ASC"]],
       raw: true,
     });
 
-    // 2. Tạo map level → danh sách từ vựng cùng level
+    // 3. Tạo map level → danh sách từ vựng cùng level
     const levelMap = {};
     for (const word of words) {
       if (!levelMap[word.level]) levelMap[word.level] = [];
       levelMap[word.level].push(word);
     }
 
-    // 3. Hàm lấy các lựa chọn sai cùng level, không trùng current
+    // 4. Hàm lấy các lựa chọn sai cùng level, không trùng current
     function getRandomOptionsSameLevel(wordId, levelWords, count = 3) {
       const others = levelWords.filter(w => w.id !== wordId);
       const shuffled = others.sort(() => Math.random() - 0.5);
       return shuffled.slice(0, count);
     }
 
-    // 4. Gắn meaning_option và hanzi_option
+    // 5. Gắn meaning_option và hanzi_option
     const result = words.map(word => {
       const levelWords = levelMap[word.level];
       const distractors = getRandomOptionsSameLevel(word.id, levelWords);

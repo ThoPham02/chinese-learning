@@ -9,8 +9,8 @@ import ReviewContainer from "../components/review/ReviewContainer";
 import QuizContainer from "../components/quiz/QuizContainer";
 import ProgressDashboard from "../components/progress/ProgressDashboard";
 import LearnWord from "../components/progress/LearnWord";
-import AdminQuiz from "../components/admin/AdminQuiz";
-import AdminWord from "../components/admin/AdminWord";
+import AdminQuiz from "../components/admin/quiz/AdminQuiz";
+import AdminWord from "../components/admin/words/AdminWord";
 import AdminDashBoard from "../components/admin/AdminDashBoard";
 
 export const AppRoute: RouteObject[] = [

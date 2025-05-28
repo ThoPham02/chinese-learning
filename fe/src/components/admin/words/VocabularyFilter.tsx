@@ -1,5 +1,5 @@
 import React from 'react';
-import { HSKLevel } from '../../types';
+import { HSKLevel } from '../../../types';
 
 interface VocabularyFilterProps {
   searchTerm: string;

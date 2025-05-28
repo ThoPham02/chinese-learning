@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Edit, Trash } from 'lucide-react';
-import { Vocabulary } from '../../types';
+import { Vocabulary } from '../../../types';
 
 interface VocabularyTableProps {
   vocabularyList: Vocabulary[];
@@ -125,16 +125,16 @@ const VocabularyTable: React.FC<VocabularyTableProps> = ({
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <h4 className="text-sm font-medium text-gray-900 mb-2">Ví dụ Tiếng Việt:</h4>
-                        <p className="text-sm text-gray-600">{vocabulary.vietnameseExample}</p>
+                        <p className="text-sm text-gray-600">{vocabulary.exampleVn}</p>
                       </div>
                       <div>
                         <h4 className="text-sm font-medium text-gray-900 mb-2">Ví dụ Tiếng Trung:</h4>
-                        <p className="text-sm text-gray-600">{vocabulary.chineseExample}</p>
-                        <p className="text-sm text-gray-500 mt-1">{vocabulary.chineseExamplePinyin}</p>
+                        <p className="text-sm text-gray-600">{vocabulary.exampleCn}</p>
+                        <p className="text-sm text-gray-500 mt-1">{vocabulary.examplePinyin}</p>
                       </div>
                       <div className="md:col-span-2">
                         <h4 className="text-sm font-medium text-gray-900 mb-2">Giải thích:</h4>
-                        <p className="text-sm text-gray-600">{vocabulary.explanation}</p>
+                        <p className="text-sm text-gray-600">{vocabulary.explain}</p>
                       </div>
                     </div>
                   </td>

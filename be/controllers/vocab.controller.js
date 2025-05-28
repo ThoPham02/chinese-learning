@@ -7,7 +7,7 @@ const responseCode = require("../const/responseCode");
 const LearningProgress = require("../models/learnProgress.model");
 const { getVocabularyByLevels } = require("../repo/user.repo");
 const vocabService = require("../repo/userVoca.repo");
-const { UserVocab } = require("../models");
+const { UserVocab, Vocab } = require("../models");
 
 // 1. Lấy từ mới để học
 exports.getWordsToLearn = async (req, res) => {
@@ -194,8 +194,9 @@ exports.getAllVocab = async (req, res) => {
     const levels = req.query.levels
       ? req.query.levels.split(",").map(Number)
       : [];
+    const search = req.query.search || "";
 
-    const words = await getVocabularyByLevels(levels);
+    const words = await getVocabularyByLevels(levels, search);
 
     const dataRes = words.map((word) => {
       return {
@@ -209,6 +210,7 @@ exports.getAllVocab = async (req, res) => {
         examplePinyin: word.example_pinyin,
         meaningOption: word.meaning_option,
         hanziOption: word.hanzi_option,
+        explanation: word.explain,
       };
     });
 
@@ -219,6 +221,183 @@ exports.getAllVocab = async (req, res) => {
     });
   } catch (error) {
     console.log("Error fetching vocabulary:", error);
+
+    return apiResponse(res, {
+      code: responseCode.SERVER_ERROR.code,
+      mess: responseCode.SERVER_ERROR.mess,
+    });
+  }
+};
+
+exports.createWord = async (req, res) => {
+  try {
+    // Lấy dữ liệu từ body
+    const {
+      hanzi,
+      pinyin,
+      meaning,
+      exampleVn,
+      exampleCn,
+      examplePinyin,
+      level,
+      explain,
+    } = req.body;
+
+    // kiem tra tu da ton tai chua
+    const existingWord = await Vocab.findOne({
+      where: {
+        hanzi,
+      },
+    });
+    if (existingWord) {
+      return apiResponse(res, {
+        code: responseCode.INVALID_INPUT.code,
+        mess: "Từ vựng đã tồn tại",
+      });
+    }
+
+    // insert từ mới vào cơ sở dữ liệu
+    const newWord = await Vocab.create({
+      level,
+      hanzi,
+      pinyin,
+      meaning,
+      example_vi: exampleVn,
+      example_cn: exampleCn,
+      example_pinyin: examplePinyin,
+      explain,
+    });
+
+    return apiResponse(res, {
+      code: responseCode.SUCCESS.code,
+      mess: responseCode.SUCCESS.mess,
+      data: newWord,
+    });
+  } catch (error) {
+    console.log("Error fetching vocabulary:", error);
+
+    return apiResponse(res, {
+      code: responseCode.SERVER_ERROR.code,
+      mess: responseCode.SERVER_ERROR.mess,
+    });
+  }
+};
+
+exports.updateWord = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const {
+      hanzi,
+      pinyin,
+      meaning,
+      exampleVn,
+      exampleCn,
+      examplePinyin,
+      level,
+      explain,
+    } = req.body;
+
+    // Kiểm tra từ vựng có tồn tại không
+    const existingWord = await Vocab.findOne({
+      where: {
+        id,
+      },
+    });
+    if (!existingWord) {
+      return apiResponse(res, {
+        code: responseCode.NOT_FOUND.code,
+        mess: "Từ vựng không tồn tại",
+      });
+    }
+
+    // Kiểm tra từ vựng có trùng lặp không
+    const duplicateWord = await Vocab.findOne({
+      where: {
+        hanzi,
+        id: { [Op.ne]: id }, // loại trừ từ hiện tại
+      },
+    });
+    if (duplicateWord) {
+      return apiResponse(res, {
+        code: responseCode.INVALID_INPUT.code,
+        mess: "Từ vựng đã tồn tại",
+      });
+    }
+
+    // Cập nhật từ vựng
+    const updatedWord = await Vocab.update(
+      {
+        level,
+        hanzi,
+        pinyin,
+        meaning,
+        example_vi: exampleVn,
+        example_cn: exampleCn,
+        example_pinyin: examplePinyin,
+        explain,
+      },
+      { where: { id } }
+    );
+
+    return apiResponse(res, {
+      code: responseCode.SUCCESS.code,
+      mess: responseCode.SUCCESS.mess,
+      data: updatedWord,
+    });
+  } catch (error) {
+    console.error("Error updating word:", error);
+
+    return apiResponse(res, {
+      code: responseCode.SERVER_ERROR.code,
+      mess: responseCode.SERVER_ERROR.mess,
+    });
+  }
+};
+
+exports.deleteWord = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // Kiểm tra từ vựng có tồn tại không
+    const existingWord = await Vocab.findOne({
+      where: {
+        id,
+      },
+    });
+    if (!existingWord) {
+      return apiResponse(res, {
+        code: responseCode.NOT_FOUND.code,
+        mess: "Từ vựng không tồn tại",
+      });
+    }
+
+    // kiểm tra từ vựng có đang được sử dụng trong user_voca không
+    const userVocabCount = await UserVocab.count({
+      where: {
+        vocabulary_id: id,
+      },
+    });
+    if (userVocabCount > 0) {
+      return apiResponse(res, {
+        code: responseCode.INVALID_INPUT.code,
+        mess: "Từ vựng đang được sử dụng trong học viên, không thể xóa",
+      });
+    }
+
+    // Xóa từ vựng
+    await Vocab.destroy({
+      where: {
+        id,
+      },
+    });
+
+    return apiResponse(res, {
+      code: responseCode.SUCCESS.code,
+      mess: responseCode.SUCCESS.mess,
+      data: null,
+    });
+  } catch (error) {
+    console.error("Error deleting word:", error);
 
     return apiResponse(res, {
       code: responseCode.SERVER_ERROR.code,

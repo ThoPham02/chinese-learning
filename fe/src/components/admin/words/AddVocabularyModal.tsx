@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Vocabulary, HSKLevel } from '../../types';
+import { Vocabulary, HSKLevel } from '../../../types';
 import { X } from 'lucide-react';
 
 interface AddVocabularyModalProps {
@@ -21,10 +21,10 @@ const AddVocabularyModal: React.FC<AddVocabularyModalProps> = ({
     pinyin: '',
     meaning: '',
     level: 1,
-    vietnameseExample: '',
-    chineseExample: '',
-    chineseExamplePinyin: '',
-    explanation: '',
+    exampleVn: '',
+    exampleCn: '',
+    examplePinyin: '',
+    explain: '',
   };
 
   const [formData, setFormData] = useState<Vocabulary>(initialFormState);
@@ -160,14 +160,14 @@ const AddVocabularyModal: React.FC<AddVocabularyModalProps> = ({
               </div>
 
               <div>
-                <label htmlFor="vietnameseExample" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="exampleVn" className="block text-sm font-medium text-gray-700 mb-1">
                   Ví dụ tiếng Việt
                 </label>
                 <textarea
-                  name="vietnameseExample"
-                  id="vietnameseExample"
+                  name="exampleVn"
+                  id="exampleVn"
                   rows={2}
-                  value={formData.vietnameseExample}
+                  value={formData.exampleVn}
                   onChange={handleChange}
                   className="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
                 />
@@ -182,7 +182,7 @@ const AddVocabularyModal: React.FC<AddVocabularyModalProps> = ({
                     name="chineseExample"
                     id="chineseExample"
                     rows={2}
-                    value={formData.chineseExample}
+                    value={formData.exampleCn}
                     onChange={handleChange}
                     className="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
                   />
@@ -196,7 +196,7 @@ const AddVocabularyModal: React.FC<AddVocabularyModalProps> = ({
                     name="chineseExamplePinyin"
                     id="chineseExamplePinyin"
                     rows={2}
-                    value={formData.chineseExamplePinyin}
+                    value={formData.examplePinyin}
                     onChange={handleChange}
                     className="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
                   />
@@ -211,7 +211,7 @@ const AddVocabularyModal: React.FC<AddVocabularyModalProps> = ({
                   name="explanation"
                   id="explanation"
                   rows={3}
-                  value={formData.explanation}
+                  value={formData.explain}
                   onChange={handleChange}
                   className="block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm"
                 />
