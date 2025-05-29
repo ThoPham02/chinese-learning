@@ -203,3 +203,75 @@ export const apiAdminDeleteWord = (wordId: number): Promise<ApiResponse> => {
     }
   });
 }
+
+
+// filter quizs
+export const filterQuizs = (search: string, level: number): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "post",
+        url: "/quiz/filter",
+        params: {
+          search,
+          level,
+        },
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+// create new quiz
+export const apiAdminCreateQuiz = (quiz: any): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "post",
+        url: "/quiz",
+        data: quiz,
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+// update existing quiz
+export const apiAdminUpdateQuiz = (quiz: any): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "put",
+        url: `/quiz/${quiz.id}`,
+        data: quiz,
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+// delete quiz
+export const apiAdminDeleteQuiz = (quizId: number): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "delete",
+        url: `/quiz/${quizId}`,
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+

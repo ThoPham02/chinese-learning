@@ -17,12 +17,70 @@ exports.getAllQuizzes = async (level, search) => {
         };
     }
 
-    return await quiz.findAll({
+    // 1. Lấy danh sách quiz thỏa điều kiện
+    const quizzes = await quiz.findAll({
         where,
         order: [["id", "DESC"]],
-        limit: 6,
+        raw: true,
     });
-}
+
+    // 2. Lấy tất cả quiz_id để truy vấn câu hỏi
+    const quizIds = quizzes.map(q => q.id);
+
+    if (quizIds.length === 0) return [];
+
+    // 3. Lấy tất cả câu hỏi thuộc các quiz đó
+    const questions = await quizQuestion.findAll({
+        where: { quiz_id: { [Op.in]: quizIds } },
+        attributes: ['id', 'quiz_id', 'vocabulary_id', 'order', 'type'],
+        raw: true,
+    });
+
+    // 4. Lấy tất cả từ vựng liên quan đến các câu hỏi
+    const vocabIds = questions.map(q => q.vocabulary_id);
+    const vocabs = await Vocab.findAll({
+        where: { id: { [Op.in]: vocabIds } },
+        attributes: [
+            'id',
+            'hanzi',
+            'meaning',
+            'pinyin',
+            'example_vi',
+            'example_cn',
+            'example_pinyin',
+            'explain',
+        ],
+        raw: true,
+    });
+
+    // 5. Map từ vựng theo id để dễ lookup
+    const vocabMap = vocabs.reduce((acc, vocab) => {
+        acc[vocab.id] = vocab;
+        return acc;
+    }, {});
+
+    // 6. Gắn từ vựng vào câu hỏi
+    const questionsWithVocab = questions.map(q => ({
+        ...q,
+        vocabulary: vocabMap[q.vocabulary_id] || null,
+    }));
+
+    // 7. Gom câu hỏi theo quiz_id
+    const questionsByQuizId = questionsWithVocab.reduce((acc, q) => {
+        if (!acc[q.quiz_id]) acc[q.quiz_id] = [];
+        acc[q.quiz_id].push(q);
+        return acc;
+    }, {});
+
+    // 8. Gắn câu hỏi có từ vựng vào từng quiz
+    const quizzesWithQuestions = quizzes.map(q => ({
+        ...q,
+        questions: questionsByQuizId[q.id] || [],
+    }));
+
+    return quizzesWithQuestions;
+};
+
 
 exports.countQuizzes = async (level, search) => {
     const where = {};
@@ -53,6 +111,7 @@ exports.createQuiz = async (quizData) => {
     for (const question of questions) {
         await quizQuestion.create({
             quiz_id: newQuiz.id,
+            order: question.order,
             vocabulary_id: question.vocabulary_id,
             type: question.type,
         });
@@ -75,6 +134,7 @@ exports.updateQuiz = async (id, quizData) => {
     for (const question of questions) {
         await quizQuestion.create({
             quiz_id: id,
+            order: question.order,
             vocabulary_id: question.vocabulary_id,
             type: question.type,
         });
@@ -99,7 +159,7 @@ exports.getQuizById = async (id) => {
   // 2. Lấy câu hỏi của quiz
   const questions = await quizQuestion.findAll({
     where: { quiz_id: id },
-    attributes: ['id', 'vocabulary_id', 'type'],
+    attributes: ['id', 'vocabulary_id', 'order', 'type'],
   });
 
   const vocabIds = questions.map(q => q.vocabulary_id);

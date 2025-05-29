@@ -40,6 +40,7 @@ instance.interceptors.request.use(
 const NO_TOAST_API_LIST = [
   "/user/login",
   "/user/register",
+  "/quiz/filter"
 ];
 
 // Intercept response to show toast or handle error codes

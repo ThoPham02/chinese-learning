@@ -8,22 +8,12 @@ const quizService = require("../repo/quiz.repo");
 exports.filterQuiz = async (req, res) => {
     try {
         const { level, search } = req.query;
-        console.log("Query parameters:", { level, search });
-        const count = await quizService.countQuizzes(level, search);
-        console.log("Count of quizzes:", count);
-        if (count === 0) {
-            return apiResponse(res, {
-                code: responseCode.NOT_FOUND.code,
-                mess: responseCode.NOT_FOUND.mess,
-            });
-        }
-
         const quizzes = await quizService.getAllQuizzes(level, search);
+        
         return apiResponse(res, {
             code: responseCode.SUCCESS.code,
             mess: responseCode.SUCCESS.mess,
             data: quizzes,
-            total: count
         });
     } catch (error) {
         console.error("Error in getAllQuizzes:", error);
@@ -170,7 +160,6 @@ exports.getQuizById = async (req, res) => {
 
         // Get quiz by ID
         const quiz = await quizService.getQuizById(id);
-
         if (!quiz) {
             return apiResponse(res, {
                 code: responseCode.NOT_FOUND.code,
