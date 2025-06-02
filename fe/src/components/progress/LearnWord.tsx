@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Question, QuizQuestion, Vocabulary } from "../../types";
+import { QuizQuestion, Vocabulary } from "../../types";
 import { apiGetLearnWords, apiUpdateWord } from "../../store/service";
 import Flashcard from "../flashcards/Flashcard";
 import QuizCard from "../review/QuizCard";

@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Volume2, ChevronLeft, ChevronRight } from "lucide-react";
-import { Word } from "../../types";
+import { Vocabulary } from "../../types";
 import Practice from "./Practice";
 
 interface FlashcardProps {
-  word: Word;
+  word: Vocabulary;
   onNext: () => void;
   onPrevious: () => void;
   learnStage: boolean;
-  // onChangeStage: (stage: number) => void;
 }
 
 const Flashcard: React.FC<FlashcardProps> = ({

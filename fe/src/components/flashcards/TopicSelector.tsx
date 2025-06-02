@@ -1,6 +1,5 @@
 import React from 'react';
 import { Topic } from '../../types';
-import { iconMap } from '../../data/mockData';
 
 interface TopicSelectorProps {
   topics: Topic[];
@@ -8,44 +7,39 @@ interface TopicSelectorProps {
   onSelectTopic: (topic: Topic) => void;
 }
 
-const TopicSelector: React.FC<TopicSelectorProps> = ({ 
-  topics, 
-  selectedTopic, 
-  onSelectTopic 
+const TopicSelector: React.FC<TopicSelectorProps> = ({
+  topics,
+  selectedTopic,
+  onSelectTopic,
 }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedId = e.target.value;
+    // convert selectedId to number if necessary
+    const id = parseInt(selectedId, 10);
+
+    const topic = topics.find((t) => t.id === id);
+    if (topic) {
+      onSelectTopic(topic);
+    }
+  };
+
   return (
-    <div className="bg-white rounded-xl shadow-md p-5">
-      <h2 className="text-xl font-semibold text-gray-800 mb-4">Level</h2>
-      
-      <div className="space-y-2">
-        {topics.map((topic) => {
-          const IconComponent = iconMap[topic.iconName];
-          
-          return (
-            <button
-              key={topic.id}
-              className={`w-full text-left p-3 rounded-lg transition-all duration-200 flex items-center ${
-                selectedTopic?.id === topic.id
-                  ? 'bg-blue-100 text-blue-700'
-                  : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
-              }`}
-              onClick={() => onSelectTopic(topic)}
-            >
-              <div className={`p-2 rounded-full mr-3 ${
-                selectedTopic?.id === topic.id
-                  ? 'bg-blue-200'
-                  : 'bg-gray-200'
-              }`}>
-                {IconComponent && <IconComponent className="w-5 h-5" />}
-              </div>
-              <div className="flex-1">
-                <p className="font-medium">{topic.name}</p>
-                <p className="text-xs text-gray-500">{topic.totalWords} từ</p>
-              </div>
-            </button>
-          );
-        })}
-      </div>
+    <div>
+      <label htmlFor="topic-select" className="block text-sm font-medium text-gray-700 mb-2">
+        Chọn cấp độ
+      </label>
+      <select
+        id="topic-select"
+        value={selectedTopic?.id || ''}
+        onChange={handleChange}
+        className="block w-full p-3 border border-gray-300 rounded-lg text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        {topics.map((topic) => (
+          <option key={topic.id} value={topic.id}>
+            {topic.name}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };

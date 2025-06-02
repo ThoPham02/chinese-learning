@@ -2,13 +2,13 @@ import React from 'react';
 import { Award, Clock, CheckCircle } from 'lucide-react';
 import { Volume2, Bookmark } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { iconMap, topics } from '../../data/mockData';
+import Pronoun from './Pronoun';
 
 const Hero: React.FC = () => {
   return (
     <div className="bg-gradient-to-b from-white to-blue-50 py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Học tiếng Trung hiệu quả với <span className="text-red-600">ChineseViet</span>
@@ -39,6 +39,11 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                <button 
+                onClick={() => {window.scrollTo({ top: window.innerHeight, behavior: "smooth" });}}
+                className="px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors shadow-sm">
+                  Làm quen với cách phát âm
+                </button>
               <Link to="/flashcards">
                 <button className="px-6 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors shadow-sm">
                   Bắt đầu học ngay
@@ -87,8 +92,12 @@ const Hero: React.FC = () => {
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-red-200 rounded-full -z-10 opacity-70"></div>
           </div>
         </div>
+
+        <div className='mt-48 text-center'>
+          <Pronoun />
+        </div>
         
-        <div className="mt-20">
+        {/* <div className="">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Cấp độ từ vựng</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -122,7 +131,7 @@ const Hero: React.FC = () => {
             )
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
