@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Word } from '../../types';
+import { Vocabulary } from '../../types';
 import { QUIZ_TYPE } from '../../common/const';
 import { Check, Volume2, X } from 'lucide-react';
 
 type FillBlankProps = {
     type: number;
-    word: Word;
+    word: Vocabulary;
     onAnswer: (isCorrect: boolean) => void;
     onNext: () => void;
 };

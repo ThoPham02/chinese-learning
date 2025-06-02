@@ -1,126 +1,42 @@
-import React, { useState } from "react";
-import { Brain, Volume2, PenLine, ArrowLeftRight } from "lucide-react";
-import { topics } from "../../data/mockData";
+import { useEffect, useState } from "react";
+import QuizFilter from "../admin/quizs/QuizFilter";
+import { HSKLevel } from "../../types";
+import { filterQuizs } from "../../store/service";
+import ListQuiz from "./ListQuiz";
 
-type QuizType = "multiple-choice" | "matching" | "listening" | "fill-blank";
+const QuizContainer = () => {
+  const [search, setSearch] = useState("");
+  const [level, setLevel] = useState<HSKLevel>(1);
+  const [quizs, setQuizs] = useState([]);
 
-interface QuizTypeOption {
-  id: QuizType;
-  name: string;
-  description: string;
-  icon: React.ReactNode;
-}
+  const fetchQuiz = async () => {
+    const resp = await filterQuizs(search, level);
 
-const QuizContainer: React.FC = () => {
-  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
-  const [selectedQuizType, setSelectedQuizType] = useState<QuizType | null>(
-    null
-  );
-  const [isStarted, setIsStarted] = useState(false);
-
-  const quizTypes: QuizTypeOption[] = [
-    {
-      id: "multiple-choice",
-      name: "Trắc nghiệm",
-      description: "Chọn đáp án đúng từ 4 lựa chọn",
-      icon: <Brain className="w-6 h-6" />,
-    },
-    {
-      id: "listening",
-      name: "Nghe và chọn",
-      description: "Nghe từ và chọn nghĩa đúng",
-      icon: <Volume2 className="w-6 h-6" />,
-    },
-    {
-      id: "fill-blank",
-      name: "Điền từ",
-      description: "Điền từ tiếng Trung vào chỗ trống",
-      icon: <PenLine className="w-6 h-6" />,
-    },
-    {
-      id: "matching",
-      name: "Nối từ",
-      description: "Nối từ tiếng Trung với nghĩa tiếng Việt",
-      icon: <ArrowLeftRight className="w-6 h-6" />,
-    },
-  ];
-
-  const handleStart = () => {
-    if (selectedQuizType) {
-      setIsStarted(true);
-    }
+    setQuizs(resp.data);
   };
 
-  if (!isStarted) {
-    return (
-      <div className="container mx-auto px-4 py-8">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Kiểm tra từ vựng
-          </h1>
-          <p className="text-gray-600">
-            Chọn chủ đề và loại bài kiểm tra bạn muốn thực hiện
-          </p>
-        </div>
-
-          <h2 className="text-xl font-semibold mb-4">Chọn loại bài kiểm tra</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {quizTypes.map((type) => (
-              <button
-                key={type.id}
-                onClick={() => setSelectedQuizType(type.id)}
-                className={`w-full p-4 rounded-lg border transition-all ${
-                  selectedQuizType === type.id
-                    ? "border-blue-500 bg-blue-50"
-                    : "border-gray-200 hover:border-blue-300"
-                }`}
-              >
-                <div className="flex items-center">
-                  <div
-                    className={`p-2 rounded-full ${
-                      selectedQuizType === type.id
-                        ? "bg-blue-100"
-                        : "bg-gray-100"
-                    }`}
-                  >
-                    {React.cloneElement(type.icon as React.ReactElement, {
-                      className:
-                        selectedQuizType === type.id
-                          ? "text-blue-600"
-                          : "text-gray-600",
-                    })}
-                  </div>
-                  <div className="ml-3 text-left">
-                    <p className="font-medium">{type.name}</p>
-                    <p className="text-sm text-gray-500">{type.description}</p>
-                  </div>
-                </div>
-              </button>
-            ))}
-          </div>
-
-        <div className="mt-8 flex justify-center">
-          <button
-            onClick={handleStart}
-            disabled={!selectedQuizType}
-            className={`px-8 py-3 rounded-lg font-medium ${
-              selectedQuizType
-                ? "bg-blue-600 text-white hover:bg-blue-700"
-                : "bg-gray-200 text-gray-500 cursor-not-allowed"
-            }`}
-          >
-            Bắt đầu kiểm tra
-          </button>
-        </div>
-      </div>
-    );
-  }
+  useEffect(() => {
+    fetchQuiz();
+  }, [search, level]);
 
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Quiz content will be implemented in the next step */}
-      <div className="text-center">
-        <p className="text-xl">Bài kiểm tra đang được tải...</p>
+      <div className="space-y-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div>
+            <h2 className="text-2xl font-bold text-gray-800">
+              Danh sách bài kiểm tra
+            </h2>
+          </div>
+        </div>
+
+        <QuizFilter
+          searchTerm={search}
+          setSearchTerm={setSearch}
+          selectedLevel={level}
+          setSelectedLevel={setLevel}
+        />
+        <ListQuiz listQuiz={quizs} />
       </div>
     </div>
   );

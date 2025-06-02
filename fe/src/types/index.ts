@@ -1,17 +1,17 @@
 import { QUIZ_TYPE } from "../common/const";
 
-export interface Word {
-  id: number;
-  level: number;
-  hanzi: string;
-  pinyin: string;
-  meaning: string;
-  exampleVn: string;
-  exampleCn: string;
-  examplePinyin: string;
-  meaningOption: string[];
-  hanziOption: string[];
-}
+// export interface Word {
+//   id: number;
+//   level: number;
+//   hanzi: string;
+//   pinyin: string;
+//   meaning: string;
+//   exampleVn: string;
+//   exampleCn: string;
+//   examplePinyin: string;
+//   meaningOption: string[];
+//   hanziOption: string[];
+// }
 
 export interface Topic {
   id: number;
@@ -32,7 +32,7 @@ export interface UserProgress {
 
 export interface QuizQuestion {
   type: number;
-  word: Word;
+  word: Vocabulary;
   options?: string[];
   correctAnswer: string;
 }
@@ -53,6 +53,7 @@ export interface Question {
   order: number;
   vocabulary_id: number;
   type: number;
+  vocabulary: Vocabulary;
 }
 
 export interface Test {
@@ -96,6 +97,8 @@ export interface Vocabulary {
   exampleVn: string;
   exampleCn: string;
   examplePinyin: string;
+  meaningOption: string[];
+  hanziOption: string[];
   explain: string;
 }
 
@@ -111,4 +114,4 @@ export interface Quiz {
   time: number;
   level: number;
   questions: Question[];
-}
+} 

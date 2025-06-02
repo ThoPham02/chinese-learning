@@ -58,14 +58,14 @@ const Header: React.FC = () => {
 
             {isLogined && user.username !== "Admin" &&(
               <>
-                <Link
+                {/* <Link
                   to="/review"
                   className={`text-gray-700 hover:text-red-600 transition-colors ${
                     isActive("/review") ? "text-red-600" : ""
                   }`}
                 >
                   Ôn tập
-                </Link>
+                </Link> */}
                 <Link
                   to="/quiz"
                   className={`text-gray-700 hover:text-red-600 transition-colors ${

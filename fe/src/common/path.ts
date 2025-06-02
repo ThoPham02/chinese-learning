@@ -15,6 +15,7 @@ export const API_URL = {
     LEARN_WORD: "/learn",
     REVIEW : "/review",
     QUIZ: "/quiz",
+    DO_QUIZ: "/quiz/:quizId",
     PROGRESS: "/progress",
     // admin routes
     ADMIN_DASHBOARD: "/admin",

@@ -1,4 +1,4 @@
-import { Vocabulary, Word } from "../types";
+import { Vocabulary } from "../types";
 import axios from "./axios";
 
 // Kiểu dữ liệu chung
@@ -265,6 +265,22 @@ export const apiAdminDeleteQuiz = (quizId: number): Promise<ApiResponse> => {
     try {
       const response = await axios({
         method: "delete",
+        url: `/quiz/${quizId}`,
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+// get quiz by id
+export const apiGetQuizById = (quizId: number): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "get",
         url: `/quiz/${quizId}`,
       });
 

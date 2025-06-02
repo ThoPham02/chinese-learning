@@ -18,8 +18,6 @@ exports.getWordsToLearn = async (req, res) => {
   });
   const level = progress ? progress.level : 1;
 
-  console.log("getWordsToLearn", userId, level);
-
   if (!userId || !level) {
     return apiResponse(res, {
       code: responseCode.INVALID_INPUT.code,

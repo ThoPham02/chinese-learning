@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Check, X, Volume2 } from 'lucide-react';
-import { QuizQuestion } from '../../types';
+import React from 'react';
+import { Question, QuizQuestion } from '../../types';
 import { QUIZ_TYPE } from '../../common/const';
 import MultiChoice from '../ui/MultiChoice';
 import ListenRepeat from '../ui/ListenRepeat';

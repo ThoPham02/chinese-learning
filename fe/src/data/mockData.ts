@@ -1,4 +1,4 @@
-import { Topic, Word, UserProgress, QuizQuestion, DailyTask } from '../types';
+import { Topic, DailyTask, Question, Vocabulary, QuizQuestion } from '../types';
 import { CalendarClock, School, Home, Briefcase, Plane, Utensils, ShoppingCart, Users, Music, BookOpen, Smile, Map, Library, Globe } from 'lucide-react';
 
 export const topics: Topic[] = [
@@ -92,53 +92,60 @@ export const iconMap: Record<string, React.ElementType> = {
   Globe,
 };
 
-// export const sampleWords: Word[] = [
-//   {
-//     id: 1,
-//     hanzi: '你好',
-//     pinyin: 'nǐ hǎo',
-//     meaning: 'Xin chào',
-//     exampleVn: 'Xin chào, bạn khỏe không?',
-//     exampleCn: '你好，你好吗？',
-//     level: 1,
-//   },
-//   {
-//     id: 2,
-//     hanzi: '谢谢',
-//     pinyin: 'xiè xiè',
-//     meaning: 'Cảm ơn',
-//     exampleVn: 'Cảm ơn bạn đã giúp tôi.',
-//     exampleCn: '谢谢你帮我。',
-//     level: 1,
-//   },
-//   {
-//     id: 3,
-//     hanzi: '学生',
-//     pinyin: 'xué shēng',
-//     meaning: 'Học sinh',
-//     exampleVn: 'Tôi là một học sinh.',
-//     exampleCn: '我是一名学生。',
-//     level: 2,
-//   },
-//   {
-//     id: 4,
-//     hanzi: '老师',
-//     pinyin: 'lǎo shī',
-//     meaning: 'Giáo viên',
-//     exampleVn: 'Cô ấy là giáo viên dạy tiếng Trung.',
-//     exampleCn: '她是中文老师。',
-//     level: 2,
-//   },
-//   {
-//     id: 5,
-//     hanzi: '工作',
-//     pinyin: 'gōng zuò',
-//     meaning: 'Công việc',
-//     exampleVn: 'Công việc của tôi rất thú vị.',
-//     exampleCn: '我的工作很有趣。',
-//     level: 3,
-//   },
-// ];
+export const sampleWords: Vocabulary[] = [
+  {
+    id: 2,
+    hanzi: '谢谢',
+    pinyin: 'xiè xiè',
+    meaning: 'Cảm ơn',
+    exampleVn: 'Cảm ơn bạn đã giúp tôi.',
+    exampleCn: '谢谢你帮我。',
+    examplePinyin: 'xiè xiè nǐ bāng wǒ.',
+    meaningOption: ['Cảm ơn', 'Xin chào', 'Tạm biệt', 'Xin lỗi'],
+    hanziOption: ['谢谢', '你好', '再见', '对不起'],
+    level: 1,
+    explain: "",
+  },
+  {
+    id: 2,
+    hanzi: '谢谢',
+    pinyin: 'xiè xiè',
+    meaning: 'Cảm ơn',
+    exampleVn: 'Cảm ơn bạn đã giúp tôi.',
+    exampleCn: '谢谢你帮我。',
+    examplePinyin: 'xiè xiè nǐ bāng wǒ.',
+    meaningOption: ['Cảm ơn', 'Xin chào', 'Tạm biệt', 'Xin lỗi'],
+    hanziOption: ['谢谢', '你好', '再见', '对不起'],
+    level: 1,
+    explain: "",
+  },
+  {
+    id: 5,
+    hanzi: '工作',
+    pinyin: 'gōng zuò',
+    meaning: 'Công việc',
+    exampleVn: 'Công việc của tôi rất thú vị.',
+    exampleCn: '我的工作很有趣。',
+    examplePinyin: 'wǒ de gōng zuò hěn yǒu qù.',
+    meaningOption: ['Công việc', 'Học sinh', 'Giáo viên', 'Bạn bè'],
+    hanziOption: ['工作', '学生', '老师', '朋友'],
+    level: 3,
+    explain: "",
+  },
+  {
+    id: 5,
+    hanzi: '工作',
+    pinyin: 'gōng zuò',
+    meaning: 'Công việc',
+    exampleVn: 'Công việc của tôi rất thú vị.',
+    exampleCn: '我的工作很有趣。',
+    examplePinyin: 'wǒ de gōng zuò hěn yǒu qù.',
+    meaningOption: ['Công việc', 'Học sinh', 'Giáo viên', 'Bạn bè'],
+    hanziOption: ['工作', '学生', '老师', '朋友'],
+    level: 3,
+    explain: "",
+  },
+];
 
 // export const userProgressMock: UserProgress = {
 //   level: 3,
@@ -150,32 +157,32 @@ export const iconMap: Record<string, React.ElementType> = {
 // };
 
 export const sampleQuestions: QuizQuestion[] = [
-  // {
-  //   type: 'multiple-choice',
-  //   word: sampleWords[0],
-  //   options: ['Xin chào', 'Cảm ơn', 'Tạm biệt', 'Xin lỗi'],
-  //   correctAnswer: 'Xin chào',
-  // },
-  // {
-  //   type: 'multiple-choice',
-  //   word: sampleWords[1],
-  //   options: ['Xin chào', 'Cảm ơn', 'Tạm biệt', 'Xin lỗi'],
-  //   correctAnswer: 'Cảm ơn',
-  // },
-  // {
-  //   type: 'fill-blank',
-  //   word: sampleWords[2],
-  //   correctAnswer: '学生',
-  // },
-  // {
-  //   type: 'listening',
-  //   word: sampleWords[3],
-  //   options: ['学生', '老师', '朋友', '家人'],
-  //   correctAnswer: '老师',
-  // },
-  // {
-  //   type: 'matching',
-  //   word: sampleWords[4],
-  //   correctAnswer: 'Công việc',
-  // },
+  {
+    type: 1,
+    word: sampleWords[0],
+    options: ['Xin chào', 'Cảm ơn', 'Tạm biệt', 'Xin lỗi'],
+    correctAnswer: 'Xin chào',
+  },
+  {
+    type: 2,
+    word: sampleWords[1],
+    options: ['Xin chào', 'Cảm ơn', 'Tạm biệt', 'Xin lỗi'],
+    correctAnswer: 'Cảm ơn',
+  },
+  {
+    type: 3,
+    word: sampleWords[2],
+    correctAnswer: '学生',
+  },
+  {
+    type: 4,
+    word: sampleWords[3],
+    options: ['学生', '老师', '朋友', '家人'],
+    correctAnswer: '老师',
+  },
+  {
+    type: 5,
+    word: sampleWords[4],
+    correctAnswer: 'Công việc',
+  },
 ];

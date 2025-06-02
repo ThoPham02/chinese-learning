@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { QuizQuestion, Word } from "../../types";
+import { Question, QuizQuestion, Vocabulary } from "../../types";
 import { apiGetLearnWords, apiUpdateWord } from "../../store/service";
 import Flashcard from "../flashcards/Flashcard";
 import QuizCard from "../review/QuizCard";
 import { Award, ChevronLeft } from "lucide-react"; // icon nếu bạn dùng
+import { Link } from "react-router-dom";
 
 const LearnWord: React.FC = () => {
-  const [filteredWords, setFilteredWords] = useState<Word[]>([]);
+  const [filteredWords, setFilteredWords] = useState<Vocabulary[]>([]);
   const [learnStage, setLearnStage] = useState(true);
   const [quizStage, setQuizStage] = useState(false);
 
@@ -23,7 +24,7 @@ const LearnWord: React.FC = () => {
       setFilteredWords(resp.data);
 
       // Tạo danh sách câu hỏi cho quiz
-      const questions = resp.data.map((word: Word) => ({
+      const questions = resp.data.map((word: Vocabulary) => ({
         type: Math.floor(Math.random() * 7) + 1, // random 1 - 7
         word,
         options: word.meaningOption,
@@ -47,7 +48,7 @@ const LearnWord: React.FC = () => {
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : filteredWords.length - 1));
   };
 
-  const handleAnswer =async (isCorrect: boolean) => {
+  const handleAnswer = async (isCorrect: boolean) => {
     const resp = await apiUpdateWord(
       quizQuestions[currentQuestionIndex].word.id,
       isCorrect
@@ -75,35 +76,25 @@ const LearnWord: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-4 gap-6">
-      <div className="lg:col-span-3">
+      <div className="lg:col-span-4">
         {filteredWords.length > 0 ? (
           <>
             <div className="mb-4 flex justify-between items-center">
               <h1 className="text-3xl font-bold text-gray-800 mb-2">
-                HSK Level {level} 
+                HSK Level {level}
               </h1>
-              <div>
-                <button
-                  onClick={() => {
-                    setQuizStage(true);
-                    setLearnStage(false);
-                  }}
-                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 mr-4"
-                >
-                  Kiểm tra
-                </button>
-              </div>
+              <div></div>
             </div>
 
             {quizStage ? (
               !isQuizComplete ? (
-                <div className="mx-auto">
+                <div className="max-w-2xl mx-auto">
                   <div className="flex justify-between items-center mb-4">
                     <p className="text-gray-600">
                       Câu hỏi {currentQuestionIndex + 1}/{quizQuestions.length}
                     </p>
                     <div className="bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-sm">
-                      Đúng: {correctAnswers}/{currentQuestionIndex+1}
+                      Đúng: {correctAnswers}/{currentQuestionIndex + 1}
                     </div>
                   </div>
 
@@ -176,7 +167,7 @@ const LearnWord: React.FC = () => {
                   <div className="flex justify-center space-x-4">
                     <button
                       onClick={resetQuiz}
-                      className="px-4 py-2 bg-white border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50"
+                      className="px-4 py-2 bg-white border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors flex items-center"
                     >
                       <ChevronLeft className="w-5 h-5 mr-1" />
                       Thử lại
@@ -191,19 +182,37 @@ const LearnWord: React.FC = () => {
                 </div>
               )
             ) : (
-              <Flashcard
-                word={filteredWords[currentIndex]}
-                onNext={handleNextCard}
-                onPrevious={handlePreviousCard}
-                learnStage={learnStage}
-              />
+              <div className="max-w-2xl mx-auto relative">
+                <button
+                  onClick={() => {
+                    setQuizStage(true);
+                    setLearnStage(false);
+                  }}
+                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 mr-4 absolute -top-12 right-0 z-10"
+                >
+                  Kiểm tra
+                </button>
+                <Flashcard
+                  word={filteredWords[currentIndex]}
+                  onNext={handleNextCard}
+                  onPrevious={handlePreviousCard}
+                  learnStage={learnStage}
+                />
+              </div>
             )}
           </>
         ) : (
-          <div className="bg-white rounded-lg shadow-md p-8 text-center">
+          <div className="bg-white rounded-lg shadow-md p-8 text-center mt-12 max-w-2xl mx-auto">
             <p className="text-xl text-gray-600">
-              Không có từ vựng cho chủ đề này. Vui lòng chọn chủ đề khác.
+              Bạn đã hoàn thành tất cả từ vựng cho HSK Level {level}!
             </p>
+            <p className="text-gray-500 mt-4">
+              Hãy tiếp tục luyện tập để nâng cao trình độ của mình.
+            </p>
+
+            <button className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+              <Link to={"/review"}>Luyện tập</Link>
+            </button>
           </div>
         )}
       </div>

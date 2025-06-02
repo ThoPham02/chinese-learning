@@ -12,6 +12,7 @@ import LearnWord from "../components/progress/LearnWord";
 import AdminQuiz from "../components/admin/quizs/AdminQuiz";
 import AdminWord from "../components/admin/words/AdminWord";
 import AdminDashBoard from "../components/admin/AdminDashBoard";
+import DoQuiz from "../components/quiz/DoQuiz";
 
 export const AppRoute: RouteObject[] = [
   {
@@ -40,6 +41,11 @@ export const AppRoute: RouteObject[] = [
     element: <QuizContainer />,
   },
   {
+    id: "DO_QUIZ",
+    path: ROUTE_PATHS.DO_QUIZ,
+    element: <DoQuiz />,
+  },
+  {
     id: "PROGRESS",
     path: ROUTE_PATHS.PROGRESS,
     element: <ProgressDashboard />,
@@ -64,6 +70,7 @@ export const AppRoute: RouteObject[] = [
     path: ROUTE_PATHS.ADMIN_DASHBOARD,
     element: <AdminDashBoard />,
   },
+
   {
     id: "error",
     path: ROUTE_PATHS.ERROR,

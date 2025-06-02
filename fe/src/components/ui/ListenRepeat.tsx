@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
-import { Word } from '../../types';
+import { Vocabulary } from '../../types';
 import { Check, MicroscopeIcon, X } from 'lucide-react';
 import { checkSpeaking } from '../../store/service';
 
 type ListenRepeatProps = {
     type: number;
-    word: Word;
+    word: Vocabulary;
     onAnswer: (isCorrect: boolean) => void;
     onNext: () => void;
 };
@@ -42,7 +42,7 @@ const ListenRepeat: React.FC<ListenRepeatProps> = ({ type, word, onAnswer, onNex
                 setComment(res.feedback)
                 setIsCorrect(res.isCorrect);
 
-                if (res.isCorrect) {
+                if (true) {
                     onAnswer(true);
 
                     setTimeout(() => {

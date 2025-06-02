@@ -24,7 +24,7 @@ const QuizFilter: React.FC<QuizFilterProps> = ({
             htmlFor="search\"
             className="block text-sm font-medium text-gray-700 mb-1"
           >
-            Tìm kiếm từ vựng
+            Tìm kiếm theo tên
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
