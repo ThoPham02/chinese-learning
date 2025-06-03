@@ -196,7 +196,12 @@ exports.getAllVocab = async (req, res) => {
     const orderBy = req.query.orderBy || "id";
     const orderDes = req.query.orderDes || "ASC";
 
-    const words = await getVocabularyByLevels(levels, search, orderBy, orderDes);
+    const words = await getVocabularyByLevels(
+      levels,
+      search,
+      orderBy,
+      orderDes
+    );
 
     const dataRes = words.map((word) => {
       return {
@@ -398,6 +403,49 @@ exports.deleteWord = async (req, res) => {
     });
   } catch (error) {
     console.error("Error deleting word:", error);
+
+    return apiResponse(res, {
+      code: responseCode.SERVER_ERROR.code,
+      mess: responseCode.SERVER_ERROR.mess,
+    });
+  }
+};
+
+// Lấy từ theo id
+exports.getWordsById = async (req, res) => {
+  const { id } = req.params;
+
+  if (!id) {
+    return apiResponse(res, {
+      code: responseCode.INVALID_INPUT.code,
+      mess: "Thiếu id từ vựng",
+    });
+  }
+
+  try {
+    const word = await vocabService.getVocabularyById(id);
+
+    const dataRes = {
+      id: word.id,
+      level: word.level,
+      hanzi: word.hanzi,
+      pinyin: word.pinyin,
+      meaning: word.meaning,
+      exampleVn: word.example_vi,
+      exampleCn: word.example_cn,
+      examplePinyin: word.example_pinyin,
+      meaningOption: word.meaning_option,
+      hanziOption: word.hanzi_option,
+      explain: word.explain,
+    };
+
+    return apiResponse(res, {
+      code: responseCode.SUCCESS.code,
+      mess: responseCode.SUCCESS.mess,
+      data: dataRes,
+    });
+  } catch (error) {
+    console.error("Error fetching word by ID:", error);
 
     return apiResponse(res, {
       code: responseCode.SERVER_ERROR.code,

@@ -22,8 +22,6 @@ export default actionTypes;
 export const register = (payload: AuthPayload) => async (dispatch: Dispatch) => {
   try {
     const data: ApiResponse = await apiRegister(payload);
-    console.log("data", data);
-
     if (data?.code === 0) {
       dispatch({
         type: actionTypes.REGISTER_SUCCESS,

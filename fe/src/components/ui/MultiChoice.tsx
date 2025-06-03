@@ -9,9 +9,10 @@ type MultiChoiceProps = {
     word: Vocabulary;
     onAnswer: (isCorrect: boolean) => void;
     onNext: () => void;
+    showResult?: boolean;
 };
 // trong mutil choice các thể loại: chọn nghĩa, chọn từ cần điền, chọn từ có nghĩa, pinyin, nghe và chọn từ
-const MultiChoice: React.FC<MultiChoiceProps> = ({type, word, onAnswer, onNext}) => {
+const MultiChoice: React.FC<MultiChoiceProps> = ({type, word, onAnswer, onNext, showResult = true}) => {
     const [showFeedback, setShowFeedback] = useState(false);
     const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
 
@@ -77,11 +78,11 @@ const MultiChoice: React.FC<MultiChoiceProps> = ({type, word, onAnswer, onNext})
         <div className="">
             {renderOption()}
             <div className="space-y-2">
-              {answer.map((option, index) => (
+              {answer?.map((option, index) => (
                 <button
                   key={index}
                   className={`w-full p-3 rounded-lg border text-left transition-all ${
-                    showFeedback && option === correctAnswer
+                    showResult && showFeedback && option === correctAnswer
                       ? 'bg-green-100 border-green-500 text-green-800'
                       : showFeedback && option === selectedAnswer
                       ? 'bg-red-100 border-red-500 text-red-800'
@@ -93,10 +94,10 @@ const MultiChoice: React.FC<MultiChoiceProps> = ({type, word, onAnswer, onNext})
                 >
                   <div className="flex justify-between items-center">
                     <span>{option}</span>
-                    {showFeedback && option === correctAnswer && (
+                    {showResult && showFeedback && option === correctAnswer && (
                       <Check className="w-5 h-5 text-green-600" />
                     )}
-                    {showFeedback && option === selectedAnswer && option !== correctAnswer && (
+                    {showResult && showFeedback && option === selectedAnswer && option !== correctAnswer && (
                       <X className="w-5 h-5 text-red-600" />
                     )}
                   </div>

@@ -7,7 +7,8 @@ interface FlashcardProps {
   word: Vocabulary;
   onNext: () => void;
   onPrevious: () => void;
-  learnStage: boolean;
+  learnStage: boolean; // Thêm prop này để xác định giai đoạn học
+  setLearnStage?: (stage: boolean) => void; // Hàm để cập nhật giai đoạn học
 }
 
 const Flashcard: React.FC<FlashcardProps> = ({
@@ -15,6 +16,7 @@ const Flashcard: React.FC<FlashcardProps> = ({
   onNext,
   onPrevious,
   learnStage,
+  setLearnStage = () => {}, // Mặc định là hàm rỗng nếu không có prop
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isRotating, setIsRotating] = useState(false);
@@ -34,16 +36,17 @@ const Flashcard: React.FC<FlashcardProps> = ({
   const handleSpeakWord = (e: React.MouseEvent) => {
     e.stopPropagation();
     if ("speechSynthesis" in window) {
-      const utterance = new SpeechSynthesisUtterance(isFlipped ? word.exampleCn : word.hanzi);
+      const utterance = new SpeechSynthesisUtterance(
+        isFlipped ? word.exampleCn : word.hanzi
+      );
       utterance.lang = "zh-CN";
       window.speechSynthesis.speak(utterance);
     }
   };
   return (
     <div className="mb-8 relative">
-      {
-        learnStage ? (
-          <>
+      {learnStage ? (
+        <>
           <div
             className={`relative w-full bg-white rounded-xl shadow-lg p-6 cursor-pointer select-none
               ${isRotating ? "pointer-events-none" : ""}
@@ -67,8 +70,26 @@ const Flashcard: React.FC<FlashcardProps> = ({
                   <p className="text-xl text-blue-600 mb-4">{word.meaning}</p>
                 </div>
               </div>
-              <p className="text-sm text-gray-400 mt-auto text-center">
-                Nhấn để xem thêm chi tiết
+              <p className="text-sm text-gray-400 mt-auto text-center space-x-4">
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation(); // Ngăn lật card ngoài ý muốn
+                    setIsFlipped(true);
+                  }}
+                  className="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors text-sm"
+                >
+                  Xem ví dụ
+                </button>
+
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setLearnStage(false); // Chuyển sang màn luyện tập
+                  }}
+                  className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-sm"
+                >
+                  Luyện tập
+                </button>
               </p>
             </div>
 
@@ -81,13 +102,36 @@ const Flashcard: React.FC<FlashcardProps> = ({
                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                   Ví dụ:
                 </h3>
-                <p className="text-xl text-gray-900 ml-4 mb-1">{word.exampleCn}</p>
-                <p className="text-lg text-blue-600 ml-4 mb-2">{word.examplePinyin}</p>
+                <p className="text-xl text-gray-900 ml-4 mb-1">
+                  {word.exampleCn}
+                </p>
+                <p className="text-lg text-blue-600 ml-4 mb-2">
+                  {word.examplePinyin}
+                </p>
                 <p className="text-lg text-gray-700 ml-4">{word.exampleVn}</p>
               </div>
-              <p className="text-sm text-gray-400 mt-4 text-center">
-                Nhấn để quay lại
-              </p>
+              <div className="text-sm text-gray-400 mt-4 text-center">
+                <div className="text-sm text-gray-400 mt-auto text-center space-x-4">
+                  <button
+                    onClick={() => {
+                      setIsFlipped(false);
+                    }}
+                    className="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors text-sm"
+                  >
+                    Xem từ
+                  </button>
+
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setLearnStage(false); // Chuyển sang màn luyện tập
+                    }}
+                    className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors text-sm"
+                  >
+                    Luyện tập
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -120,18 +164,18 @@ const Flashcard: React.FC<FlashcardProps> = ({
               <ChevronRight className="w-5 h-5 ml-1" />
             </button>
           </div>
-          </>
-        ) : (
-          <div className="relative w-full bg-white rounded-xl shadow-lg p-6" 
-            style={{ height: "465px" }}
-          >
-            <Practice word={word} onNextWord={() => {
-                setIsFlipped(false);
-                onNext();
-              }}/>
-          </div>
-        )
-      }
+        </>
+      ) : (
+        <div
+          className="relative w-full bg-white rounded-xl shadow-lg p-6"
+          style={{ height: "465px" }}
+        >
+          <Practice
+            word={word}
+            setLearnStage={setLearnStage} // Truyền hàm để cập nhật giai đoạn học
+          />
+        </div>
+      )}
     </div>
   );
 };

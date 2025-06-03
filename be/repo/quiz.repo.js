@@ -156,40 +156,50 @@ exports.getQuizById = async (id) => {
   const quizData = await quiz.findByPk(id);
   if (!quizData) return null;
 
-  // 2. Lấy câu hỏi của quiz
+  // 2. Lấy danh sách câu hỏi
   const questions = await quizQuestion.findAll({
     where: { quiz_id: id },
     attributes: ['id', 'vocabulary_id', 'order', 'type'],
-  });
-
-  const vocabIds = questions.map(q => q.vocabulary_id);
-
-  // 3. Lấy từ vựng tương ứng
-  const vocabs = await Vocab.findAll({
-    where: { id: { [Op.in]: vocabIds } },
-    attributes: [
-      'id',
-      'hanzi',
-      'meaning',
-      'pinyin',
-      'example_vi',
-      'example_cn',
-      'example_pinyin',
-      'explain',
-    ],
     raw: true,
   });
 
-  // 4. Gắn thông tin từ vựng vào câu hỏi
-  const questionsWithVocab = questions.map(q => {
-    const vocab = vocabs.find(v => v.id === q.vocabulary_id);
-    return {
-      ...q.dataValues,
-      vocabulary: vocab || null,
-    };
-  });
+  // 3. Gắn dữ liệu từ vựng & phương án sai
+  const questionsWithVocab = await Promise.all(
+    questions.map(async (q) => {
+      const vocab = await Vocab.findOne({
+        where: { id: q.vocabulary_id },
+        raw: true,
+      });
 
-  // 5. Trả về quiz kèm câu hỏi
+      if (!vocab) throw new Error("Từ vựng không tồn tại");
+
+      // Lấy các từ cùng level trừ chính nó
+      const levelWords = await Vocab.findAll({
+        where: {
+          level: vocab.level,
+          id: { [Op.ne]: vocab.id },
+        },
+        raw: true,
+      });
+
+      // Chọn ngẫu nhiên 3 từ khác để làm đáp án nhiễu
+      const distractors = levelWords.sort(() => Math.random() - 0.5).slice(0, 3);
+      const options = [...distractors, vocab].sort(() => Math.random() - 0.5);
+
+      return {
+        ...q,
+        vocabulary: {
+          ...vocab,
+          exampleCn: vocab.example_cn || "",
+          exampleVi: vocab.example_vi || "",
+          meaningOption: options.map((o) => o.meaning),
+          hanziOption: options.map((o) => o.hanzi),
+        },
+      };
+    })
+  );
+
+  // 4. Trả về quiz + danh sách câu hỏi
   return {
     ...quizData.dataValues,
     questions: questionsWithVocab,

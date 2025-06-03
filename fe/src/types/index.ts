@@ -114,4 +114,19 @@ export interface Quiz {
   time: number;
   level: number;
   questions: Question[];
-} 
+}
+
+export interface QuizResult {
+  quizId: number;
+  score: number;
+  totalQuestions: number;
+  correctAnswers: number;
+  incorrectAnswers: number;
+  timeTaken: number; // in seconds
+  completedAt: Date;
+}
+
+export interface Answer {
+  questionId: number;
+  isCorrect: boolean;
+}

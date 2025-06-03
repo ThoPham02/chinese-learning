@@ -8,10 +8,11 @@ type FillBlankProps = {
     word: Vocabulary;
     onAnswer: (isCorrect: boolean) => void;
     onNext: () => void;
+    showResult?: boolean;
 };
 
 // điền từ theo nghĩa, nghe và điền từ
-const FillBlank: React.FC<FillBlankProps> = ({type, word, onAnswer, onNext}) => {
+const FillBlank: React.FC<FillBlankProps> = ({type, word, onAnswer, onNext, showResult = true}) => {
     const correctAnswer = word.hanzi;
 
     const [showFeedback, setShowFeedback] = useState(false);
@@ -73,7 +74,7 @@ const FillBlank: React.FC<FillBlankProps> = ({type, word, onAnswer, onNext}) => 
                 value={inputAnswer}
                 onChange={(e) => setInputAnswer(e.target.value)}
                 className={`w-full p-3 rounded-lg border outline-none focus:ring-2 ${
-                  showFeedback
+                  showResult && showFeedback
                     ? inputAnswer.trim() === correctAnswer
                       ? 'border-green-500 focus:ring-green-200 bg-green-50'
                       : 'border-red-500 focus:ring-red-200 bg-red-50'
@@ -90,10 +91,10 @@ const FillBlank: React.FC<FillBlankProps> = ({type, word, onAnswer, onNext}) => 
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 disabled={showFeedback || !inputAnswer.trim()}
               >
-                Kiểm tra
+                Xác nhận
               </button>
             </div>
-            {showFeedback && (
+            {showResult && showFeedback && (
               <div className={`mt-4 p-3 rounded-lg ${
                 inputAnswer.trim() === correctAnswer
                   ? 'bg-green-100 text-green-800'

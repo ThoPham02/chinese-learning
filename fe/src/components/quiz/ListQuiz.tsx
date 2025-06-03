@@ -1,4 +1,4 @@
-import { BookOpen, Clock, Eye, FileCheck, GraduationCap } from "lucide-react";
+import { BookOpen, Clock, FileCheck, GraduationCap } from "lucide-react";
 import { Quiz } from "../../types";
 import { Link } from "react-router-dom";
 

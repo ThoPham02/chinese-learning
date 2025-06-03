@@ -67,8 +67,8 @@ const FlashcardContainer: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <div className="lg:col-span-4 px-8">
+      <div className="">
+        <div className="max-w-3xl mx-auto space-y-8 ">
           {filteredWords.length > 0 ? (
             <>
               <div className="mb-4 flex justify-between items-center">
@@ -76,13 +76,6 @@ const FlashcardContainer: React.FC = () => {
                   {selectedTopic?.name} - {currentIndex + 1}/
                   {filteredWords.length} từ
                 </h2>
-
-                {/* <button
-                  onClick={() => setLearnStage(!learnStage)}
-                  className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors"
-                >
-                  {learnStage ? "Học từ" : "Xem nghĩa"}
-                </button> */}
               </div>
 
               <Flashcard
@@ -90,6 +83,7 @@ const FlashcardContainer: React.FC = () => {
                 onNext={handleNextCard}
                 onPrevious={handlePreviousCard}
                 learnStage={learnStage}
+                setLearnStage={setLearnStage}
               />
             </>
           ) : (

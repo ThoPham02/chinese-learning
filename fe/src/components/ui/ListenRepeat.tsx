@@ -8,9 +8,10 @@ type ListenRepeatProps = {
     word: Vocabulary;
     onAnswer: (isCorrect: boolean) => void;
     onNext: () => void;
+    showResult?: boolean;
 };
 
-const ListenRepeat: React.FC<ListenRepeatProps> = ({ type, word, onAnswer, onNext }) => {
+const ListenRepeat: React.FC<ListenRepeatProps> = ({ type, word, onAnswer, onNext, showResult = true }) => {
     const mediaRecorderRef = useRef<MediaRecorder | null>(null);
     const chunksRef = useRef<Blob[]>([]);
 
@@ -62,8 +63,6 @@ const ListenRepeat: React.FC<ListenRepeatProps> = ({ type, word, onAnswer, onNex
         mediaRecorderRef.current?.stop();
     };
 
-    console.log(type);
-
     return (
         <div>
             <div className="text-2xl mb-4">Phát âm từ sau:</div>
@@ -88,7 +87,7 @@ const ListenRepeat: React.FC<ListenRepeatProps> = ({ type, word, onAnswer, onNex
                 </button>
             </div>
 
-            {showFeedback && (
+            {showResult && showFeedback && (
               <div className={`mt-4 p-3 rounded-lg ${
                 isCorrect
                   ? 'bg-green-100 text-green-800'

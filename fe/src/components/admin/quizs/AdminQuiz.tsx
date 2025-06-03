@@ -49,14 +49,12 @@ const AdminQuiz = () => {
 
   const handleDeleteQuiz = async (id: number) => {
     const resp = await apiAdminDeleteQuiz(id);
-    console.log(resp);
 
     fetchQuiz();
   };
 
   const handleSaveVocabulary = async (quiz: Quiz) => {
     if (editingQuiz) {
-      console.log("Updating quiz:", quiz);
       const resp = await apiAdminUpdateQuiz(quiz);
 
       console.log(resp);

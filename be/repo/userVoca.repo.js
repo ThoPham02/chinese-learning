@@ -128,8 +128,6 @@ exports.updateReviewResult = async (user_vocab_id, is_correct, current_correct_c
   const now = getCurrentTime();
   const newCorrectCount = is_correct ? current_correct_count + 1 : 0;
 
-  console.log("updateReviewResult", user_vocab_id, is_correct, current_correct_count, newCorrectCount);
-
   // Tính ngày ôn tiếp theo theo SRS
   const delays = [1, 3, 7, 14, 30]; // ngày
   const delay = delays[Math.min(newCorrectCount, delays.length - 1)];
@@ -147,3 +145,34 @@ exports.updateReviewResult = async (user_vocab_id, is_correct, current_correct_c
     }
   );
 };
+
+// get voca by id
+exports.getVocabularyById = async (id) => {
+  try {
+    const word = await Vocab.findOne({
+      where: { id },
+      raw: true,
+    });
+
+    if (!word) {
+      throw new Error("Từ vựng không tồn tại");
+    }
+
+    // lấy các lựa chọn sai cùng level
+    const levelWords = await Vocab.findAll({
+      where: { level: word.level, id: { [Op.ne]: id } },
+      raw: true,
+    });
+
+    const distractors = levelWords.sort(() => Math.random() - 0.5).slice(0, 3);
+    const options = [...distractors, word];
+    const shuffled = options.sort(() => Math.random() - 0.5);
+    word.meaning_option = shuffled.map(o => o.meaning);
+    word.hanzi_option = shuffled.map(o => o.hanzi);
+
+    return word;
+  } catch (err) {
+    console.error("Lỗi khi lấy từ vựng theo ID:", err);
+    throw err;
+  }
+}

@@ -13,8 +13,6 @@ const ProgressDashboard: React.FC = () => {
     const fetchProcess = async () => {
       const resp = await apiGetUserProgress();
 
-      console.log('User progress data:', resp.data);
-
       setProgress(resp.data);
     }
     

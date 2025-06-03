@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { QuizQuestion, Vocabulary } from "../../types";
 import { apiGetLearnWords, apiUpdateWord } from "../../store/service";
-import Flashcard from "../flashcards/Flashcard";
 import QuizCard from "../review/QuizCard";
 import { Award, ChevronLeft } from "lucide-react"; // icon nếu bạn dùng
 import { Link } from "react-router-dom";
+import Flashcard from "../flashcards/Flashcard";
 
 const LearnWord: React.FC = () => {
   const [filteredWords, setFilteredWords] = useState<Vocabulary[]>([]);
@@ -53,7 +53,6 @@ const LearnWord: React.FC = () => {
       quizQuestions[currentQuestionIndex].word.id,
       isCorrect
     );
-    console.log("Update word response:", resp.data);
 
     if (isCorrect) {
       setCorrectAnswers((prev) => prev + 1);
@@ -197,6 +196,7 @@ const LearnWord: React.FC = () => {
                   onNext={handleNextCard}
                   onPrevious={handlePreviousCard}
                   learnStage={learnStage}
+                  setLearnStage={setLearnStage}
                 />
               </div>
             )}

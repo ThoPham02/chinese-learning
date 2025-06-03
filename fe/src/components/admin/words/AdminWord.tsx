@@ -22,7 +22,6 @@ const AdminWord = () => {
   // Filter vocabulary when search term or level changes
   const fetchVocabulary = async () => {
     const result = await filterWords(selectedLevel, searchTerm, "id", "DESC");
-    console.log(result);
 
     setFilteredList(result.data);
     setCurrentPage(1);

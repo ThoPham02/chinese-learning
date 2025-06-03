@@ -291,3 +291,37 @@ export const apiGetQuizById = (quizId: number): Promise<ApiResponse> => {
   });
 }
 
+
+
+// submit quiz answers
+export const apiSubmitQuiz = (data: any): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "post",
+        url: "/quiz/submit",
+        data,
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+// get word by id
+export const apiGetWordById = (wordId: number): Promise<ApiResponse> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios({
+        method: "get",
+        url: `/word/${wordId}`,
+      });
+
+      resolve(response.data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}

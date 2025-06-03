@@ -81,7 +81,7 @@ const AddQuizModal: React.FC<AddQuizModalProps> = ({
       ...prev,
       questions: [...(prev.questions || []), newQuestion],
       num: (prev.questions?.length || 0) + 1,
-    }));
+    } as Quiz));
   };
 
   return (
