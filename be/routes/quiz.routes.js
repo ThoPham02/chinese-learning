@@ -20,6 +20,6 @@ router.get("/:id", auth, getQuizById)
 router.post("/filter", filterQuiz)
 router.get("/results", auth, getQuizResults);
 router.get("/results/:id", auth, getQuizResultsByQuizId);
-router.post("/take", auth, takeQuiz);
+router.post("/submit", auth, takeQuiz);
 
 module.exports = router;

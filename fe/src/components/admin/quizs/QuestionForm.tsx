@@ -60,7 +60,7 @@ export const QuestionForm: React.FC<QuestionFormProps> = ({
             <option value="" disabled>
               Chọn từ vựng
             </option>
-            {words.map((word) => (
+            {words?.map((word) => (
               <option key={word.id} value={word.id}>
                 {word.hanzi} - {word.meaning}
               </option>

@@ -5,6 +5,7 @@ const Vocab = require("../models/vocab.model"); // import model Vocabulary
 const userQuiz = require("../models/userQuiz.model"); // import model userQuiz
 const userAnswer = require("../models/userAnswer.model"); // import model userQuizAnswer
 const user = require("../models/user.model"); // import model user
+const { getCurrentTime } = require("../utils/helper");
 
 exports.getAllQuizzes = async (level, search) => {
     const where = {};
@@ -206,3 +207,42 @@ exports.getQuizById = async (id) => {
   };
 };
 
+exports.submitQuiz = async (quizId, userId, answers) => {
+    // 1. Kiểm tra quiz có tồn tại không
+    const quizData = await quiz.findByPk(quizId);
+    if (!quizData) throw new Error("Quiz không tồn tại");
+
+    // 2. Lưu kết quả quiz cho người dùng
+    const userQuizData = await userQuiz.create({
+        user_id: userId,
+        quiz_id: quizId,
+        score: 0, // sẽ cập nhật sau khi tính điểm
+        created_at: getCurrentTime(),
+    });
+
+    // 3. Tính điểm và lưu câu trả lời
+    let score = 0;
+    for (const answer of answers) {
+        const { questionId, isCorrect } = answer;
+
+        if (isCorrect) {
+            score += 1;
+        }
+
+        await userAnswer.create({
+            user_id: userId,
+            quiz_id: questionId,
+            vocabulary_id: 0, // Giả sử questionId là vocabulary_id
+            type: 0, // Giả sử type là 0, cần điều chỉnh nếu có loại khác
+            is_correct: isCorrect,
+        });
+    }
+
+    // 4. Cập nhật điểm số cho người dùng
+    await userQuiz.update({ score }, { where: { id: userQuizData.id } });
+
+    return {
+        userQuizId: userQuizData.id,
+        score,
+    };
+}

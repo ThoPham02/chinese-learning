@@ -213,7 +213,33 @@ exports.getQuizResultsByQuizId = async (req, res) => {
 // làm quiz
 exports.takeQuiz = async (req, res) => {
     try {
+        console.log("takeQuiz called with body:", req.body);
+        const { quizId, answers } = req.body;
+        const userId = req.userId;
 
+        // Validate input
+        if (!quizId || !userId || !answers || answers.length === 0) {
+            return apiResponse(res, {
+                code: responseCode.INVALID_INPUT.code,
+                mess: responseCode.INVALID_INPUT.mess,
+            });
+        }
+
+        // Process quiz submission
+        const result = await quizService.submitQuiz(quizId, userId, answers);
+
+        if (!result) {
+            return apiResponse(res, {
+                code: responseCode.NOT_FOUND.code,
+                mess: responseCode.NOT_FOUND.mess,
+            });
+        }
+
+        return apiResponse(res, {
+            code: responseCode.SUCCESS.code,
+            mess: responseCode.SUCCESS.mess,
+            data: result
+        });
     } catch (error) {
         console.error("Error in takeQuiz:", error);
 

@@ -14,7 +14,10 @@ interface QuizCardProps {
 const QuizCard: React.FC<QuizCardProps> = ({ question, onAnswer, onNext }) => {
 
   const renderQuestion = () => {
-    switch (question.type) {
+    if (!question) {
+      return <div className="text-center text-gray-500">Loading...</div>;
+    }
+    switch (question?.type) {
       case QUIZ_TYPE.FillBlank_Word:
         return <FillBlank 
           type={question.type}

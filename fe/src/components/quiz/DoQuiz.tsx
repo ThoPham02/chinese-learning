@@ -49,12 +49,17 @@ const DoQuiz: React.FC = () => {
 
   const handleNextQuestion = () => {
     if (!quiz) return;
-    if (currentQuestionIndex < quiz.questions.length - 1) {
+    if (currentQuestionIndex <= quiz.questions.length - 1) {
       setCurrentQuestionIndex((prev) => prev + 1);
-    } else {
-      handleSubmit();
     }
   };
+
+  useEffect(() => {
+    if (!quiz) return;
+    if (currentQuestionIndex >= quiz.questions.length) {
+      handleSubmit();
+    }
+  }, [currentQuestionIndex, quiz]);
 
   const handleSubmit = async () => {
     setIsQuizComplete(true);
