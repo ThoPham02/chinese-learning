@@ -10,6 +10,7 @@ const {
   updateWord,
   deleteWord,
   getWordsById,
+  getWordsByUser,
 } = require("../controllers/vocab.controller");
 const auth = require("../middleware/auth.middleware");
 
@@ -21,5 +22,6 @@ router.get("/learn", auth, getWordsToLearn);
 router.get("/review", auth, getWordsToReview);
 router.post("/update", auth, updateUserVocab);
 router.get("/filter", getAllVocab)
+router.get("/user", auth, getWordsByUser);
 
 module.exports = router;

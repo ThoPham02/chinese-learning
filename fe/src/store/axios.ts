@@ -41,7 +41,9 @@ const NO_TOAST_API_LIST = [
   "/auth/login",
   "/auth/register",
   "/quiz/filter",
-  "/word/update"
+  "/quiz/user",
+  "/word/update",
+  "/quiz/submit"
 ];
 
 // Intercept response to show toast or handle error codes

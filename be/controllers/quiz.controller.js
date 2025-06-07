@@ -249,3 +249,36 @@ exports.takeQuiz = async (req, res) => {
         });
     }
 };
+
+// lấy danh sách quiz của user
+exports.getUserQuizzes = async (req, res) => {
+    try {
+        const userId = req.userId;
+
+        // Validate input
+        if (!userId) {
+            return apiResponse(res, {
+                code: responseCode.BAD_REQUEST.code,
+                mess: responseCode.BAD_REQUEST.mess,
+            });
+        }
+
+        // Get user quizzes
+        const quizzes = await quizService.getUserQuizzes(userId);
+
+        console.log("User quizzes:", quizzes);
+
+        return apiResponse(res, {
+            code: responseCode.SUCCESS.code,
+            mess: responseCode.SUCCESS.mess,
+            data: quizzes
+        });
+    } catch (error) {
+        console.error("Error in getUserQuizzes:", error);
+
+        return apiResponse(res, {
+            code: responseCode.SERVER_ERROR.code,
+            mess: responseCode.SERVER_ERROR.mess,
+        });
+    }
+}

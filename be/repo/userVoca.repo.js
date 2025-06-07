@@ -67,7 +67,7 @@ exports.getWordsToReview = async (userId, now = dayjs().unix()) => {
     const userVocabs = await UserVocab.findAll({
       where: {
         user_id: userId,
-        status: { [Op.in]: [1, 2] },
+        status: { [Op.in]: [0, 1] },
         [Op.or]: [
           { next_review: null },
           { next_review: { [Op.lte]: now } },
@@ -129,7 +129,7 @@ exports.updateReviewResult = async (user_vocab_id, is_correct, current_correct_c
   const newCorrectCount = is_correct ? current_correct_count + 1 : 0;
 
   // Tính ngày ôn tiếp theo theo SRS
-  const delays = [1, 3, 7, 14, 30]; // ngày
+  const delays = [0, 1, 3, 7, 14, 30]; // ngày
   const delay = delays[Math.min(newCorrectCount, delays.length - 1)];
   const next_review = dayjs().add(delay, 'day').unix();
 
@@ -138,7 +138,7 @@ exports.updateReviewResult = async (user_vocab_id, is_correct, current_correct_c
       correct_count: newCorrectCount,
       last_review: now,
       next_review,
-      status: newCorrectCount >= 3 ? 2 : 1,
+      status: newCorrectCount == 0 ? 0 : newCorrectCount>= 4 ? 2 : 1,
     },
     {
       where: { id: user_vocab_id },
@@ -176,3 +176,43 @@ exports.getVocabularyById = async (id) => {
     throw err;
   }
 }
+
+// Lấy danh sách từ vựng của user
+exports.getWordsByUser = async (userId) => {
+  try {
+    // 1. Lấy danh sách từ vựng đã học
+    const userVocabs = await UserVocab.findAll({
+      where: { user_id: userId },
+      raw: true,
+    });
+
+    // 2. Lấy vocab_id từ userVocab
+    const vocabIds = userVocabs.map(uv => uv.vocabulary_id);
+
+    // 3. Lấy dữ liệu từ bảng Vocab tương ứng
+    const vocabs = await Vocab.findAll({
+      where: { id: vocabIds },
+      attributes: ['id', 'hanzi', 'pinyin', 'meaning', 'level'],
+      raw: true,
+    });
+
+    // 4. Map vocabId -> Vocab
+    const vocabMap = vocabs.reduce((acc, v) => {
+      acc[v.id] = v;
+      return acc;
+    }, {});
+
+    // 5. Kết hợp lại dữ liệu
+    return userVocabs.map(uv => ({
+      ...vocabMap[uv.vocabulary_id],
+      user_vocab_id: uv.id,
+      status: uv.status,
+      correct_count: uv.correct_count,
+      last_review: uv.last_review,
+      next_review: uv.next_review,
+    }));
+  } catch (err) {
+    console.error("Lỗi khi lấy từ vựng của user:", err);
+    throw err;
+  }
+};

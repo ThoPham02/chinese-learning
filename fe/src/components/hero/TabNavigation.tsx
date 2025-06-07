@@ -1,15 +1,18 @@
-import React from 'react';
+import React from "react";
 
 interface TabNavigationProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
 }
 
-const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }) => {
+const TabNavigation: React.FC<TabNavigationProps> = ({
+  activeTab,
+  setActiveTab,
+}) => {
   const tabs = [
-    { id: 'consonants', label: 'Phụ âm (声母)', chinese: 'shēngmǔ' },
-    { id: 'vowels', label: 'Nguyên âm (韵母)', chinese: 'yùnmǔ' },
-    { id: 'tones', label: 'Thanh điệu', chinese: 'shēngdiào' },
+    { id: "consonants", label: "Phụ âm (声母)", chinese: "shēngmǔ" },
+    { id: "vowels", label: "Nguyên âm (韵母)", chinese: "yùnmǔ" },
+    { id: "tones", label: "Thanh điệu", chinese: "shēngdiào" },
   ];
 
   return (
@@ -22,8 +25,8 @@ const TabNavigation: React.FC<TabNavigationProps> = ({ activeTab, setActiveTab }
             className={`whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm md:text-base
                       ${
                         activeTab === tab.id
-                          ? 'border-red-700 text-red-700'
-                          : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                          ? "border-red-700 text-red-700"
+                          : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
                       }`}
           >
             {tab.label}

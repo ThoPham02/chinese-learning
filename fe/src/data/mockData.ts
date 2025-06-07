@@ -66,7 +66,7 @@ export const todayTasks: DailyTask[] = [
   {
     id: 3,
     title: 'Làm bài Quiz',
-    description: 'Kiểm tra nhanh 10 từ vựng ngẫu nhiên',
+    description: 'Kiểm tra kiến thức với bài Quiz',
     status: 'incomplete',
     actionLabel: 'Làm Quiz',
     actionLink: '/quiz',

@@ -133,33 +133,32 @@ exports.updateUserVocab = async (req, res) => {
         vocabulary_id: wordId,
       },
     });
-    if (!userVocab) {
-      // 2. Nếu chưa có thì tạo mới
-      if (!userVocab) {
-        userVocab = await UserVocab.create({
-          user_id: userId,
-          vocabulary_id: wordId,
-          correct_count: 0,
-          status: 1, // đang học
-          next_review: null,
-        });
 
-        // update user progress
-        const progress = await LearningProgress.findOne({
-          where: { user_id: userId },
-        });
-        if (progress) {
-          await progress.increment("learned_words");
-        } else {
-          await LearningProgress.create({
-            user_id: userId,
-            level: 1,
-            learned_words: 1,
-            reviewed_words: 0,
-            mastered_words: 0,
-          });
-        }
-      }
+    const progress = await LearningProgress.findOne({
+      where: { user_id: userId },
+    });
+    if (!progress) {
+      await LearningProgress.create({
+        user_id: userId,
+        level: 1,
+        learned_words: 0,
+        reviewed_words: 0,
+        mastered_words: 0,
+      });
+    }
+
+    // 2. Nếu chưa có thì tạo mới
+    if (!userVocab) {
+      userVocab = await UserVocab.create({
+        user_id: userId,
+        vocabulary_id: wordId,
+        correct_count: 0,
+        status: 0, // đang học
+        next_review: null,
+      });
+
+      await progress.increment("learned_words");
+      await progress.increment("reviewed_words");
     }
 
     const nextReview = await vocabService.updateReviewResult(
@@ -167,6 +166,38 @@ exports.updateUserVocab = async (req, res) => {
       isCorrect,
       userVocab.correct_count
     );
+
+    const newCorrectCount = isCorrect ? userVocab.correct_count + 1 : 0;
+
+    // Xác định status mới theo số lần đúng liên tiếp
+    let newStatus = 0; // Mặc định: cần ôn
+    if (isCorrect) {
+      newStatus = newCorrectCount >= 4 ? 2 : 1;
+    }
+
+    const oldStatus = userVocab.status;
+
+    // Cập nhật trạng thái nếu thay đổi
+    if (newStatus !== oldStatus) {
+      if (oldStatus == 0) {
+        if (newStatus == 1) {
+          await progress.decrement("reviewed_words");
+        }
+      }
+      if (oldStatus == 1) {
+        if (newStatus == 0) {
+          await progress.increment("reviewed_words");
+        } else if (newStatus == 2) {
+          await progress.increment("mastered_words");
+        }
+      } 
+      if (oldStatus == 2) {
+        if (newStatus == 0) {
+          await progress.decrement("mastered_words");
+          await progress.increment("reviewed_words");
+        }
+      }  
+    }
 
     return apiResponse(res, {
       code: responseCode.SUCCESS.code,
@@ -411,45 +442,43 @@ exports.deleteWord = async (req, res) => {
   }
 };
 
-// // Lấy từ theo id
-// exports.getWordsById = async (req, res) => {
-//   const { id } = req.params;
+// Lấy từ vựng của người dùng
+exports.getWordsByUser = async (req, res) => {
+  const { userId } = req;
 
-//   if (!id) {
-//     return apiResponse(res, {
-//       code: responseCode.INVALID_INPUT.code,
-//       mess: "Thiếu id từ vựng",
-//     });
-//   }
+  if (!userId) {
+    return apiResponse(res, {
+      code: responseCode.INVALID_INPUT.code,
+      mess: "Thiếu userId",
+    });
+  }
 
-//   try {
-//     const word = await vocabService.getVocabularyById(id);
+  try {
+    const words = await vocabService.getWordsByUser(userId);
 
-//     const dataRes = {
-//       id: word.id,
-//       level: word.level,
-//       hanzi: word.hanzi,
-//       pinyin: word.pinyin,
-//       meaning: word.meaning,
-//       exampleVn: word.example_vi,
-//       exampleCn: word.example_cn,
-//       examplePinyin: word.example_pinyin,
-//       meaningOption: word.meaning_option,
-//       hanziOption: word.hanzi_option,
-//       explain: word.explain,
-//     };
+    const dataRes = words.map((word) => ({
+      userVocabId: word.user_vocab_id,
+      wordId: word.vocabulary_id,
+      hanzi: word.hanzi,
+      pinyin: word.pinyin,
+      meaning: word.meaning,
+      level: word.level,
+      status: word.status,
+      lastReview: word.last_review,
+      nextReview: word.next_review,
+    }));
 
-//     return apiResponse(res, {
-//       code: responseCode.SUCCESS.code,
-//       mess: responseCode.SUCCESS.mess,
-//       data: dataRes,
-//     });
-//   } catch (error) {
-//     console.error("Error fetching word by ID:", error);
+    return apiResponse(res, {
+      code: responseCode.SUCCESS.code,
+      mess: responseCode.SUCCESS.mess,
+      data: dataRes,
+    });
+  } catch (error) {
+    console.error("Error fetching user's vocabulary:", error);
 
-//     return apiResponse(res, {
-//       code: responseCode.SERVER_ERROR.code,
-//       mess: responseCode.SERVER_ERROR.mess,
-//     });
-//   }
-// };
+    return apiResponse(res, {
+      code: responseCode.SERVER_ERROR.code,
+      mess: responseCode.SERVER_ERROR.mess,
+    });
+  }
+};

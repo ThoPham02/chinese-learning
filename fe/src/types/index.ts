@@ -130,3 +130,26 @@ export interface Answer {
   questionId: number;
   isCorrect: boolean;
 }
+
+export interface UserVoca {
+  userVocabId: number;
+  vocabularyId: number;
+  hanzi: string;
+  pinyin: string;
+  meaning: string;
+  level: number;
+  lastReview: number; // timestamp
+  nextReview: number; // timestamp
+  status: number; // 0: learned, 1: reviewing, 2: mastered
+}
+
+export interface UserQuiz {
+  userQuizId: number;
+  id: number;
+  title: string;
+  level: number;
+  num: number;
+  score: number;
+  time: number;
+  createdAt: number; // timestamp (ms)
+}

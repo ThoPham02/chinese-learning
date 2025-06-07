@@ -1,5 +1,5 @@
 import React from 'react';
-import { Question, QuizQuestion } from '../../types';
+import { QuizQuestion } from '../../types';
 import { QUIZ_TYPE } from '../../common/const';
 import MultiChoice from '../ui/MultiChoice';
 import ListenRepeat from '../ui/ListenRepeat';

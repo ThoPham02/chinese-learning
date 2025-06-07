@@ -3,6 +3,7 @@ const DailyTaskLog = require("../models/dailyTaskLog.model");
 
 const apiResponse = require("../utils/apiResponse");
 const { getCurrentTime } = require("../utils/helper");
+const e = require("express");
 
 exports.getProgress = async (req, res) => {
   try {
@@ -64,3 +65,7 @@ exports.getProgress = async (req, res) => {
     return apiResponse(res, { code: 500, mess: "Server error" });
   }
 };
+
+exports.updateProgress = async (req, res) => {
+  
+}

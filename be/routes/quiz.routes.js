@@ -9,7 +9,8 @@ const {
     getQuizResults,
     getQuizResultsByQuizId,
     takeQuiz,
-    filterQuiz
+    filterQuiz,
+    getUserQuizzes
 } = require("../controllers/quiz.controller");
 const auth = require("../middleware/auth.middleware");
 
@@ -21,5 +22,6 @@ router.post("/filter", filterQuiz)
 router.get("/results", auth, getQuizResults);
 router.get("/results/:id", auth, getQuizResultsByQuizId);
 router.post("/submit", auth, takeQuiz);
+router.post("/user", auth, getUserQuizzes);
 
 module.exports = router;
