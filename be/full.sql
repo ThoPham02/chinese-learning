@@ -1,84 +1,119 @@
-CREATE TABLE `user` (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(100) NOT NULL UNIQUE,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    password_hash VARCHAR(255) NOT NULL,
-    created_at BIGINT,
-    last_login BIGINT
+create table daily_task_log
+(
+    id           bigint auto_increment
+        primary key,
+    user_id      bigint        not null,
+    task_type    int           not null,
+    status       int default 0 null,
+    task_date    date          not null,
+    number_words int default 0 null,
+    updated_at   bigint        null
 );
 
-CREATE TABLE vocabulary (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    level INT NOT NULL CHECK (level BETWEEN 1 AND 6),
-    hanzi VARCHAR(20) NOT NULL,
-    pinyin VARCHAR(100),
-    meaning TEXT,
-    example_vi TEXT,
-    example_cn TEXT,
-    example_pinyin TEXT,
-    audio_url VARCHAR(255)
+create table learning_progress
+(
+    id               bigint auto_increment
+        primary key,
+    user_id          bigint        not null,
+    level            int default 1 null,
+    learned_words    int default 0 null,
+    reviewed_words   int default 0 null,
+    mastered_words   int default 0 null,
+    current_streak   int default 0 null,
+    last_active_date bigint        null
 );
 
-CREATE TABLE user_vocabulary (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    user_id BIGINT NOT NULL,
-    vocabulary_id BIGINT NOT NULL,
-    status INT DEFAULT 0 CHECK (status BETWEEN 0 AND 3), -- 0: new, 1: learning, 2: mastered, 3: archived
-    correct_count INT DEFAULT 0,
-    last_review BIGINT,
-    next_review BIGINT,
-    created_at BIGINT
+create table quiz
+(
+    id    bigint auto_increment
+        primary key,
+    title varchar(255) null,
+    time  bigint       null,
+    level bigint       null,
+    num   bigint       null
 );
 
-CREATE TABLE review_log (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    user_id BIGINT NOT NULL,
-    vocabulary_id BIGINT NOT NULL,
-    review_time BIGINT,
-    is_correct BOOLEAN,
-    attempt INT
+create table quiz_question
+(
+    id            bigint auto_increment
+        primary key,
+    quiz_id       bigint not null,
+    `order`       int    not null,
+    vocabulary_id bigint not null,
+    type          bigint not null
 );
 
-CREATE TABLE quiz (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    user_id BIGINT NOT NULL,
-    title VARCHAR(255),
-    score FLOAT,
-    created_at BIGINT
+create table review_log
+(
+    id            bigint auto_increment
+        primary key,
+    user_id       bigint     not null,
+    vocabulary_id bigint     not null,
+    review_time   bigint     null,
+    is_correct    tinyint(1) null,
+    attempt       int        null
 );
 
-CREATE TABLE quiz_question (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    quiz_id BIGINT NOT NULL,
-    question_text TEXT NOT NULL,
-    vocabulary_id BIGINT,
-    is_correct BOOLEAN
+create table user
+(
+    id            bigint auto_increment
+        primary key,
+    username      varchar(100) not null,
+    email         varchar(255) not null,
+    password_hash varchar(255) not null,
+    created_at    bigint       null,
+    last_login    bigint       null,
+    constraint email
+        unique (email),
+    constraint username
+        unique (username)
 );
 
-CREATE TABLE quiz_answer (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    question_id BIGINT NOT NULL,
-    content TEXT NOT NULL,
-    is_correct BOOLEAN
+create table user_answer
+(
+    id            bigint auto_increment
+        primary key,
+    user_id       bigint not null,
+    quiz_id       bigint not null,
+    vocabulary_id bigint not null,
+    type          bigint not null,
+    is_correct    bigint not null
 );
 
-CREATE TABLE learning_progress (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    user_id BIGINT NOT NULL,
-    level INT DEFAULT 1 CHECK (level BETWEEN 1 AND 6),
-    learned_words INT DEFAULT 0,
-    reviewed_words INT DEFAULT 0,
-    mastered_words INT DEFAULT 0,
-    current_streak INT DEFAULT 0,
-    last_active_date BIGINT
+create table user_quiz
+(
+    id         bigint auto_increment
+        primary key,
+    user_id    bigint not null,
+    quiz_id    bigint not null,
+    score      bigint not null,
+    created_at bigint not null
 );
 
-CREATE TABLE daily_task_log (
-    id BIGINT PRIMARY KEY AUTO_INCREMENT,
-    user_id BIGINT NOT NULL,
-    task_type INT NOT NULL,
-    status INT DEFAULT 0,
-    task_date DATE NOT NULL,
-    number_words INT DEFAULT 0,
-    updated_at BIGINT
+create table user_vocabulary
+(
+    id            bigint auto_increment
+        primary key,
+    user_id       bigint        not null,
+    vocabulary_id bigint        not null,
+    status        int default 0 null,
+    correct_count int default 0 null,
+    last_review   bigint        null,
+    next_review   bigint        null,
+    created_at    bigint        null
 );
+
+create table vocabulary
+(
+    id             bigint auto_increment
+        primary key,
+    level          int          not null,
+    hanzi          varchar(20)  not null,
+    pinyin         varchar(100) null,
+    meaning        text         null,
+    example_vi     text         null,
+    example_cn     text         null,
+    example_pinyin text         null,
+    `explain`      varchar(255) null
+);
+
